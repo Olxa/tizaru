@@ -1,0 +1,14 @@
+/*------------------------------------*\
+  #обёртка ссылки "подробнее"
+\*------------------------------------*/
+
+.more-wrapper {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: -5px;
+
+    @media (max-width: 1200px) {
+        font-size: 14px;
+        justify-content: flex-start;
+    }
+}

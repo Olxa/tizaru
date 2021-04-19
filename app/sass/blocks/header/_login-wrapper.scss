@@ -1,0 +1,15 @@
+/*------------------------------------*\
+  # нопка авторизации
+\*------------------------------------*/
+
+.login-wrapper {
+    position: relative;
+
+    &.active {
+
+        .login-reg {
+            opacity: 1;
+            visibility: visible;
+        }
+    }
+}

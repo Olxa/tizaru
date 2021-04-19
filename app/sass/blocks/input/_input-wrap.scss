@@ -1,0 +1,42 @@
+/*------------------------------------*\
+  #инпут с заголовком
+\*------------------------------------*/
+
+.input-wrap {
+
+    &__label {
+        display: block;
+        font-size: 14px;
+        line-height: 1;
+        color: $gray;
+
+        > .input,
+        + .input,
+        + .input-password,
+        + .textarea {
+            margin-top: 6px;
+        }
+    }
+}
+
+
+
+
+
+/*------------------------------------*\
+  #Сообщения под инпутом
+\*------------------------------------*/
+
+.input-wrap__message {
+    margin-top: 5px;
+    font-size: 14px;
+    line-height: 1;
+
+    &--warning {
+        color: $accent;
+    }
+
+    &--success {
+        color: $color-tertiary;
+    }
+}

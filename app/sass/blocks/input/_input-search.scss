@@ -1,0 +1,32 @@
+/*------------------------------------*\
+  #»нпут с полем поиска
+\*------------------------------------*/
+
+.input-search {
+    position: relative;
+    overflow: hidden;
+    font-size: 16px;
+
+    &__val {
+        padding-right: 35px;
+    }
+
+    &__btn {
+        position: absolute;
+        font-size: 0;
+        width: 45px;
+        height: 100%;
+        top: 0;
+        right: 0;
+        border-radius: 5px;
+        border: none;
+        background: transparent;
+        padding: 0;
+        z-index: 2;
+
+        &::before {
+            font-size: 18px;
+            color: $gray;
+        }
+    }
+}

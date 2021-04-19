@@ -1,0 +1,164 @@
+/*------------------------------------*\
+  #Кнопки
+\*------------------------------------*/
+
+.btn {
+    display: inline-block;
+    height: 55px;
+    padding: 5px 30px;
+    font-size: 16px;
+    line-height: 45px;
+    text-align: center;
+    vertical-align: middle;
+    text-decoration: none;
+    white-space: nowrap;
+    border-radius: 5px;
+    text-decoration: none;
+    touch-action: manipulation;
+    cursor: pointer;
+
+    &:hover {
+        text-decoration: none;
+        outline: none;
+    }
+
+    &:focus {
+        outline: none;
+    }
+
+    &:active,
+    &.active {
+        outline: 0;
+        background-image: none;
+    }
+
+    &.disabled,
+    &[disabled] {
+        opacity: .6;
+        pointer-events: none;
+        cursor: default;
+    }
+}
+
+.btn--md {
+    height: 45px;
+    line-height: 33px;
+}
+
+.btn--sm {
+    height: 33px;
+    line-height: 22px;
+    padding: 5px 10px;
+}
+
+.btn--full {
+    width: 100%;
+}
+
+.btn-flex{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+
+
+
+/*------------------------------------*\
+  #акцентные кнопки (базовый цвет)
+\*------------------------------------*/
+.btn-accent {
+    background: $accent;
+    color: #ffffff;
+    border: none;
+
+    &:hover,
+    &:focus {
+        color: #fff;
+        background: $accent-dark;
+    }
+}
+
+
+
+
+
+/*------------------------------------*\
+  #акцентные кнопки (контурная кнопка)
+\*------------------------------------*/
+
+.btn-conture {
+    color: $accent;
+    background-color: transparent;
+    border: 1px solid $accent;
+
+    &:hover,
+    &:focus {
+        color: $accent;
+        box-shadow: 0px 0px 17px rgba(255, 30, 30, 0.25);
+    }
+}
+
+
+
+
+/*------------------------------------*\
+  #кнопки с иконками
+\*------------------------------------*/
+
+.btn-i-left .icon::before {
+    padding-right: 10px;
+}
+
+.btn-i-right .icon::before {
+    padding-left: 10px;
+}
+
+
+
+/*------------------------------------*\
+  Старый код
+\*------------------------------------*/
+/*.btn-border-red, 
+.btn-red {
+    border: 1px solid $accent;
+    width: 285px;
+    height: 55px;
+}
+
+.btn-border-red {
+    background: #fff;
+    color: $accent;
+
+    &::before {
+        font-size: 24px;
+        margin-right: 10px;
+    }
+
+    &:hover, 
+    &:focus {
+        box-shadow: 0px 0px 17px rgba(255, 30, 30, 0.25);
+        color: $accent;
+    }
+}
+
+.btn-red {
+    background: $accent;
+    color: #fff;
+    font-weight: 700;
+
+    &:hover, 
+    &:focus {
+        color: #fff;
+        background: #D70000;
+    }
+}
+
+.btn-border-red_min {
+    font-size: 14px;
+    height: 33px;
+    width: 158px;
+    padding: 0 3px;
+}*/

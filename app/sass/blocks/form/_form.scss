@@ -1,0 +1,18 @@
+/*------------------------------------*\
+  #Форма
+\*------------------------------------*/
+
+.form {
+    &__fieldset {
+
+        .input-wrap {
+            margin-bottom: 24px;
+        }
+    }
+
+    &__legend {
+        font-family: $userfont-sbold;
+        font-weight: 600;
+        font-size: 16px;
+    }
+}

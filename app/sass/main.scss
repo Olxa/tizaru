@@ -1,0 +1,147 @@
+// == SASS Mixins & Variables ==
+@import "variables";
+
+// == normalize ==
+@import "config";
+
+// == typography ==
+@import "blocks/typography/text";
+@import "blocks/typography/ul";
+
+// == blocks ==
+@import "blocks/if";
+
+// == button ==
+@import "blocks/buttons/btn";
+@import "blocks/buttons/link";
+@import "blocks/buttons/back-link";
+@import "blocks/buttons/tag";
+
+// == input ==
+@import "blocks/input/input-wrap";
+@import "blocks/input/input";
+@import "blocks/input/input-required";
+@import "blocks/input/input-search";
+@import "blocks/input/input-password";
+@import "blocks/input/checkbox";
+@import "blocks/input/radio";
+@import "blocks/input/textarea";
+
+// == header ==
+@import "blocks/header/header";
+@import "blocks/header/burger-btn";
+@import "blocks/header/main-menu";
+@import "blocks/header/city-wrapper";
+@import "blocks/header/city";
+@import "blocks/header/map-bar";
+@import "blocks/header/btn-languages";
+@import "blocks/header/languages-list";
+@import "blocks/header/login-wrapper";
+@import "blocks/header/login-reg";
+@import "blocks/header/recovery";
+@import "blocks/header/soc-login";
+@import "blocks/header/header-logo";
+
+// == footer ==
+@import "blocks/footer/footer";
+@import "blocks/footer/footer-menu";
+@import "blocks/footer/footer-submenu";
+
+// == home ==
+@import "blocks/home/home-nav";
+@import "blocks/home/home-category";
+@import "blocks/home/home-services";
+@import "blocks/home/services-item";
+
+// == form ==
+@import "blocks/form/form";
+
+// == dropdown ==
+@import "blocks/dropdown/dropdown";
+
+// == search ==
+@import "blocks/search/smart-search";
+
+// == tabs ==
+@import "blocks/tabs/tabs";
+
+// == categoty-bar ==
+@import "blocks/categoty-bar/categoty-bar";
+@import "blocks/categoty-bar/categoty-search";
+@import "blocks/categoty-bar/categoty-modal";
+@import "blocks/categoty-bar/mobil-bar";
+@import "blocks/categoty-bar/mobil-filter";
+@import "blocks/categoty-bar/city-slroller";
+@import "blocks/categoty-bar/mobil-filter-region";
+
+// == page-filter ==
+@import "blocks/page-filter/page-filter";
+
+// == heading ==
+@import "blocks/heading/block-title";
+
+// == slider ==
+@import "blocks/slider/slider";
+@import "blocks/slider/content-slider";
+
+// == content-carusel ==
+@import "blocks/content-carusel/content-carusel";
+
+// == preview ==
+@import "blocks/preview/preview";
+
+// == persons ==
+@import "blocks/persons/persons";
+
+// == SINGLE blocks ==
+@import "blocks/more-wrapper";
+@import "blocks/dividing-block";
+@import "blocks/expert-opinion";
+@import "blocks/collapse";
+@import "blocks/search-map";
+@import "blocks/search-images";
+@import "blocks/page";
+@import "blocks/breadcrumb";
+@import "blocks/rating";
+@import "blocks/metro-list";
+@import "blocks/write-message";
+@import "blocks/change-password";
+@import "blocks/scroll-gray";
+
+// == search-results ==
+@import "blocks/search-results/search-results";
+@import "blocks/search-results/search-b-item";
+
+// == pagination ==
+@import "blocks/pagination/pagination";
+
+// == advertising-banner ==
+@import "blocks/advertising-banner/advertising-banner";
+
+// == popup ==
+@import "blocks/popup/popup";
+@import "blocks/popup/change-popup";
+@import "blocks/popup/message-popup";
+@import "blocks/popup/popup-gener-code";
+@import "blocks/popup/popup-sucess";
+
+// == share ==
+@import "blocks/share/share-block";
+@import "blocks/share/share-popup";
+@import "blocks/share/share-btn";
+
+// == social-list ==
+@import "blocks/social-list/social-list";
+
+// == article ==
+@import "blocks/article/sorting-article";
+@import "blocks/article/search-article";
+
+// == card-page ==
+@import "blocks/card-page/card-page";
+@import "blocks/card-page/card-link-row";
+@import "blocks/card-page/card-page-info";
+@import "blocks/card-page/persone-page";
+
+// == card-page ==
+@import "blocks/file-photo/file-photo";

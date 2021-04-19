@@ -1,0 +1,43 @@
+.advertising-banner {
+    max-width: 300px;
+    margin-left: auto;
+    position: sticky;
+    top: 50px;
+
+    @media (max-width: 992px) {
+        display: none;
+    }
+
+
+
+    > &__title {
+        display: block;
+        font-size: 14px;
+        line-height: normal;
+        color: #AFAFAF;
+        margin-bottom: 11px;
+    }
+
+    &__title {
+        display: block;
+        font-size: 14px;
+        line-height: normal;
+        color: #AFAFAF;
+        margin-bottom: 11px;
+    }
+}
+
+.advertising-banner_left {
+    margin-left: 0;
+}
+
+.advertising-banner_full {
+    max-width: 100%;
+    margin: 0;
+
+    .advertising-banner__title {
+        @media (max-width: 767px) {
+            display: none;
+        }
+    }
+}

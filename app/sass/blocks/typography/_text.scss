@@ -1,0 +1,41 @@
+/*------------------------------------*\
+  #Цвета текста
+\*------------------------------------*/
+
+.text-gray {
+    color: $gray;
+}
+
+.text-accent {
+    color: $accent;
+}
+
+.text-second {
+    color: $color-second;
+}
+
+.text-tertiary {
+    color: $color-tertiary;
+}
+
+
+
+
+
+/*------------------------------------*\
+  #Маркеры
+\*------------------------------------*/
+.mark-accent {
+    color: #ffffff;
+    background-color: $accent;
+}
+
+.mark-second {
+    color: #ffffff;
+    background-color: $color-second;
+}
+
+.mark-tertiary {
+    color: #ffffff;
+    background-color: $color-tertiary;
+}
