@@ -17,6 +17,8 @@
         }
 
         &:last-child {
+            cursor: default;
+
             &::after {
                 display: none;
             }
@@ -29,6 +31,18 @@
 
         &:hover {
             color: $accent;
+        }
+    }
+
+    &--private-office {
+        padding-left: 286px;
+
+        @media (max-width: 1200px) {
+            padding-left: 0;
+        }
+
+        @media (max-width: 992px) {
+            display: none;
         }
     }
 }

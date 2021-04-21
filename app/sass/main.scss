@@ -42,7 +42,6 @@
 @import "blocks/header/soc-login";
 @import "blocks/header/header-logo";
 @import "blocks/header/user-account";
-@import "blocks/header/user-nav";
 @import "blocks/header/account-menu";
 
 // == footer ==
@@ -150,3 +149,7 @@
 
 // == card-page ==
 @import "blocks/file-photo/file-photo";
+
+// == private-office ==
+@import "private-office/private-office";
+@import "private-office/user-nav";
