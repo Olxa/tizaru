@@ -218,7 +218,12 @@ document.addEventListener("DOMContentLoaded", function () {
 
 	$(".header__reg-btn").on('click', function () {
 		$(".login-wrapper").toggleClass('active');
-	});
+    });
+
+    $(".user-account__btn-open").on('click', function () {
+        $(this).toggleClass('active');
+        $(".user-account__dropdown").toggleClass('active');
+    });
 
 	$(".categoty-bar__btn").on('click', function () {
 		$(".categoty-bar").toggleClass('categoty-modal-active');

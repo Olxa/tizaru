@@ -43,12 +43,24 @@ $systemfont:                            -apple-system, BlinkMacSystemFont, Arial
 
 
 /*------------------------------------*\
+  #Части
+\*------------------------------------*/
+
+$border-radius: 5px;
+
+
+
+
+
+/*------------------------------------*\
   #Форма
 \*------------------------------------*/
 
 $input-height:                          45px;
 $input-border-color:                    $gray;
-$input-border-radius:                   5px;
+$input-border-radius:                   $border-radius;
+
+
 
 
 
