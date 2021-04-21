@@ -39,3 +39,23 @@
     color: #ffffff;
     background-color: $color-tertiary;
 }
+
+
+
+
+
+/*------------------------------------*\
+  #Виды текста
+\*------------------------------------*/
+
+.muted-text {
+    font-size: 14px;
+    line-height: 16px;
+    color: $gray;
+    margin: 0;
+
+    + .muted-text {
+        margin-top: 8px;
+        margin-bottom: 0;
+    }
+}

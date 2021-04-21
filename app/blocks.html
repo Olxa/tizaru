@@ -51,6 +51,9 @@
                     <mark class="mark-second">вторичный: mark-second</mark>,
                     <mark class="mark-tertiary">третичный: mark-tertiary</mark>
                 </p>
+
+                <p class="muted-text">Справочный текст</p>
+                <p class="muted-text">Справочный текст+Справочный текст=отступ с верху</p>
             </div>
             <div class="ui-group__item">
                 <ul class="list-mark">
@@ -766,8 +769,18 @@
 
             </div>
             <div class="ui-group__item">
+                <div class="dropdown dropdown--input js-dropdown-toogle">
+                    <button class="dropdown__value" type="button"><span class="dropdown__value-inner">Выпадающий список (вид инпута) с переполнением</span></button>
+                    <div class="dropdown__list scroll-gray">
+                        <div class="dropdown__list-item"><a href="#" class="dropdown__list-val">Значение 1</a></div>
+                        <div class="dropdown__list-item"><a href="#" class="dropdown__list-val">Значение 2</a></div>
+                    </div>
+                </div>
+
+                <br />
+
                 <div class="dropdown js-dropdown-toogle">
-                    <div class="dropdown__value dropdown__value--bold" type="button">Выпадающий список</div>
+                    <button class="dropdown__value dropdown__value--bold" type="button">Выпадающий список</button>
                     <div class="dropdown__list scroll-gray">
                         <div class="dropdown__list-item"><a href="#" class="dropdown__list-val">По дате</a></div>
                         <div class="dropdown__list-item"><a href="#" class="dropdown__list-val">По релевантности</a></div>
@@ -777,7 +790,7 @@
                 <br />
 
                 <div class="dropdown dropdown--input js-dropdown-toogle">
-                    <div class="dropdown__value" type="button">Выпадающий список (вид инпута)</div>
+                    <button class="dropdown__value" type="button">Выпадающий список (вид инпута)</button>
                     <div class="dropdown__list scroll-gray">
                         <div class="dropdown__list-item"><a href="#" class="dropdown__list-val">Значение 1</a></div>
                         <div class="dropdown__list-item"><a href="#" class="dropdown__list-val">Значение 2</a></div>
@@ -787,10 +800,10 @@
                 <br />
 
                 <div class="dropdown dropdown--input dropdown--icon js-dropdown-toogle">
-                    <div class="dropdown__value" type="button">
+                    <button class="dropdown__value" type="button">
                         <span class="icon i-tl"></span>
                         Выпадающий список c иконкой
-                    </div>
+                    </button>
                     <div class="dropdown__list scroll-gray">
                         <div class="dropdown__list-item"><a href="#" class="dropdown__list-val">Значение 1</a></div>
                         <div class="dropdown__list-item"><a href="#" class="dropdown__list-val">Значение 2</a></div>
@@ -800,10 +813,10 @@
                 <br />
 
                 <div class="dropdown dropdown--input dropdown--icon js-dropdown-toogle">
-                    <div class="dropdown__value dropdown__value--icon" type="button">
+                    <button class="dropdown__value dropdown__value--icon" type="button">
                         <span class="icon i-tl"></span>
                         Выпадающий список иконки у значений
-                    </div>
+                    </button>
                     <div class="dropdown__list scroll-gray">
                         <div class="dropdown__list-item">
                             <a href="#" class="dropdown__list-val">
@@ -975,6 +988,18 @@
                     </div>
                 </div>
 
+                <div class="checkbox checkbox--sm checkbox--muted checkbox--tooltip">
+                    <input class="checkbox__field" id="mailing-vote" type="checkbox"><label class="checkbox__value" for="mailing-vote">Получать уведомление о новых голосованиях</label>
+                    <div class="tooltip">
+                        <div class="tooltip__btn">
+                            <span class="tooltip__icon i-info"></span>
+                        </div>
+                        <div class="tooltip__popup">
+                            <p class="tooltip__popup-txt">Несколько раз в месяц на сервисе происходит опрос зарегистрированных пользователей поставив галочку «уведомлять» вы первыми узнаете об этом и выразите свое мнение, <b>дополнительно получите баллы</b></p>
+                        </div>
+                    </div>
+                </div>
+
                 <div class="file-photo">
                     <label class="input__file-button">
                         <input name="file" type="file" class="input-file" multiple>
@@ -1053,7 +1078,16 @@
 
         <div class="ui-group">
             <div class="ui-group__item">
-
+                <div class="tooltip">
+                    <div class="tooltip__btn">
+                        <span class="tooltip__icon i-info"></span>
+                    </div>
+                    <div class="tooltip__popup">
+                        <p class="tooltip__popup-txt">
+                            Несколько раз в месяц на сервисе происходит опрос зарегистрированных пользователей поставив галочку «уведомлять» вы первыми узнаете об этом и выразите свое мнение, <b>дополнительно получите баллы</b>
+                        </p>
+                    </div>
+                </div>
             </div>
             <div class="ui-group__item">
 

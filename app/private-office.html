@@ -36,8 +36,90 @@
                 </ul>
 
                 <div class="private-office__tab-content">
-                    КОНТЕНТ
-                    Tincidunt integer eu augue augue nunc elit dolor, luctus placerat scelerisque euismod, iaculis eu lacus nunc mi elit, vehicula ut laoreet ac, aliquam sit amet justo nunc tempor, metus vel.
+                    <form class="form form-col form-col__two" action="/" method="post">
+
+                        <div class="form-col__row form-col__row--big-margin">
+                            <div class="form-col__col">
+                                <div class="input-wrap form-col__input-wrap">
+                                    <span class="input-wrap__label">Выберите страну</span>
+                                    <div class="dropdown dropdown--input js-dropdown-toogle">
+                                        <button class="dropdown__value" type="button"><span class="dropdown__value-inner"></span></button>
+                                        <div class="dropdown__list scroll-gray">
+                                            <div class="dropdown__list-item"><a href="#" class="dropdown__list-val">Россия</a></div>
+                                            <div class="dropdown__list-item"><a href="#" class="dropdown__list-val">Англия</a></div>
+                                            <div class="dropdown__list-item"><a href="#" class="dropdown__list-val">Франция</a></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-col__col">
+                                <div class="input-wrap form-col__input-wrap">
+                                    <span class="input-wrap__label">Выберите город</span>
+                                    <div class="dropdown dropdown--input js-dropdown-toogle">
+                                        <button class="dropdown__value" type="button"><span class="dropdown__value-inner"></span></button>
+                                        <div class="dropdown__list scroll-gray">
+                                            <div class="dropdown__list-item"><a href="#" class="dropdown__list-val">Москва</a></div>
+                                            <div class="dropdown__list-item"><a href="#" class="dropdown__list-val">Подольск</a></div>
+                                            <div class="dropdown__list-item"><a href="#" class="dropdown__list-val">Чехов</a></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="form-col__row">
+                            <div class="form-col__col"><div class="input-wrap form-col__input-wrap"><label class="input-wrap__label">Фамилия<input class="input" type="text"></label></div></div>
+                            <div class="form-col__col"><div class="input-wrap form-col__input-wrap"><label class="input-wrap__label">Телефон<input class="input" type="tel"></label></div></div>
+                        </div>
+
+                        <div class="form-col__row">
+                            <div class="form-col__col"><div class="input-wrap form-col__input-wrap"><label class="input-wrap__label">Имя<input class="input" type="text"></label></div></div>
+                            <div class="form-col__col form-col__col-group">
+                                <div class="input-wrap form-col__input-wrap">
+                                    <label class="input-wrap__label">E-mail<input class="input" type="email"></label>
+                                </div>
+
+                                <div class="form-col__sub-group">
+                                    <button class="link link-accent link--border form-col__btn-confirm" type="button">Подтвердить почту</button>
+                                    <div class="form-col__muted-text">
+                                        <p class="muted-text">Подтвердите вашу почту чтобы получить все возможности личного кабинета</p>
+                                        <p class="muted-text">Вам на почту придет ссылка, нажмите на нее</p>
+                                    </div>
+                                </div>                               
+                            </div>
+                        </div>
+
+                        <div class="form-col__row">
+                            <div class="form-col__col"><div class="input-wrap form-col__input-wrap"><label class="input-wrap__label">Отчество<input class="input" type="text"></label></div></div>
+                            <div class="form-col__col">
+                                <div class="checkbox checkbox--sm checkbox--muted checkbox--tooltip">
+                                    <input class="checkbox__field" id="mailing" type="checkbox"><label class="checkbox__value" for="mailing">Хочу получать рассылки и письма</label>
+                                    <div class="tooltip">
+                                        <div class="tooltip__btn">
+                                            <span class="tooltip__icon i-info"></span>
+                                        </div>
+                                        <div class="tooltip__popup">
+                                            <p class="tooltip__popup-txt">Несколько раз в месяц на сервисе происходит опрос зарегистрированных пользователей поставив галочку «уведомлять» вы первыми узнаете об этом и выразите свое мнение, <b>дополнительно получите баллы</b></p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="checkbox checkbox--sm checkbox--muted checkbox--tooltip">
+                                    <input class="checkbox__field" id="mailing-vote" type="checkbox"><label class="checkbox__value" for="mailing-vote">Получать уведомление о новых голосованиях</label>
+                                    <div class="tooltip">
+                                        <div class="tooltip__btn">
+                                            <span class="tooltip__icon i-info"></span>
+                                        </div>
+                                        <div class="tooltip__popup">
+                                            <p class="tooltip__popup-txt">Несколько раз в месяц на сервисе происходит опрос зарегистрированных пользователей поставив галочку «уведомлять» вы первыми узнаете об этом и выразите свое мнение, <b>дополнительно получите баллы</b></p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <button class="btn btn-accent form-col__btn" type="submit">Сохранить</button>
+                    </form>
+
                 </div>
 
             </div>

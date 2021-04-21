@@ -85,3 +85,40 @@
         }
     }
 }
+
+.checkbox--muted {
+    .checkbox__value {
+        color: $gray;
+        font-size: 14px;
+    }
+}
+
+.checkbox--sm {
+
+    .checkbox__value {
+
+        &::before {
+            width: 20px;
+            height: 20px;
+            border: 1px solid $gray;
+            left: 0px;
+            top: 0;
+            border-radius: 5px;
+        }
+
+        &::after {
+            height: 6px;
+            width: 9px;
+        }
+    }
+}
+
+
+.checkbox--tooltip {
+    display: flex;
+    align-items: center;
+
+    .tooltip {
+        margin-left: 10px;
+    }
+}

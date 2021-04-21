@@ -57,6 +57,7 @@
 
 // == form ==
 @import "blocks/form/form";
+@import "blocks/form/form-col";
 
 // == dropdown ==
 @import "blocks/dropdown/dropdown";
@@ -146,6 +147,9 @@
 @import "blocks/card-page/card-link-row";
 @import "blocks/card-page/card-page-info";
 @import "blocks/card-page/persone-page";
+
+// == tooltip ==
+@import "blocks/tooltip/tooltip";
 
 // == card-page ==
 @import "blocks/file-photo/file-photo";
