@@ -1,0 +1,37 @@
+/*------------------------------------*\
+  #Форма личного кабинета
+\*------------------------------------*/
+
+.form-private {
+
+    .input-wrap {
+        margin-bottom: 13px;
+    }
+
+    .row-margin-big {
+        margin-bottom: 32px;
+
+        @media (max-width: 991px) {
+            margin-bottom: 0;
+        }
+    }
+
+    .confirm {
+        margin-top: 25px;
+
+        @media (max-width: 1199px) {
+            margin-top: 0;
+            margin-bottom: 12px;
+        }
+
+
+
+        &__btn {
+            font-size: 14px;
+        }
+    }
+
+    &__btn {
+        margin-top: 35px;
+    }
+}
