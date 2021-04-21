@@ -5,18 +5,29 @@
 .user-nav {
     list-style: none;
     margin: 0;
-    padding: 10px 0 20px;
+    padding: 0;
 
     &__item {
         font-size: 14px;
+        padding: 13px 0;
+
+        &:first-child {
+            padding-top: 0;
+        }
+    }
+
+    &__item--delet {
+        border-top: 1px solid $gray;
+        border-bottom: 1px solid $gray;
     }
 
     &__link {
         display: inline-block;
         width: 100%;
-        padding: 10px 20px;
+        font-size: 16px;
 
-        &:hover {
+        &:hover,
+        &.active {
             color: $accent;
         }
     }

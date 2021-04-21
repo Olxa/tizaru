@@ -225,6 +225,11 @@ document.addEventListener("DOMContentLoaded", function () {
         $(".user-account__dropdown").toggleClass('active');
     });
 
+    $(".user-account__dropdown-close").on('click', function () {
+        $(".user-account__btn-open").toggleClass('active');
+        $(".user-account__dropdown").toggleClass('active');
+    });
+
 	$(".categoty-bar__btn").on('click', function () {
 		$(".categoty-bar").toggleClass('categoty-modal-active');
 	});
