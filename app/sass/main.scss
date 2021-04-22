@@ -80,8 +80,9 @@
 // == page-filter ==
 @import "blocks/page-filter/page-filter";
 
-// == heading ==
-@import "blocks/heading/block-title";
+// == title ==
+@import "blocks/title/block-title";
+@import "blocks/title/page-title";
 
 // == slider ==
 @import "blocks/slider/slider";
@@ -164,6 +165,7 @@
 @import "private-office/user-nav";
 @import "private-office/add-avatar";
 @import "private-office/add-avatar__popup";
+@import "private-office/edit-company";
 
 // == options ==
 @import "blocks/options/options";

@@ -1,0 +1,61 @@
+<!--#set var="title" value="Личный кабинет | Информация" -->
+<!--#include virtual="/parts/header-login.html" -->
+
+<div class="page-content">
+    <div class="full-container private-office__wrap">
+
+        <nav aria-label="breadcrumb">
+            <ol class="breadcrumb breadcrumb--private-office">
+                <li class="breadcrumb__item"><a class="breadcrumb__link" href="/">Главная</a></li>
+                <li class="breadcrumb__item"><a class="breadcrumb__link" href="private-office-my-company.html">Мои компании</a></li>
+                <li class="breadcrumb__item active" aria-current="page">Моя компания</li>
+            </ol>
+        </nav>
+
+        <div class="private-office">
+            <div class="private-office__sidebar">
+                <!--#include virtual="/parts/user-nav-page.html" -->
+            </div>
+
+            <div class="private-office__content">
+
+                <ul class="private-office__tab">
+                    <li class="private-office__tab-item">
+                        <a class="private-office__tab-link" href="private-office-my-company-detail.html">Редактирование</a>
+                    </li>
+                    <li class="private-office__tab-item">
+                        <a class="private-office__tab-link" href="private-office-my-company-detail-promo.html">Промокоды</a>
+                    </li>
+                    <li class="private-office__tab-item">
+                        <a class="private-office__tab-link active" href="#">Статистика</a>
+                    </li>
+                    <li class="private-office__tab-item">
+                        <a class="private-office__tab-link" href="private-office-my-company-detail-advert.html">Продвижение объявления</a>
+                    </li>
+                </ul>
+
+                <div class="edit-company private-office__tab-content">
+
+                    <div class="edit-company__header">
+                        <div class="row edit-company__header-row">
+                            <div class="col-xl-7 edit-company__title">
+                                <div class="edit-company__title">
+                                    <div class="page-title-wrap">
+                                        <h1 class="page-title">ООО "Моя компания"</h1>
+                                        <div class="alert-wrap">ожидает модерации<span class="alert i-alert"></span></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <a href="private-office-my-company.html" class="link link-accent link--border back-link i-arrow">Вернуться к профилю</a>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<!--#include virtual="/parts/footer.html" -->

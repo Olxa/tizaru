@@ -49,6 +49,13 @@
     &__message--succes {
         color: $color-succes;
     }
+
+    .icon {
+        border: none;
+        background-color: transparent;
+        font-size:20px;
+        color: $gray;
+    }
 }
 
 

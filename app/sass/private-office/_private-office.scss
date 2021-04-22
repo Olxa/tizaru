@@ -4,6 +4,7 @@
 
 .private-office {
     display: flex;
+    align-items: flex-start;
 
     &__wrap {
 
@@ -43,6 +44,12 @@
         }
     }
 
+
+
+    &__limited-width {
+        max-width: 660px;
+    }
+
     &__status {
         display: flex;
         align-items: baseline;
@@ -79,7 +86,7 @@
         padding: 0;
         list-style: none;
 
-        @media (max-width: 992px) {
+        @media (max-width: 1199px) {
             display: flex;
             flex-wrap: nowrap;
             max-width: 100vw;
@@ -147,27 +154,6 @@
         }
     }
 
-    &__tab-content--w660 {
-        max-width: 660px;
-    }
-
-    &__title-wrap {
-        display: flex;
-        align-items: center;
-        margin-bottom: 25px;
-    }
-
-    &__title {
-        margin-right: 43px;
-        font-family: $userfont-bold;
-        font-weight: 700;
-        font-size: 30px;
-
-        @media (max-width: 767px) {
-            font-size: 25px;
-        }
-    }
-
     &__balance-add--desc {
         @media (max-width: 620px) {
             display: none;
@@ -181,4 +167,8 @@
             display: block;
         }
     }
+}
+
+.balance__page-title-wrap {
+    margin-bottom: 25px;
 }
