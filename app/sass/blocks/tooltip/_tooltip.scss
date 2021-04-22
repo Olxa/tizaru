@@ -3,7 +3,8 @@
 \*------------------------------------*/
 
 .tooltip {
-    position: relative;    
+    position: relative;
+    display: inline-block;
 
     &__icon {
         color: $accent;

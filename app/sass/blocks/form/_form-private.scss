@@ -68,10 +68,18 @@
             order: 99;
         }
     }
-}
 
-.page-promo {
-    .table {
-        max-width: 765px;
+    &__mute-text {
+        margin-bottom: 30px;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 19px;
+        color: $gray;
+
+        a {
+            color: $textcolor;
+            white-space: nowrap;
+            text-decoration: underline;
+        }
     }
 }

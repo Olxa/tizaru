@@ -71,7 +71,20 @@
         font-size: 18px;
         line-height: 24px;
         border: 1px solid $gray;
-        border-radius: $border-radius;  
+        border-radius: $border-radius;
         cursor: default;
+    }
+
+    &__col-title {
+        display: flex;
+        align-items: baseline;
+
+        > * {
+            margin-right: 10px;
+
+            &:last-child {
+                margin-right: 0;
+            }
+        }
     }
 }
