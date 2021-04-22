@@ -1,0 +1,112 @@
+<!--#set var="title" value="Личный кабинет | Информация" -->
+<!--#include virtual="/parts/header-login.html" -->
+
+<div class="page-content">
+    <div class="full-container private-office__wrap">
+
+        <nav aria-label="breadcrumb">
+            <ol class="breadcrumb breadcrumb--private-office">
+                <li class="breadcrumb__item"><a class="breadcrumb__link" href="/">Главная</a></li>
+                <li class="breadcrumb__item active" aria-current="page">Мои компании</li>
+            </ol>
+        </nav>
+
+        <div class="private-office">
+            <div class="private-office__sidebar">
+                <!--#include virtual="/parts/user-nav-page.html" -->
+            </div>
+
+            <div class="private-office__content">
+
+                <div class="table__responsive">
+                    <table class="table table-striped">
+                        <tr class="table__tr">
+                            <th class="table__th">№</th>
+                            <th class="table__th">Компания</th>
+                            <th class="table__th text-center">Статус</th>
+                            <th class="table__th text-center">Продвижение</th>
+                            <th class="table__th table__td--nowrap text-center">Кол-во просмотров</th>
+                            <th class="table__th"></th>
+                        </tr>
+                        <tr class="table__tr">
+                            <td class="table__td">1</td>
+                            <td class="table__td">Моя компания</td>
+                            <td class="table__td">Опубликовано</td>
+                            <td class="table__td">Зафиксировано на главной до 21.02.2021</td>
+                            <td class="table__td text-center">1 000</td>
+                            <td class="table__td">
+                                <div class="options">
+                                    <button class="options__btn" type="button"></button>
+                                    <div class="options__popup">
+                                        <ul class="options__list">
+                                            <li class="options__item"><a class="options__link" href="#">Изменить</a></li>
+                                            <li class="options__item"><a class="options__link  options__link-del" href="#">Удалить</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr class="table__tr">
+                            <td class="table__td">2</td>
+                            <td class="table__td">ООО Ромашка</td>
+                            <td class="table__td">Ожидает модерации</td>
+                            <td class="table__td text-center">&mdash;</td>
+                            <td class="table__td text-center">300</td>
+                            <td class="table__td">
+                                <div class="options">
+                                    <button class="options__btn" type="button"></button>
+                                    <div class="options__popup">
+                                        <ul class="options__list">
+                                            <li class="options__item"><a class="options__link" href="#">Изменить</a></li>
+                                            <li class="options__item"><a class="options__link  options__link-del" href="#">Удалить</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr class="table__tr">
+                            <td class="table__td">3</td>
+                            <td class="table__td">ИП Восход</td>
+                            <td class="table__td">Ожидает подтверждение по телефону</td>
+                            <td class="table__td text-center">&mdash;</td>
+                            <td class="table__td text-center">28</td>
+                            <td class="table__td">
+                                <div class="options">
+                                    <button class="options__btn" type="button"></button>
+                                    <div class="options__popup">
+                                        <ul class="options__list">
+                                            <li class="options__item"><a class="options__link" href="#">Изменить</a></li>
+                                            <li class="options__item"><a class="options__link  options__link-del" href="#">Удалить</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr class="table__tr">
+                            <td class="table__td">4</td>
+                            <td class="table__td">ОАО Инженерные технологии</td>
+                            <td class="table__td table__message--succes">Подтверждено</td>
+                            <td class="table__td text-center">&mdash;</td>
+                            <td class="table__td text-center">19</td>
+                            <td class="table__td">
+                                <div class="options">
+                                    <button class="options__btn" type="button"></button>
+                                    <div class="options__popup">
+                                        <ul class="options__list">
+                                            <li class="options__item"><a class="options__link" href="#">Изменить</a></li>
+                                            <li class="options__item"><a class="options__link  options__link-del" href="#">Удалить</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<!--#include virtual="/parts/footer.html" -->

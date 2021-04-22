@@ -175,6 +175,10 @@ document.addEventListener("DOMContentLoaded", function () {
 			.closest('.tabs').find('.tabs-content').removeClass('active').eq($(this).index()).addClass('active');
     });
 
+    $(".options__btn").on('click', function () {
+        $(this).toggleClass('active');
+    });
+
     //$(".collapse .collapse-link").click(function () {
     //    $(this).toggleClass('hide').siblings('.collapse-content').slideToggle();
     //    return false;
@@ -311,6 +315,11 @@ $(document).on('mouseup', function (e) {
     let drop = $('.dropdown');
     if (!hsm.is(e.target) && drop.has(e.target).length === 0) {
         drop.removeClass('active');
+    }
+
+    let option = $('.options__btn');
+    if (!hsm.is(e.target) && drop.has(e.target).length === 0) {
+        option.removeClass('active');
     }
 });
 

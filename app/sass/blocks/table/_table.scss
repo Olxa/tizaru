@@ -8,7 +8,7 @@
     border-collapse: collapse;
     margin-bottom: 1rem;
     background-color: transparent;
-    cursor: pointer;
+    cursor: default;
 
     &__responsive {
         display: block;
@@ -24,14 +24,13 @@
     }
 
     &__th {
-        text-align: center;
         vertical-align: bottom;
     }
 
     &__th-sorting {
         display: flex;
         align-items: center;
-        justify-content: center;
+        justify-content: flex-end;
 
         .sorting {
             margin-left: 15px;
@@ -46,7 +45,12 @@
     &__td--nowrap {
         white-space: nowrap;
     }
+
+    &__message--succes {
+        color: $color-succes;
+    }
 }
+
 
 
 
