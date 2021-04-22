@@ -1,0 +1,63 @@
+/*------------------------------------*\
+  #Таблица
+\*------------------------------------*/
+
+.table {
+    width: 100%;
+    max-width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 1rem;
+    background-color: transparent;
+    cursor: pointer;
+
+    &__responsive {
+        display: block;
+        width: 100%;
+        margin-bottom: 30px;
+        overflow-x: auto;
+        border-radius: $border-radius;
+    }
+
+    &__td,
+    &__th {
+        padding: 10px 20px;
+    }
+
+    &__th {
+        text-align: center;
+        vertical-align: bottom;
+    }
+
+    &__th-sorting {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        .sorting {
+            margin-left: 15px;
+        }
+    }
+
+    &__td {
+        height: 60px;
+        border-top: 1px solid $gray;
+    }
+
+    &__td--nowrap {
+        white-space: nowrap;
+    }
+}
+
+
+
+
+/*------------------------------------*\
+  #Таблица - полосатая
+\*------------------------------------*/
+
+.table-striped {
+
+    .table__tr:nth-of-type(odd) {
+        background-color: $white;
+    }
+}

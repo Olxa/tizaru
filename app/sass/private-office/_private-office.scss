@@ -146,4 +146,39 @@
             padding-right: 15px;
         }
     }
+
+    &__tab-content--w660 {
+        max-width: 660px;
+    }
+
+    &__title-wrap {
+        display: flex;
+        align-items: center;
+        margin-bottom: 25px;
+    }
+
+    &__title {
+        margin-right: 43px;
+        font-family: $userfont-bold;
+        font-weight: 700;
+        font-size: 30px;
+
+        @media (max-width: 767px) {
+            font-size: 25px;
+        }
+    }
+
+    &__balance-add--desc {
+        @media (max-width: 620px) {
+            display: none;
+        }
+    }
+
+    &__balance-add--mob {
+        display: none;
+
+        @media (max-width: 620px) {
+            display: block;
+        }
+    }
 }

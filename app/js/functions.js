@@ -367,5 +367,9 @@ if (document.documentElement.clientWidth < 768) {
 document.addEventListener("DOMContentLoaded", function () {
 	$('.popup-link').magnificPopup({
 		type: 'inline' // к поп апу добавить класс mfp-hide // Через кнопку data-mfp-src="#call_me" добавить кнопке
-	});
+    });
+
+    $('.mfp-btn-close').on("click", function () {
+        $.magnificPopup.close();
+    });
 });

@@ -111,6 +111,7 @@
 @import "blocks/change-password";
 @import "blocks/scroll-gray";
 @import "blocks/page-content";
+@import "blocks/sorting";
 
 
 // == search-results ==
@@ -151,9 +152,15 @@
 // == tooltip ==
 @import "blocks/tooltip/tooltip";
 
-// == card-page ==
-@import "blocks/file-photo/file-photo";
+// == table ==
+@import "blocks/table/table";
+
+// == add-file ==
+@import "blocks/add-file/file-photo";
+@import "blocks/add-file/file-txt";
 
 // == private-office ==
 @import "private-office/private-office";
 @import "private-office/user-nav";
+@import "private-office/add-avatar";
+@import "private-office/add-avatar__popup";

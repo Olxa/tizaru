@@ -1,0 +1,69 @@
+.file-photo {
+    position: relative;
+    display: flex;
+    align-items: center;
+
+    &__description {
+        display: inline-block;
+        margin-top: 10px;
+    }
+
+    &__file-button {
+        position: relative;
+        min-width: 110px;
+        width: 110px;
+        height: 110px;
+        border: 1px solid #aca9a9;
+        border-radius: 5px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: #aca9a9;
+        font-size: 36px;
+        cursor: pointer;
+        overflow: hidden;
+
+        img {
+            object-fit: cover;
+            object-position: top;
+        }
+
+        &:hover .file-photo__delet-wrap {
+            bottom: -70%;
+        }
+    }
+
+    &__delet-wrap {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        bottom: -100%;
+        background: rgba($white, 0.7);
+        transition: all .3s linear;
+        cursor: default;
+    }
+
+    &__delet-btn {
+        position: relative;
+        top: -10px;
+        border: none;
+        background-color: transparent;
+        font-size: 16px;
+
+        &:hover {
+            color: $accent;
+        }
+    }
+
+    &__file-button--circle {
+        border-radius: 50%;
+    }
+}
+
+.input__file-button {
+    margin-right: 17px;
+
+    .input-file {
+        display: none;
+    }
+}
