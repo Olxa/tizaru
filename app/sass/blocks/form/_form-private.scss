@@ -4,10 +4,6 @@
 
 .form-private {
 
-    .input-wrap {
-        margin-bottom: 13px;
-    }
-
     .row-margin-big {
         margin-bottom: 32px;
 
@@ -24,8 +20,6 @@
             margin-bottom: 12px;
         }
 
-
-
         &__btn {
             font-size: 14px;
         }
@@ -35,51 +29,95 @@
         margin-top: 35px;
     }
 
-    &__group {
-        margin-bottom: 70px;
-
-        @media (max-width: 991px) {
-            margin-bottom: 40px;
-        }
-    }
-
-    &__group-title {
-        margin-bottom: 16px;
-        font-family: $userfont-bold;
-        font-size: 20px;
-        font-weight: 700;
-        line-height: 27px;
-    }
-
-    &__group-title--sm {
-        margin-bottom: 13px;
-        font-size: 18px;
-        line-height: 25px;
-    }
-
-    &__sub-group {
-        @media (max-width: 991px) {
-            margin: 10px 0;
-        }
-    }
-
     &__mob-last {
         @media (max-width: 1199px) {
             order: 99;
         }
     }
 
-    &__mute-text {
-        margin-bottom: 30px;
-        font-size: 14px;
-        font-weight: 400;
-        line-height: 19px;
-        color: $gray;
+    &__time-label {
+        display: inline-block;
+        margin-bottom: 4px;
+    }
 
-        a {
-            color: $textcolor;
-            white-space: nowrap;
-            text-decoration: underline;
+    &__desk-vis {
+        display: inline-block;
+
+        @media (max-width: 767px) {
+            display: none
         }
+    }
+
+    &__label-group {
+
+        @media (max-width: 480px) {
+            font-size: 12px;
+        }
+    }
+
+    &__time-label--hidden {
+        display: none;
+        width: 100%;
+        font-size: 12px;
+        text-align: center;
+
+        @media (max-width: 767px) {
+            display: inline-block;
+        }
+    }
+
+    &__has-del-group {
+        position: relative;
+
+        .form__btn-del {
+            @media (max-width: 992px) {
+                display: none;
+            }
+        }
+    }
+
+    &__fields-has-del {
+        @media (max-width: 992px) {
+            width: calc(100% - 28px)
+        }
+    }
+
+    &__del-group {
+        display: none;
+        position: absolute;
+        right: 0;
+        top: 25px;
+        font-size: 20px;
+        color: $gray;
+        border: none;
+        background-color: transparent;
+
+        @media (max-width: 992px) {
+            display: block;
+        }
+    }
+}
+
+.time-col {
+    @media (max-width: 767px) {
+        padding-left: 2px;
+        padding-right: 2px;
+
+        .checkbox {
+            text-align: center;
+        }
+
+        .form-private__text-sm {
+            text-align: center;
+        }
+    }
+}
+
+.schedule__row {
+    margin-bottom: 10px;
+
+    @media (max-width: 767px) {
+        max-width: 100%;
+        margin: 0 auto 10px;
     }
 }

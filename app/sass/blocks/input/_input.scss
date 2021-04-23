@@ -20,10 +20,13 @@
         background: $light-gray;
     }
 
-    &:disabled {
+    &:disabled,
+    &.disabled {
         color: $gray2;
-        background: $light-gray;
-        border-color: $gray;
+        background: #ffffff;
+        border-color: #E7E7E7;
+        cursor: default;
+        user-select: none;
     }
 }
 

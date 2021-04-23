@@ -769,6 +769,61 @@
                 </div>
 
                 <br />
+                <form class="form" action="/" method="post">
+                    <fieldset class="form__group">
+                        <legend class="form__group-title">Заголовок группы</legend>
+                        <p class="form__group-description">Описание группы</p>
+                        <div class="input-wrap">
+                            <label class="input-wrap__label">
+                                Услуга/товар
+                                <input class="input" type="text">
+                            </label>
+                            <span class="form__mute-text">Рекомендуемый размер 1200x1200 px</span>
+                        </div>
+
+                        <fieldset class="form__subgroup">
+                            <legend class="form__subgroup-title">Заголовок Подгруппы</legend>
+                            <div class="form__field-has-del">
+                                <div class="input-wrap">
+                                    <label class="input-wrap__label">
+                                        Услуга/товар
+                                        <input class="input" type="text">
+                                    </label>
+                                </div>
+                                <button class="form__btn-del i-clear" type="button"></button>
+                            </div>
+
+                            <div class="input-wrap">
+                                <label class="input-wrap__label">
+                                    Услуга/товар
+                                    <input class="input" type="text">
+                                </label>
+                            </div>
+                        </fieldset>
+
+                        <fieldset class="form__subgroup">
+                            <legend class="form__subgroup-title">Заголовок Подгруппы</legend>
+
+                            <div class="input-wrap">
+                                <label class="input-wrap__label">
+                                    Услуга/товар
+                                    <input class="input" type="text">
+                                </label>
+                            </div>
+
+                            <div class="input-wrap">
+                                <label class="input-wrap__label">
+                                    Услуга/товар
+                                    <input class="input" type="text">
+                                </label>
+                            </div>
+
+                            <button class="form__subgroup-add" type="button">+ Добавить подгруппу</button>
+                            <button class="form__subgroup-add" type="button">+ Добавить подгруппу</button>
+                        </fieldset>
+                    </fieldset>
+                </form>
+
 
             </div>
             <div class="ui-group__item">
@@ -1014,24 +1069,24 @@
                     </div>
                 </div>
 
-                <div class="file-photo">
-                    <label class="input__file-button">
-                        <input name="file" type="file" class="input-file" multiple>
-                        <span class="file-photo__file-button i-camera"></span>
-                    </label>
+                <div class="file-photo__group">
                     <div class="file-photo">
                         <label class="input__file-button">
-                            <input name="file" type="file" class="input-file" multiple>
+                            <input name="file" type="file" class="input-file" multiple="">
                             <span class="file-photo__file-button i-camera"></span>
                         </label>
                     </div>
-
+                    <div class="file-photo">
+                        <label class="input__file-button">
+                            <input name="file" type="file" class="input-file" multiple="">
+                            <span class="file-photo__file-button i-camera"></span>
+                        </label>
+                    </div>
                     <label class="input__file-button">
                         <input name="file" type="file" class="input-file" multiple>
                         <span class="file-photo__file-button file-photo__file-button--circle i-camera"></span>
                     </label>
                 </div>
-
                 <label class="file-txt">
                     Загрузите файл с компьютера
                     <input name="file" type="file" class="file-txt__input" multiple>
@@ -1083,7 +1138,7 @@
                         </div>
 
                     </fieldset>
-                </form>
+                </form>               
             </div>
         </div>
 
