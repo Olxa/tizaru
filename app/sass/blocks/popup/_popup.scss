@@ -27,6 +27,21 @@
     }
 }
 
+.mfp-figure {
+
+    .mfp-close {
+        padding: 0;
+        top: -12px !important;
+        width: 44px;
+        height: 44px;
+        background: #ffffff;
+        border-radius: 50%;
+        text-align: center;
+        color: $textcolor;
+        box-shadow: $shadow1;
+    }
+}
+
 .popup__text {
     font-size: 20px;
     line-height: 1.5;

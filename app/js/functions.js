@@ -389,3 +389,9 @@ document.addEventListener("DOMContentLoaded", function () {
         $.magnificPopup.close();
     });
 });
+
+document.addEventListener("DOMContentLoaded", function () {
+    $('.popup-image').magnificPopup({
+        type: 'image' 
+    });    
+});

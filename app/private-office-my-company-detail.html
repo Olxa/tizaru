@@ -516,10 +516,10 @@
                                 <legend class="form__subgroup-title visually-hidden">Добавление фото</legend>
                                 <div class="file-photo__group">
                                     <div class="file-photo file-photo__file-button">
-                                        <a class="file-photo__preview-btn i-see" href="#" title="Увеличить"></a>
+                                        <a class="file-photo__preview-btn i-see popup-image" href="images/dist/decor.png" title="Увеличить"></a>
                                         <img src="images/dist/or2.jpg" alt="название фото">
                                         <div class="file-photo__delet-wrap">
-                                            <button class="file-photo__delet-btn i-clear" type="button" title="Удалить изображение"></button>
+                                            <button class="file-photo__delet-btn popup-link i-clear" type="button" data-mfp-src="#del-photo" title="Удалить фото"></button>
                                         </div>
                                     </div>
                                     <div class="file-photo">
@@ -814,6 +814,19 @@
         </div>
 
     </div>
+</div>
+
+<div id="del-photo" class="popup delete-popup mfp-hide">
+    <div class="delete-popup__title">Удалить фото?</div>
+    <div class="delete-popup__btn-group">
+        <div class="btn btn-conture btn--md add-avatar__popup-btn-close mfp-btn-close">Отмена</div>
+        <button class="btn btn-accent btn--md popup-link" type="button" data-mfp-src="#del-confirmed">Удалить</button>
+    </div>
+</div>
+
+
+<div id="del-confirmed" class="popup delete-popup mfp-hide">
+    <div class="delete-popup__title">Фото удалено</div>
 </div>
 
 <!--#include virtual="/parts/footer.html" -->

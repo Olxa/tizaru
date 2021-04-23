@@ -66,6 +66,7 @@
         &:hover {
             .file-photo__delet-wrap {
                 bottom: -70%;
+                height: 100%;
             }
 
             .file-photo__preview-btn {
@@ -81,7 +82,7 @@
     &__delet-wrap {
         position: absolute;
         width: 100%;
-        height: 100%;
+        height: 0;
         bottom: -100%;
         text-align: center;
         background: rgba($white, 0.7);
