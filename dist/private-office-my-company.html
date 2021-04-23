@@ -258,7 +258,7 @@
         <nav aria-label="breadcrumb">
             <ol class="breadcrumb breadcrumb--private-office">
                 <li class="breadcrumb__item"><a class="breadcrumb__link" href="/">Главная</a></li>
-                <li class="breadcrumb__item active" aria-current="page">Личный кабинет</li>
+                <li class="breadcrumb__item active" aria-current="page">Мои компании</li>
             </ol>
         </nav>
 
@@ -291,111 +291,89 @@
 
             <div class="private-office__content">
 
-                <div class="private-office__status">ID 3500560<span class="private-office__status-val private-office__status-val--one">, статус</span></div>
-
-                <ul class="private-office__tab">
-                    <li class="private-office__tab-item">
-                        <a class="private-office__tab-link active" href="#">Личная информация</a>
-                    </li>
-                    <li class="private-office__tab-item">
-                        <a class="private-office__tab-link" href="private-office-change-password.html">Смена пароля</a>
-                    </li>
-                    <li class="private-office__tab-item">
-                        <a class="private-office__tab-link" href="private-office-balance.html">Баланс</a>
-                    </li>
-                    <li class="private-office__tab-item">
-                        <a class="private-office__tab-link" href="private-office-profile-photo.html">Фото профиля</a>
-                    </li>
-                </ul>
-
-                <div class="private-office__tab-content">
-
-                    <form class="form form-private" action="/" method="post">
-
-                        <div class="row row-margin-big">
-                            <div class="col-xl-3 col-lg-6">
-                                <div class="input-wrap">
-                                    <span class="input-wrap__label">Выберите страну</span>
-                                    <div class="dropdown dropdown--input js-dropdown-toogle">
-                                        <button class="dropdown__value" type="button"><span class="dropdown__value-inner"></span></button>
-                                        <div class="dropdown__list scroll-gray">
-                                            <div class="dropdown__list-item"><a href="#" class="dropdown__list-val">Россия</a></div>
-                                            <div class="dropdown__list-item"><a href="#" class="dropdown__list-val">Англия</a></div>
-                                            <div class="dropdown__list-item"><a href="#" class="dropdown__list-val">Франция</a></div>
-                                        </div>
+                <div class="table__responsive">
+                    <table class="table table-striped">
+                        <tr class="table__tr">
+                            <th class="table__th">№</th>
+                            <th class="table__th">Компания</th>
+                            <th class="table__th text-center">Статус</th>
+                            <th class="table__th text-center">Продвижение</th>
+                            <th class="table__th table__td--nowrap text-center">Кол-во просмотров</th>
+                            <th class="table__th"></th>
+                        </tr>
+                        <tr class="table__tr">
+                            <td class="table__td">1</td>
+                            <td class="table__td">Моя компания</td>
+                            <td class="table__td">Опубликовано</td>
+                            <td class="table__td">Зафиксировано на главной до 21.02.2021</td>
+                            <td class="table__td text-center">1 000</td>
+                            <td class="table__td">
+                                <div class="options">
+                                    <button class="options__btn" type="button"></button>
+                                    <div class="options__popup">
+                                        <ul class="options__list">
+                                            <li class="options__item"><a class="options__link" href="private-office-my-company-detail.html">Изменить</a></li>
+                                            <li class="options__item"><a class="options__link  options__link-del" href="#">Удалить</a></li>
+                                        </ul>
                                     </div>
                                 </div>
-                            </div>
-                            <div class="col-xl-3 col-lg-6">
-                                <div class="input-wrap">
-                                    <span class="input-wrap__label">Выберите город</span>
-                                    <div class="dropdown dropdown--input js-dropdown-toogle">
-                                        <button class="dropdown__value" type="button"><span class="dropdown__value-inner"></span></button>
-                                        <div class="dropdown__list scroll-gray">
-                                            <div class="dropdown__list-item"><a href="#" class="dropdown__list-val">Москва</a></div>
-                                            <div class="dropdown__list-item"><a href="#" class="dropdown__list-val">Подольск</a></div>
-                                            <div class="dropdown__list-item"><a href="#" class="dropdown__list-val">Чехов</a></div>
-                                        </div>
+                            </td>
+                        </tr>
+                        <tr class="table__tr">
+                            <td class="table__td">2</td>
+                            <td class="table__td">ООО Ромашка</td>
+                            <td class="table__td">Ожидает модерации</td>
+                            <td class="table__td text-center">&mdash;</td>
+                            <td class="table__td text-center">300</td>
+                            <td class="table__td">
+                                <div class="options">
+                                    <button class="options__btn" type="button"></button>
+                                    <div class="options__popup">
+                                        <ul class="options__list">
+                                            <li class="options__item"><a class="options__link" href="private-office-my-company-detail.html">Изменить</a></li>
+                                            <li class="options__item"><a class="options__link  options__link-del" href="#">Удалить</a></li>
+                                        </ul>
                                     </div>
                                 </div>
-                            </div>
-                        </div>
-
-                        <div class="row">
-                            <div class="col-xl-3 col-lg-6">
-                                <div class="input-wrap"><label class="input-wrap__label">Фамилия<input class="input" type="text"></label></div>
-                                <div class="input-wrap"><label class="input-wrap__label">Имя<input class="input" type="text"></label></div>
-                                <div class="input-wrap"><label class="input-wrap__label">Отчество<input class="input" type="text"></label></div>
-                            </div>
-                            <div class="col-xl-9 col-lg-6">
-                                <div class="row">
-                                    <div class="col-xl-4">
-                                        <div class="input-wrap"><label class="input-wrap__label">Телефон<input class="input" type="tel"></label></div>                                       
-                                    </div>
-                                </div> 
-                                <div class="row">
-                                    <div class="col-xl-4">
-                                        <div class="input-wrap"><label class="input-wrap__label">E-mail<input class="input" type="email"></label></div>
-                                    </div>
-                                    <div class="col-xl-3 confirm">
-                                        <button class="link link-accent link--border confirm__btn" type="button">Подтвердить почту</button>
-                                    </div>
-                                    <div class="col-xl-5 confirm">
-                                        <p class="muted-text">Подтвердите вашу почту чтобы получить все возможности личного кабинета</p>
-                                        <p class="muted-text">Вам на почту придет ссылка, нажмите на нее</p>
+                            </td>
+                        </tr>
+                        <tr class="table__tr">
+                            <td class="table__td">3</td>
+                            <td class="table__td">ИП Восход</td>
+                            <td class="table__td">Ожидает подтверждение по телефону</td>
+                            <td class="table__td text-center">&mdash;</td>
+                            <td class="table__td text-center">28</td>
+                            <td class="table__td">
+                                <div class="options">
+                                    <button class="options__btn" type="button"></button>
+                                    <div class="options__popup">
+                                        <ul class="options__list">
+                                            <li class="options__item"><a class="options__link" href="private-office-my-company-detail.html">Изменить</a></li>
+                                            <li class="options__item"><a class="options__link  options__link-del" href="#">Удалить</a></li>
+                                        </ul>
                                     </div>
                                 </div>
-                                <div class="checkbox checkbox--sm checkbox--muted checkbox--tooltip">
-                                    <input class="checkbox__field" id="mailing" type="checkbox"><label class="checkbox__value" for="mailing">Хочу получать рассылки и письма</label>
-                                    <div class="tooltip">
-                                        <div class="tooltip__btn">
-                                            <span class="tooltip__icon i-info"></span>
-                                        </div>
-                                        <div class="tooltip__popup">
-                                            <p class="tooltip__popup-txt">Несколько раз в месяц на сервисе происходит опрос зарегистрированных пользователей поставив галочку «уведомлять» вы первыми узнаете об этом и выразите свое мнение, <b>дополнительно получите баллы</b></p>
-                                        </div>
+                            </td>
+                        </tr>
+                        <tr class="table__tr">
+                            <td class="table__td">4</td>
+                            <td class="table__td">ОАО Инженерные технологии</td>
+                            <td class="table__td table__message--succes">Подтверждено</td>
+                            <td class="table__td text-center">&mdash;</td>
+                            <td class="table__td text-center">19</td>
+                            <td class="table__td">
+                                <div class="options">
+                                    <button class="options__btn" type="button"></button>
+                                    <div class="options__popup">
+                                        <ul class="options__list">
+                                            <li class="options__item"><a class="options__link" href="private-office-my-company-detail.html">Изменить</a></li>
+                                            <li class="options__item"><a class="options__link  options__link-del" href="#">Удалить</a></li>
+                                        </ul>
                                     </div>
                                 </div>
-                                <div class="checkbox checkbox--sm checkbox--muted checkbox--tooltip">
-                                    <input class="checkbox__field" id="mailing-vote" type="checkbox"><label class="checkbox__value" for="mailing-vote">Получать уведомление о новых голосованиях</label>
-                                    <div class="tooltip">
-                                        <div class="tooltip__btn">
-                                            <span class="tooltip__icon i-info"></span>
-                                        </div>
-                                        <div class="tooltip__popup">
-                                            <p class="tooltip__popup-txt">Несколько раз в месяц на сервисе происходит опрос зарегистрированных пользователей поставив галочку «уведомлять» вы первыми узнаете об этом и выразите свое мнение, <b>дополнительно получите баллы</b></p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>                            
-                        </div>
-                        <div class="row">
-                            <div class="col-xl-3 col-lg-6 offset-lg-3 offset-xl-0">
-                                <button class="btn btn-accent btn--full form-private__btn" type="submit">Сохранить</button>
-                            </div>
-                        </div>
-                    </form>
-
+                            </td>
+                        </tr>
+                    </table>
                 </div>
 
             </div>

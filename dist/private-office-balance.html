@@ -258,7 +258,8 @@
         <nav aria-label="breadcrumb">
             <ol class="breadcrumb breadcrumb--private-office">
                 <li class="breadcrumb__item"><a class="breadcrumb__link" href="/">Главная</a></li>
-                <li class="breadcrumb__item active" aria-current="page">Личный кабинет</li>
+                <li class="breadcrumb__item"><a class="breadcrumb__link" href="private-office">Личный кабинет</a></li>
+                <li class="breadcrumb__item active" aria-current="page">Баланс</li>
             </ol>
         </nav>
 
@@ -295,107 +296,60 @@
 
                 <ul class="private-office__tab">
                     <li class="private-office__tab-item">
-                        <a class="private-office__tab-link active" href="#">Личная информация</a>
+                        <a class="private-office__tab-link" href="private-office.html">Личная информация</a>
                     </li>
                     <li class="private-office__tab-item">
                         <a class="private-office__tab-link" href="private-office-change-password.html">Смена пароля</a>
                     </li>
                     <li class="private-office__tab-item">
-                        <a class="private-office__tab-link" href="private-office-balance.html">Баланс</a>
+                        <a class="private-office__tab-link active" href="#">Баланс</a>
                     </li>
                     <li class="private-office__tab-item">
                         <a class="private-office__tab-link" href="private-office-profile-photo.html">Фото профиля</a>
                     </li>
                 </ul>
 
-                <div class="private-office__tab-content">
+                <div class="private-office__tab-content private-office__limited-width">
+                    <div class="page-title-wrap balance__page-title-wrap">
+                        <div class="page-title">На балансе 15 000 ₽</div>
+                        <a class="btn btn-accent btn--md private-office__balance-add--desc" href="#">Пополнить</a>
+                    </div>
 
-                    <form class="form form-private" action="/" method="post">
-
-                        <div class="row row-margin-big">
-                            <div class="col-xl-3 col-lg-6">
-                                <div class="input-wrap">
-                                    <span class="input-wrap__label">Выберите страну</span>
-                                    <div class="dropdown dropdown--input js-dropdown-toogle">
-                                        <button class="dropdown__value" type="button"><span class="dropdown__value-inner"></span></button>
-                                        <div class="dropdown__list scroll-gray">
-                                            <div class="dropdown__list-item"><a href="#" class="dropdown__list-val">Россия</a></div>
-                                            <div class="dropdown__list-item"><a href="#" class="dropdown__list-val">Англия</a></div>
-                                            <div class="dropdown__list-item"><a href="#" class="dropdown__list-val">Франция</a></div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-xl-3 col-lg-6">
-                                <div class="input-wrap">
-                                    <span class="input-wrap__label">Выберите город</span>
-                                    <div class="dropdown dropdown--input js-dropdown-toogle">
-                                        <button class="dropdown__value" type="button"><span class="dropdown__value-inner"></span></button>
-                                        <div class="dropdown__list scroll-gray">
-                                            <div class="dropdown__list-item"><a href="#" class="dropdown__list-val">Москва</a></div>
-                                            <div class="dropdown__list-item"><a href="#" class="dropdown__list-val">Подольск</a></div>
-                                            <div class="dropdown__list-item"><a href="#" class="dropdown__list-val">Чехов</a></div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="row">
-                            <div class="col-xl-3 col-lg-6">
-                                <div class="input-wrap"><label class="input-wrap__label">Фамилия<input class="input" type="text"></label></div>
-                                <div class="input-wrap"><label class="input-wrap__label">Имя<input class="input" type="text"></label></div>
-                                <div class="input-wrap"><label class="input-wrap__label">Отчество<input class="input" type="text"></label></div>
-                            </div>
-                            <div class="col-xl-9 col-lg-6">
-                                <div class="row">
-                                    <div class="col-xl-4">
-                                        <div class="input-wrap"><label class="input-wrap__label">Телефон<input class="input" type="tel"></label></div>                                       
-                                    </div>
-                                </div> 
-                                <div class="row">
-                                    <div class="col-xl-4">
-                                        <div class="input-wrap"><label class="input-wrap__label">E-mail<input class="input" type="email"></label></div>
-                                    </div>
-                                    <div class="col-xl-3 confirm">
-                                        <button class="link link-accent link--border confirm__btn" type="button">Подтвердить почту</button>
-                                    </div>
-                                    <div class="col-xl-5 confirm">
-                                        <p class="muted-text">Подтвердите вашу почту чтобы получить все возможности личного кабинета</p>
-                                        <p class="muted-text">Вам на почту придет ссылка, нажмите на нее</p>
-                                    </div>
-                                </div>
-                                <div class="checkbox checkbox--sm checkbox--muted checkbox--tooltip">
-                                    <input class="checkbox__field" id="mailing" type="checkbox"><label class="checkbox__value" for="mailing">Хочу получать рассылки и письма</label>
-                                    <div class="tooltip">
-                                        <div class="tooltip__btn">
-                                            <span class="tooltip__icon i-info"></span>
-                                        </div>
-                                        <div class="tooltip__popup">
-                                            <p class="tooltip__popup-txt">Несколько раз в месяц на сервисе происходит опрос зарегистрированных пользователей поставив галочку «уведомлять» вы первыми узнаете об этом и выразите свое мнение, <b>дополнительно получите баллы</b></p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="checkbox checkbox--sm checkbox--muted checkbox--tooltip">
-                                    <input class="checkbox__field" id="mailing-vote" type="checkbox"><label class="checkbox__value" for="mailing-vote">Получать уведомление о новых голосованиях</label>
-                                    <div class="tooltip">
-                                        <div class="tooltip__btn">
-                                            <span class="tooltip__icon i-info"></span>
-                                        </div>
-                                        <div class="tooltip__popup">
-                                            <p class="tooltip__popup-txt">Несколько раз в месяц на сервисе происходит опрос зарегистрированных пользователей поставив галочку «уведомлять» вы первыми узнаете об этом и выразите свое мнение, <b>дополнительно получите баллы</b></p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>                            
-                        </div>
-                        <div class="row">
-                            <div class="col-xl-3 col-lg-6 offset-lg-3 offset-xl-0">
-                                <button class="btn btn-accent btn--full form-private__btn" type="submit">Сохранить</button>
-                            </div>
-                        </div>
-                    </form>
-
+                    <div class="table__responsive">
+                        <table class="table table-striped">
+                            <tr class="table__tr">
+                                <th class="table__th">№</th>
+                                <th class="table__th table__th-sorting">
+                                    Дата/время
+                                    <div class="sorting">
+                                        <button class="sorting__btn sorting__btn--disabled i-arrow-bottom" type="button"></button>
+                                        <button class="sorting__btn i-arrow-top" type="button"></button>
+                                    </div>                                    
+                                </th>
+                                <th class="table__th text-center">Сумма</th>
+                                <th class="table__th text-center">Операция</th>
+                            </tr>
+                            <tr class="table__tr">
+                                <td class="table__td">1</td>
+                                <td class="table__td table__td--nowrap">12.02.2021 21:21:22</td>
+                                <td class="table__td table__td--nowrap">+ 1000 ₽</td>
+                                <td class="table__td">Пополнение через PayPal</td>
+                            </tr>
+                            <tr class="table__tr">
+                                <td class="table__td">2</td>
+                                <td class="table__td table__td--nowrap">01.02.2021 21:21:22</td>
+                                <td class="table__td table__td--nowrap">- 100 ₽</td>
+                                <td class="table__td">Продвижение карточки «Моя организация»</td>
+                            </tr>
+                            <tr class="table__tr">
+                                <td class="table__td">3</td>
+                                <td class="table__td table__td--nowrap">12.12.2020 21:21:22</td>
+                                <td class="table__td table__td--nowrap">- 200 ₽</td>
+                                <td class="table__td">Оплата сертификата</td>
+                            </tr>
+                        </table>
+                    </div>
+                    <a class="btn btn-accent btn--md btn--full private-office__balance-add--mob" href="#">Пополнить</a>
                 </div>
 
             </div>

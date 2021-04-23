@@ -175,6 +175,10 @@ document.addEventListener("DOMContentLoaded", function () {
 			.closest('.tabs').find('.tabs-content').removeClass('active').eq($(this).index()).addClass('active');
     });
 
+    $(".options__btn").on('click', function () {
+        $(this).toggleClass('active');
+    });
+
     //$(".collapse .collapse-link").click(function () {
     //    $(this).toggleClass('hide').siblings('.collapse-content').slideToggle();
     //    return false;
@@ -218,7 +222,17 @@ document.addEventListener("DOMContentLoaded", function () {
 
 	$(".header__reg-btn").on('click', function () {
 		$(".login-wrapper").toggleClass('active');
-	});
+    });
+
+    $(".user-account__btn-open").on('click', function () {
+        $(this).toggleClass('active');
+        $(".user-account__dropdown").toggleClass('active');
+    });
+
+    $(".user-account__dropdown-close").on('click', function () {
+        $(".user-account__btn-open").toggleClass('active');
+        $(".user-account__dropdown").toggleClass('active');
+    });
 
 	$(".categoty-bar__btn").on('click', function () {
 		$(".categoty-bar").toggleClass('categoty-modal-active');
@@ -302,6 +316,11 @@ $(document).on('mouseup', function (e) {
     if (!hsm.is(e.target) && drop.has(e.target).length === 0) {
         drop.removeClass('active');
     }
+
+    let option = $('.options__btn');
+    if (!hsm.is(e.target) && drop.has(e.target).length === 0) {
+        option.removeClass('active');
+    }
 });
 
 if (document.documentElement.clientWidth > 1201) {
@@ -357,5 +376,9 @@ if (document.documentElement.clientWidth < 768) {
 document.addEventListener("DOMContentLoaded", function () {
 	$('.popup-link').magnificPopup({
 		type: 'inline' // к поп апу добавить класс mfp-hide // Через кнопку data-mfp-src="#call_me" добавить кнопке
-	});
+    });
+
+    $('.mfp-btn-close').on("click", function () {
+        $.magnificPopup.close();
+    });
 });

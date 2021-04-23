@@ -34,7 +34,8 @@
 
     &.disabled,
     &[disabled] {
-        opacity: .6;
+        background-color: $gray;
+        color: #ffffff;
         pointer-events: none;
         cursor: default;
     }

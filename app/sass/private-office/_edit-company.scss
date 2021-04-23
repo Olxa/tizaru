@@ -49,6 +49,10 @@
 
         &.link {
             font-size: 14px;
+
+            @media (max-width: 1199px) {
+                margin-bottom: 30px;
+            }
         }
 
         &.btn {
@@ -78,6 +82,10 @@
     &__col-title {
         display: flex;
         align-items: baseline;
+
+        @media (max-width: 991px) {
+            margin-top: 20px;
+        }
 
         > * {
             margin-right: 10px;

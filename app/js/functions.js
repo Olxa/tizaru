@@ -361,6 +361,13 @@ if (document.documentElement.clientWidth < 1200) {
 
 };
 
+if (document.documentElement.clientWidth < 992) {
+    $(".page-notice__col-title").click(function () {
+        $(this).toggleClass('active').siblings('.page-notice__col-content').slideToggle();
+        return false;
+    });
+};
+
 if (document.documentElement.clientWidth < 768) {
 
 	$(".header__reg-btn").on('click', function () {
