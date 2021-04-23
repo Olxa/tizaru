@@ -6,6 +6,10 @@
     position: relative;
     display: inline-block;
 
+    @media (max-width: 767px) {
+        position: initial;
+    }
+
     &__icon {
         color: $accent;
     }
@@ -20,6 +24,11 @@
         border-radius: $border-radius;
         box-shadow: $shadow2;
         z-index: 10;
+
+        @media (max-width: 767px) {
+            left: 0;
+            right: 0;
+        }
     }
 
     &__popup-txt {

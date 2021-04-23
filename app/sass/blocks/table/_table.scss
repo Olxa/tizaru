@@ -56,6 +56,7 @@
         font-size:20px;
         color: $gray;
     }
+
 }
 
 
@@ -70,5 +71,29 @@
 
     .table__tr:nth-of-type(odd) {
         background-color: $white;
+    }
+}
+
+
+
+
+
+/*------------------------------------*\
+  #Таблица - с рамкой
+\*------------------------------------*/
+
+.table-border {
+    border: 1px solid $gray;
+
+    .table__td:last-child {
+        border-left: 1px solid $gray;
+    }
+
+    .table__th {
+        background-color: #ffffff;
+
+        &:last-child {
+            border-left: 1px solid $gray;
+        }
     }
 }
