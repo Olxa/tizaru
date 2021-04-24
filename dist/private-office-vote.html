@@ -258,8 +258,7 @@
         <nav aria-label="breadcrumb">
             <ol class="breadcrumb breadcrumb--private-office">
                 <li class="breadcrumb__item"><a class="breadcrumb__link" href="/">Главная</a></li>
-                <li class="breadcrumb__item"><a class="breadcrumb__link" href="private-office">Личный кабинет</a></li>
-                <li class="breadcrumb__item active" aria-current="page">Смена пароля</li>
+                <li class="breadcrumb__item active" aria-current="page">Голосование</li>
             </ol>
         </nav>
 
@@ -292,46 +291,256 @@
 
             <div class="private-office__content">
 
-                <div class="private-office__status">ID 3500560<span class="private-office__status-val private-office__status-val--one">, статус</span></div>
+                <div class="private-office__status">ID 3500560<span class="private-office__status-val private-office__status-val--two">, статус</span></div>
 
                 <ul class="private-office__tab">
                     <li class="private-office__tab-item">
-                        <a class="private-office__tab-link" href="private-office.html">Личная информация</a>
+                        <div class="private-office__tab-link active">Голосование за проекты</div>
                     </li>
                     <li class="private-office__tab-item">
-                        <div class="private-office__tab-link active">Смена пароля</div>
-                    </li>
-                    <li class="private-office__tab-item">
-                        <a class="private-office__tab-link" href="private-office-balance.html">Баланс</a>
-                    </li>
-                    <li class="private-office__tab-item">
-                        <a class="private-office__tab-link" href="private-office-profile-photo.html">Фото профиля</a>
+                        <a class="private-office__tab-link" href="private-office-vote2.html">История результатов голосования</a>
                     </li>
                 </ul>
 
                 <div class="private-office__tab-content">
+                    <div class="page-vote">
 
-                    <form class="form form-private" action="/" method="post">
-                        <div class="row row-margin-big">
-                            <div class="col-xl-3 col-lg-6">
-                                <div class="input-wrap"><label class="input-wrap__label">Старый пароль<input class="input" type="password"></label></div>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-xl-3 col-lg-6">
-                                <div class="input-wrap"><label class="input-wrap__label">Новый пароль<input class="input" type="password"></label></div>
-                            </div>
-                            <div class="col-xl-3 col-lg-6">
-                                <div class="input-wrap"><label class="input-wrap__label">Повторите новый пароль<input class="input" type="password"></label></div>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-xl-3 col-lg-6 offset-lg-3 offset-xl-0">
-                                <button class="btn btn-accent btn--full form-private__btn" type="submit">Сменить</button>
-                            </div>
-                        </div>
-                    </form>
 
+                        <div class="note-panel">
+                            <p>
+                                Вы можете проголосовать <b>раз в месяц</b> за определенное предложение
+                            </p>
+                            <p>
+                                Это влияет на проект.  И принесет вам +10 баллов  (накопление баллов в личном кабинете увеличивает ваш статус в проекте и делает карточку вашей организации более заметной)
+                            </p>
+                        </div>
+
+                        <div class="vote-card__wrap">
+                            <div class="vote-card">
+                                <div class="vote-card__header">
+                                    <h3 class="vote-card__title">Голосование №1</h3>
+                                    <span class="vote-card__date">09.02.2021 — 09.03.2021</span>
+                                </div>
+                                <div class="collapse vote-card__description">
+                                    Данный проект поддерживает начинающих предпринимателей. Помогает распространить идею о необходмости развития интеллектуального труда
+                                    <a class="link link-accent link--underline collapse-link vote-card__description-more" href="#">Подробнее</a>
+                                    <div class="collapse-content">
+                                        <p>
+                                            Данный проект поддерживает начинающих предпринимателей. Помогает распространить идею о необходмости развития интеллектуального труда
+                                        </p>
+                                    </div>
+                                    <a class="link link-accent link--underline collapse-link-close" href="#">Скрыть</a>
+                                </div>
+                                <div class="vote-card__option">
+                                    <div class="vote-card__option-item">
+                                        <button class="btn btn-conture btn--full" type="button">Согласиться</button>
+                                    </div>
+                                    <div class="vote-card__option-item">
+                                        <button class="btn btn-conture btn--full" type="button">Отказаться</button>
+                                    </div>
+                                    <div class="vote-card__option-item">
+                                        <button class="btn btn-conture btn--full" type="button">Воздержаться</button>
+                                    </div>
+                                </div>
+                                <div class="checkbox checkbox--sm checkbox--muted checkbox--tooltip">
+                                    <input class="checkbox__field" id="mailing-vote" type="checkbox"><label class="checkbox__value" for="mailing-vote">Получать уведомление о новых голосованиях</label>
+                                    <div class="tooltip">
+                                        <div class="tooltip__btn">
+                                            <span class="tooltip__icon i-info"></span>
+                                        </div>
+                                        <div class="tooltip__popup">
+                                            <p class="tooltip__popup-txt">Несколько раз в месяц на сервисе происходит опрос зарегистрированных пользователей поставив галочку «уведомлять» вы первыми узнаете об этом и выразите свое мнение, <b>дополнительно получите баллы</b></p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="vote-card">
+                                <div class="vote-card__header">
+                                    <h3 class="vote-card__title">Голосование №1356</h3>
+                                    <span class="vote-card__date">09.02.2021 — 09.03.2021</span>
+                                </div>
+                                <div class="collapse vote-card__description">
+                                    Данный проект поддерживает начинающих предпринимателей. Помогает распространить идею о необходмости развития интеллектуального труда
+                                    <a class="link link-accent link--underline collapse-link vote-card__description-more" href="#">Подробнее</a>
+                                    <div class="collapse-content">
+                                        <p>
+                                            Данный проект поддерживает начинающих предпринимателей. Помогает распространить идею о необходмости развития интеллектуального труда
+                                        </p>
+                                    </div>
+                                    <a class="link link-accent link--underline collapse-link-close" href="#">Скрыть</a>
+                                </div>
+                                <div class="vote-card__option">
+                                    <div class="vote-card__option-item">
+                                        <div class="vote-card__result">
+                                            <span class="vote-card__result-title">Согласиться</span>
+                                            <span class="vote-card__result-percent">39%</span>
+                                            <span class="vote-card__result-bg" style="width:39%"></span>
+                                        </div>
+                                    </div>
+                                    <div class="vote-card__option-item">
+                                        <div class="vote-card__result">
+                                            <div class="vote-card__point">
+                                                <div class="vote-card__point-val">+ 10</div>
+                                                <div class="vote-card__point-txt">Вы получили 10 баллов</div>
+                                            </div>
+                                            <span class="vote-card__result-title">Отказаться</span>
+                                            <span class="vote-card__result-percent current">45%</span>
+                                            <span class="vote-card__result-bg" style="width:45%"></span>
+                                        </div>
+                                    </div>
+                                    <div class="vote-card__option-item">
+                                        <div class="vote-card__result">
+                                            <span class="vote-card__result-title">Воздержаться</span>
+                                            <span class="vote-card__result-percent">16%</span>
+                                            <span class="vote-card__result-bg" style="width:16%"></span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="checkbox checkbox--sm checkbox--muted checkbox--tooltip">
+                                    <input class="checkbox__field" id="mailing-vote" type="checkbox"><label class="checkbox__value" for="mailing-vote">Получать уведомление о новых голосованиях</label>
+                                    <div class="tooltip">
+                                        <div class="tooltip__btn">
+                                            <span class="tooltip__icon i-info"></span>
+                                        </div>
+                                        <div class="tooltip__popup">
+                                            <p class="tooltip__popup-txt">Несколько раз в месяц на сервисе происходит опрос зарегистрированных пользователей поставив галочку «уведомлять» вы первыми узнаете об этом и выразите свое мнение, <b>дополнительно получите баллы</b></p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="vote-card__wrap">
+                            <div class="vote-card">
+                                <div class="vote-card__header">
+                                    <h3 class="vote-card__title">Голосование №1356</h3>
+                                    <span class="vote-card__date">09.02.2021 — 09.03.2021</span>
+                                </div>
+                                <div class="collapse vote-card__description">
+                                    Данный проект поддерживает начинающих предпринимателей. Помогает распространить идею о необходмости развития интеллектуального труда
+                                    <a class="link link-accent link--underline collapse-link vote-card__description-more" href="#">Подробнее</a>
+                                    <div class="collapse-content">
+                                        <p>
+                                            Данный проект поддерживает начинающих предпринимателей. Помогает распространить идею о необходмости развития интеллектуального труда
+                                        </p>
+                                    </div>
+                                    <a class="link link-accent link--underline collapse-link-close" href="#">Скрыть</a>
+                                </div>
+                                <div class="vote-card__option">
+                                    <div class="vote-card__option-item">
+                                        <div class="vote-card__result">
+                                            <div class="vote-card__point">
+                                                <div class="vote-card__point-val">+ 10</div>
+                                                <div class="vote-card__point-txt">Вы получили 10 баллов</div>
+                                            </div>
+                                            <span class="vote-card__result-title">Согласиться</span>
+                                            <span class="vote-card__result-percent current">10%</span>
+                                            <span class="vote-card__result-bg" style="width:10%"></span>
+                                        </div>
+                                    </div>
+                                    <div class="vote-card__option-item">
+                                        <div class="vote-card__result">
+                                            <span class="vote-card__result-title">Отказаться</span>
+                                            <span class="vote-card__result-percent">90%</span>
+                                            <span class="vote-card__result-bg" style="width:90%"></span>
+                                        </div>
+                                    </div>
+                                    <div class="vote-card__option-item">
+                                        <div class="vote-card__result">
+                                            <span class="vote-card__result-title">Воздержаться</span>
+                                            <span class="vote-card__result-percent">0%</span>
+                                            <span class="vote-card__result-bg" style="width:0%"></span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="checkbox checkbox--sm checkbox--muted checkbox--tooltip">
+                                    <input class="checkbox__field" id="mailing-vote" type="checkbox"><label class="checkbox__value" for="mailing-vote">Получать уведомление о новых голосованиях</label>
+                                    <div class="tooltip">
+                                        <div class="tooltip__btn">
+                                            <span class="tooltip__icon i-info"></span>
+                                        </div>
+                                        <div class="tooltip__popup">
+                                            <p class="tooltip__popup-txt">Несколько раз в месяц на сервисе происходит опрос зарегистрированных пользователей поставив галочку «уведомлять» вы первыми узнаете об этом и выразите свое мнение, <b>дополнительно получите баллы</b></p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="vote-card">
+                                <div class="vote-card__header">
+                                    <h3 class="vote-card__title">Голосование №1</h3>
+                                    <span class="vote-card__date">09.02.2021 — 09.03.2021</span>
+                                </div>
+                                <div class="collapse vote-card__description">
+                                    Данный проект поддерживает начинающих предпринимателей. Помогает распространить идею о необходмости развития интеллектуального труда
+                                    <a class="link link-accent link--underline collapse-link vote-card__description-more" href="#">Подробнее</a>
+                                    <div class="collapse-content">
+                                        <p>
+                                            Данный проект поддерживает начинающих предпринимателей. Помогает распространить идею о необходмости развития интеллектуального труда
+                                        </p>
+                                    </div>
+                                    <a class="link link-accent link--underline collapse-link-close" href="#">Скрыть</a>
+                                </div>
+                                <div class="vote-card__option">
+                                    <div class="vote-card__option-item">
+                                        <button class="btn btn-conture btn--full" type="button">Согласиться</button>
+                                    </div>
+                                    <div class="vote-card__option-item">
+                                        <button class="btn btn-conture btn--full" type="button">Отказаться</button>
+                                    </div>
+                                    <div class="vote-card__option-item">
+                                        <button class="btn btn-conture btn--full" type="button">Воздержаться</button>
+                                    </div>
+                                </div>
+                                <div class="checkbox checkbox--sm checkbox--muted checkbox--tooltip">
+                                    <input class="checkbox__field" id="mailing-vote" type="checkbox"><label class="checkbox__value" for="mailing-vote">Получать уведомление о новых голосованиях</label>
+                                    <div class="tooltip">
+                                        <div class="tooltip__btn">
+                                            <span class="tooltip__icon i-info"></span>
+                                        </div>
+                                        <div class="tooltip__popup">
+                                            <p class="tooltip__popup-txt">Несколько раз в месяц на сервисе происходит опрос зарегистрированных пользователей поставив галочку «уведомлять» вы первыми узнаете об этом и выразите свое мнение, <b>дополнительно получите баллы</b></p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="pagination">
+	<div class="pagination__left-link">
+		<a class="pagination__link pagination__link_first" href="#">В начало</a>
+		<a class="pagination__link pagination__link_first" href="#">Предыдущая</a>
+	</div>
+	<ul class="pagination-list">
+		<li class="pagination-list__item"><a class="pagination-list__link" href="#"><span class="pagination-list__page">1</span></a></li>
+		<li class="pagination-list__item active"><a class="pagination-list__link" href="#"><span class="pagination-list__page">2</span></a></li>
+		<li class="pagination-list__item"><a class="pagination-list__link" href="#"><span class="pagination-list__page">3</span></a></li>
+		<li class="pagination-list__item"><a class="pagination-list__link" href="#"><span class="pagination-list__page">4</span></a></li>
+		<li class="pagination-list__item"><a class="pagination-list__link" href="#"><span class="pagination-list__page">5</span></a></li>
+	</ul>
+	<div class="pagination__right-link">
+		<a class="pagination__link pagination__link_last" href="#">Следующая</a>
+		<a class="pagination__link pagination__link_last" href="#">Последняя</a>
+	</div>
+</div>
+                    </div>
+
+                    <div class="page-vote__message">
+                        <form class="form page-vote__message-form" action="/" method="post">
+                            <div class="form__group-title page-vote__message-title">Оставить своё предложение</div>
+                            <textarea class="textarea page-vote__message-field"></textarea>
+                            <img src="images/dist/capc.jpg" alt="Гугл капча">
+                            <button class="btn btn-accent page-vote__message-btn" type="submit">Оставить своё предложение</button>
+                        </form>
+
+                        <div class="page-vote__message-descr">
+                            <p>
+                                Если у вас имеются собственные идея и преложение — вы можете оставить их в поле слева. Наши модераторы изучат их и дадут обратную связь в течении нескольких дней.
+                            </p>
+                            <p>
+                                За предоженную идею вы можете получить 10 баллов
+                            </p>
+                        </div>
+                    </div>
                 </div>
 
             </div>
