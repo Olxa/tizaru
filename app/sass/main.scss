@@ -114,6 +114,7 @@
 @import "blocks/scroll-gray";
 @import "blocks/page-content";
 @import "blocks/sorting";
+@import "blocks/note-panel";
 
 
 // == search-results ==
@@ -172,6 +173,8 @@
 @import "private-office/page-notice";
 @import "private-office/page-point";
 @import "private-office/page-statistic";
+@import "private-office/page-vote";
+@import "private-office/vote-card";
 
 // == options ==
 @import "blocks/options/options";

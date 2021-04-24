@@ -132,6 +132,7 @@
 
         &.active {
             color: $accent;
+            cursor: default;
 
             &::after {
                 width: 100%;
