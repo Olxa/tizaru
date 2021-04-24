@@ -171,7 +171,11 @@
 @import "private-office/page-promo";
 @import "private-office/page-notice";
 @import "private-office/page-point";
-
+@import "private-office/page-statistic";
 
 // == options ==
 @import "blocks/options/options";
+
+// == graph ==
+@import "blocks/graph/graph-vertical";
+@import "blocks/graph/graph-horizontal";

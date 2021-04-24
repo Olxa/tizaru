@@ -276,8 +276,20 @@ document.addEventListener("DOMContentLoaded", function () {
 
 	$(".mobil-filter__btn-region").on('click', function () {
 		$(".mobil-filter__region").addClass('active');
-	});
+    });
 
+    let graph = document.querySelectorAll('.graph__cell');
+    const max = 2000;
+
+    graph.forEach(graph => {
+        if (graph.dataset.graph) {
+            const value = graph.dataset.graph;
+            const bar = graph.querySelector('.graph__data');
+            const barHeight = (value / max) * 100;
+
+            bar.style.height = `${barHeight}%`;
+        }
+    });
 });
 
 $(document).on('mouseup', function (e) {
