@@ -241,6 +241,19 @@ document.addEventListener("DOMContentLoaded", function () {
         $(".city-search").toggleClass('active');
     });   
 
+    $(".page-sertificat__more-btn--open").on('click', function () {
+        $(this).addClass('hidden');
+        $(".page-sertificat__more-btn--close").addClass('active');
+        $(".page-sertificat__more-btn--close").removeClass('hidden');
+        $(".page-sertificat__more-content").addClass('open');
+    }); 
+    $(".page-sertificat__more-btn--close").on('click', function () {
+        $(this).addClass('hidden');
+        $(".page-sertificat__more-btn--open").addClass('active');
+        $(".page-sertificat__more-btn--open").removeClass('hidden');
+        $(".page-sertificat__more-content").removeClass('open');
+    }); 
+
     //Mobil filter
 
     $(".mobil-bar__btn").on('click', function () {

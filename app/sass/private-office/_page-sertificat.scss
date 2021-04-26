@@ -37,9 +37,11 @@
     &__intro-price {
         font-family: $userfont-bold;
         font-weight: 700;
+        margin-top: 40px;
         margin-bottom: 50px;
 
         @media (max-width:768px) {
+            margin-top: 20px;
             margin-bottom: 10px;
         }
     }
@@ -118,6 +120,22 @@
     }
 
     &__bottom {
+        display: flex;
+        align-items: center;
+
+        @media (max-width:767px) {
+            flex-wrap: wrap;
+        }
+    }
+
+    &__bottom-btn {
+        display: flex;
+        flex-direction: column;
+
+        @media (max-width:767px) {
+            width: 100%;
+            justify-content: center;
+        }
     }
 
     &__image {
@@ -177,11 +195,14 @@
     }
 
     &__buy-btn {
+        margin-bottom: 25px;
 
         @media (max-width:767px) {
-            display: block;
             max-width: 350px;
-            margin: 0 auto;
+        }
+
+        &:last-child {
+            margin-bottom: 0;
         }
     }
 
@@ -217,5 +238,81 @@
                 margin-right: 0;
             }
         }
+    }
+
+    &__buy-text {
+        font-family: $userfont-bold;
+        font-size: 18px;
+        font-weight: 700;
+        line-height: 25px;
+        margin-bottom: 50px;
+
+        @media (max-width: 767px) {
+            font-size: 14px;
+            line-height: 19px;
+        }
+    }
+
+    .table {
+        max-width: 765px;
+    }
+
+    &__more-btn {
+        display: inline-block;
+        margin-bottom: 50px;
+        font-size: 16px;
+        line-height: 22px;
+        color: $accent;
+        text-decoration: underline;
+        border: none;
+        background-color: transparent;
+        cursor: pointer;
+
+        &::after {
+            content: "\e910";
+            font-family: If;
+            display: inline-block;
+            font-size: 12px;
+            margin-left: 12px;
+        }
+
+        &.active {
+            display: block;
+        }
+
+        &.hidden {
+            display: none;
+        }
+    }
+
+    &__more-btn--close {
+        display: none;
+
+        &::after {
+            content: "\e90f";
+        }
+    }
+
+    &__more-content {
+        display: none;
+
+        &.open {
+            display: block;
+        }
+    }
+
+    &__row {
+        margin-bottom: 60px;
+    }
+
+    &__pay-form {
+
+        padding-top: 40px;
+    }
+
+    &__warnig-txt {
+        font-family: $userfont-bold;
+        font-weight: 700;
+        color: $color-warning;
     }
 }

@@ -303,7 +303,7 @@
                         <a class="private-office__tab-link" href="private-office-my-company-detail-statistic.html">Статистика</a>
                     </li>
                     <li class="private-office__tab-item">
-                        <a class="private-office__tab-link" href="private-office-my-company-detail-advert.html">Продвижение объявления</a>
+                        <a class="private-office__tab-link" href="private-office-my-company-detail-advert.html">Реклама объявления</a>
                     </li>
                 </ul>
 
@@ -314,7 +314,7 @@
                             <div class="col-xl-7 edit-company__title">
                                 <div class="edit-company__title">
                                     <div class="page-title-wrap">
-                                        <h1 class="page-title">ООО "Моя компания"</h1>
+                                        <h1 class="page-title page-title__margin-r">ООО "Моя компания"</h1>
                                         <div class="alert-wrap">ожидает модерации<span class="alert i-alert"></span></div>
                                     </div>
                                 </div>
@@ -367,22 +367,14 @@
                                     <div class="radio checkbox--tooltip">
                                         <input class="radio__field" id="ip" type="radio" name="radio">
                                         <label class="radio__value" for="ip">
-                                            Я ИП/самозанятый
+                                            ИП/самозанятый
                                         </label>
-                                        <div class="tooltip">
-                                            <div class="tooltip__btn"><span class="tooltip__icon i-info"></span></div>
-                                            <div class="tooltip__popup"><p class="tooltip__popup-txt">Описание</p></div>
-                                        </div>
                                     </div>
                                     <div class="radio checkbox--tooltip">
                                         <input class="radio__field" id="ooo" type="radio" name="radio">
                                         <label class="radio__value" for="ooo">
-                                            Я компания/организация
+                                            Компания/организация
                                         </label>
-                                        <div class="tooltip">
-                                            <div class="tooltip__btn"><span class="tooltip__icon i-info"></span></div>
-                                            <div class="tooltip__popup"><p class="tooltip__popup-txt">Описание</p></div>
-                                        </div>
                                     </div>
                                 </div>
                                 <div class="col-xl-3 col-lg-6 form-private__mob-last">
@@ -393,7 +385,10 @@
                                                 <span class="tooltip__icon i-info"></span>
                                             </div>
                                             <div class="tooltip__popup">
-                                                <p class="tooltip__popup-txt">Описание</p>
+                                                <p class="tooltip__popup-txt">
+                                                    При включении промокода вам на общую почту будут приходить письма с сформированным кодом от клиентов, которые увидели информацию о вашей компании в каталоге и заинтересовались вашими услугами и товарами.
+                                                    Вы можете предоставить скидку в соответсвии с вашими тарифами. Отключение промокода говорит о том, что кнопка «промокод» не будет видна в вашей карточке, что сделает карточку в выдаче менее заметной
+                                                </p>
                                             </div>
                                         </div>
                                     </div>
@@ -407,6 +402,19 @@
                                                 <div class="dropdown__list-item"><a href="#" class="dropdown__list-val">Россия</a></div>
                                                 <div class="dropdown__list-item"><a href="#" class="dropdown__list-val">Англия</a></div>
                                                 <div class="dropdown__list-item"><a href="#" class="dropdown__list-val">Франция</a></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-xl-3 col-lg-6">
+                                    <div class="input-wrap">
+                                        <span class="input-wrap__label">Выберите регион</span>
+                                        <div class="dropdown dropdown--input js-dropdown-toogle">
+                                            <button class="dropdown__value" type="button"><span class="dropdown__value-inner"></span></button>
+                                            <div class="dropdown__list scroll-gray">
+                                                <div class="dropdown__list-item"><a href="#" class="dropdown__list-val">Москва</a></div>
+                                                <div class="dropdown__list-item"><a href="#" class="dropdown__list-val">Подольск</a></div>
+                                                <div class="dropdown__list-item"><a href="#" class="dropdown__list-val">Чехов</a></div>
                                             </div>
                                         </div>
                                     </div>
@@ -508,7 +516,6 @@
                                         </div>
                                     </div>
                                 </div>
-                                <button class="form__subgroup-add" type="button">+ Добавить адрес</button>
                             </fieldset>
 
                             <fieldset class="form__subgroup">
@@ -1086,7 +1093,10 @@
                                         </label>
                                     </div>
                                     <span class="form__mute-text">Рекомендуемый размер 1200x1200 px</span>
-                                    <button class="form__subgroup-add" type="button">+ Добавить фото</button>
+                                    <label class="form__subgroup-add file-txt">
+                                        + Добавить фото
+                                        <input name="file" type="file" class="file-txt__input" multiple="">
+                                    </label>
                                 </div>
                             </fieldset>
 
@@ -1104,13 +1114,18 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="file-photo">
-                                    <label class="input__file-button">
-                                        <input name="file" type="file" class="input-file" multiple="">
-                                        <span class="file-photo__file-button i-camera"></span>
-                                    </label>
+                                <div class="file-photo file-photo__file-button">
+                                    <a class="file-photo__preview-btn i-see popup-image" href="images/dist/logo-c.jpg" title="Увеличить"></a>
+                                    <img src="images/dist/logo-c.jpg" alt="название фото">
+                                    <div class="file-photo__delet-wrap">
+                                        <button class="file-photo__delet-btn popup-link i-clear" type="button" data-mfp-src="#del-photo" title="Удалить фото"></button>
+                                    </div>
                                 </div>
                                 <span class="form__mute-text">Рекомендуемый размер 50x50 px</span>
+                                <label class="form__subgroup-add file-txt">
+                                    + Изменить фото
+                                    <input name="file" type="file" class="file-txt__input" multiple="">
+                                </label>
                             </fieldset>
                         </fieldset>
 

@@ -83,6 +83,21 @@
     .checkbox__value {
         padding-left: 30px;
     }
+
+    &__td-link {
+        text-decoration: underline;
+
+        &:hover {
+            color: $accent;
+        }
+    }
+
+    &__td-download {
+
+        &:hover {
+            color: $color-tertiary;
+        }
+    }
 }
 
 

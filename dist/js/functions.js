@@ -179,10 +179,9 @@ document.addEventListener("DOMContentLoaded", function () {
         $(this).toggleClass('active');
     });
 
-    //$(".collapse .collapse-link").click(function () {
-    //    $(this).toggleClass('hide').siblings('.collapse-content').slideToggle();
-    //    return false;
-    //});
+    $(".js-sorting").on('click', function () {
+        $('.icon-sorting').toggleClass('active');
+    });
 
     $(".collapse .collapse-link").click(function () {
         $(this)
@@ -240,7 +239,20 @@ document.addEventListener("DOMContentLoaded", function () {
 
     $(".city-search__btn").on('click', function () {
         $(".city-search").toggleClass('active');
-    });
+    });   
+
+    $(".page-sertificat__more-btn--open").on('click', function () {
+        $(this).addClass('hidden');
+        $(".page-sertificat__more-btn--close").addClass('active');
+        $(".page-sertificat__more-btn--close").removeClass('hidden');
+        $(".page-sertificat__more-content").addClass('open');
+    }); 
+    $(".page-sertificat__more-btn--close").on('click', function () {
+        $(this).addClass('hidden');
+        $(".page-sertificat__more-btn--open").addClass('active');
+        $(".page-sertificat__more-btn--open").removeClass('hidden');
+        $(".page-sertificat__more-content").removeClass('open');
+    }); 
 
     //Mobil filter
 
