@@ -179,10 +179,9 @@ document.addEventListener("DOMContentLoaded", function () {
         $(this).toggleClass('active');
     });
 
-    //$(".collapse .collapse-link").click(function () {
-    //    $(this).toggleClass('hide').siblings('.collapse-content').slideToggle();
-    //    return false;
-    //});
+    $(".js-sorting").on('click', function () {
+        $('.icon-sorting').toggleClass('active');
+    });
 
     $(".collapse .collapse-link").click(function () {
         $(this)
@@ -240,7 +239,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
     $(".city-search__btn").on('click', function () {
         $(".city-search").toggleClass('active');
-    });
+    });   
 
     //Mobil filter
 

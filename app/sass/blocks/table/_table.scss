@@ -8,13 +8,14 @@
     border-collapse: collapse;
     margin-bottom: 1rem;
     background-color: transparent;
+    overflow-x: visible;
     cursor: default;
 
     &__responsive {
         display: block;
         width: 100%;
         margin-bottom: 30px;
-        overflow-x: auto;
+        overflow-y: auto;
         border-radius: $border-radius;
     }
 
@@ -37,6 +38,28 @@
         }
     }
 
+
+    &__th-sorting--chevron {
+        position: relative;
+        display: flex;
+        align-items: baseline;
+    }
+
+    .icon-sorting {
+        position: relative;
+
+        &::before {
+            position: absolute;
+            top: -11px;
+            font-size: 12px;
+            transition: all .3s linear;
+        }
+
+        &.active::before {
+            transform: rotate( -180deg );
+        }
+    }
+
     &__td {
         height: 60px;
         border-top: 1px solid $gray;
@@ -53,10 +76,13 @@
     .icon {
         border: none;
         background-color: transparent;
-        font-size:20px;
+        font-size: 20px;
         color: $gray;
     }
 
+    .checkbox__value {
+        padding-left: 30px;
+    }
 }
 
 

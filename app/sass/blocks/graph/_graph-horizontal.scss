@@ -2,96 +2,6 @@
   #Горизонтальная столбчатая диаграмма
 \*------------------------------------*/
 
-/*.graph {
-    text-align: center;
-    width: 100%;
-    margin-bottom: 1rem;
-
-    &__title {
-        display: flex;
-        align-items: center;
-        margin-bottom: 30px;
-
-        @media (max-width: 991px) {
-            flex-wrap: wrap;
-            margin-bottom: 50px;
-        }
-
-        .btn {
-            @media (max-width: 991px) {
-                margin-top: 24px;
-                width: 100%;
-            }
-        }
-    }
-
-    &__title-text {
-        font-family: $userfont-bold;
-        font-weight: 700;
-        margin-right: 33px;
-        font-size: 20px;
-        white-space: nowrap;
-
-        @media (max-width: 768px) {
-            font-size: 16px;
-            margin-right: 20px;
-        }
-
-        @media (max-width: 567px) {
-            font-size: 14px;
-            margin-right: 20px;
-        }
-    }
-
-    &__footer {
-        border-top: 1px solid $gray;
-    }
-
-    &__footer-row {
-    }
-
-    &__footer-item {
-        padding: .4rem 0;
-        vertical-align: top;
-        line-height: 1.3em;
-        font-size: 14px;
-        color: $textcolor;
-    }
-
-    &__cell {
-        height: 300px;
-        vertical-align: bottom;
-        padding-bottom: 0;
-        color: white;
-    }
-
-    &__data-wrap {
-        background: repeating-linear-gradient( to top, #ffffff, #ffffff 30px, $white 30px, $white 70px );
-    }
-
-    &__data {
-        position: relative;
-        display: block;
-        margin: 0 25%;
-        height: 0;
-        color: $textcolor;
-        background: $accent-dark2;
-        border-radius: $border-radius $border-radius 0 0;
-        transition: height 1s ease-out;
-        transition-delay: 1s;
-    }
-
-    &__data-val {
-        position: absolute;
-        top: -30px;
-        left: 0;
-        width: 100%;
-        font-size: .9rem;
-        line-height: 30px;
-    }
-}*/
-
-
 .graph {
     text-align: center;
     color: gray;
@@ -182,6 +92,7 @@
         height: 300px;
         vertical-align: bottom;
         padding-bottom: 0;
+        overflow: hidden;
 
         @media (max-width: 1201px) {
             height: auto;
