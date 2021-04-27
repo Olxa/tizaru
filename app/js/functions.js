@@ -254,6 +254,14 @@ document.addEventListener("DOMContentLoaded", function () {
         $(".page-sertificat__more-content").removeClass('open');
     }); 
 
+    $(".js-popover-open").on('click', function () {
+        $(".note-popover__panel").addClass('active');
+    }); 
+
+    $(".note-popover__close").on('click', function () {
+        $(".note-popover__panel").removeClass('active');
+    }); 
+
     //Mobil filter
 
     $(".mobil-bar__btn").on('click', function () {
