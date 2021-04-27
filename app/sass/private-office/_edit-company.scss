@@ -105,6 +105,12 @@
         }
     }
 
+    &__social-list {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+    }
+
     &__social-txt {
         margin: 0;
 
@@ -115,6 +121,7 @@
     }
 
     &__social-item {
+        width: 20%;
         margin-left: 30px;
 
         @media (max-width: 767px) {
