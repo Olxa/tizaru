@@ -129,6 +129,22 @@
     .dropdown__list-val {
         font-size: 14px
     }
+
+    .state-text {
+        padding-bottom: 13px;
+
+        @media (max-width: 1199px) {
+            display: none;
+        }
+    }
+
+    &__dropdown-status {
+        max-width: 250px;
+
+        @media (max-width: 1199px) {
+            margin-bottom: 20px;
+        }
+    }
 }
 
 /*------------------------------------*\
@@ -137,4 +153,10 @@
 
 .form-horizont {
     align-items: center;
+
+    .btn-search--sm {
+        @media (max-width: 767px) {
+            width: 100%;
+        }
+    }
 }

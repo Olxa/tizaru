@@ -2,6 +2,18 @@
   #Таблица
 \*------------------------------------*/
 
+.table__responsive {
+    display: block;
+    width: 100%;
+    margin-bottom: 30px;
+    border-radius: $border-radius;
+
+
+    @media (max-width: 1200px) {
+        overflow-y: auto;
+    }
+}
+
 .table {
     width: 100%;
     max-width: 100%;
@@ -11,21 +23,13 @@
     overflow-x: visible;
     cursor: default;
 
-    &__responsive {
-        display: block;
-        width: 100%;
-        margin-bottom: 30px;
-        overflow-y: auto;
-        border-radius: $border-radius;
-    }
-
     &__td,
     &__th {
         padding: 10px 20px;
     }
 
     &__th {
-        vertical-align: bottom;
+        vertical-align: middle;
     }
 
     &__th-sorting {
@@ -73,6 +77,14 @@
         color: $color-succes;
     }
 
+    &__message--danger {
+        color: $color-warning;
+    }
+
+    &__message--disabled {
+        color: rgba($gray, .7);
+    }
+
     .icon {
         border: none;
         background-color: transparent;
@@ -96,6 +108,25 @@
 
         &:hover {
             color: $color-tertiary;
+        }
+    }
+
+    .status-cancel__wrap {
+        position: relative;
+    }
+
+    .status-cancel {
+        position: absolute;
+        right: -100px;
+        font-family: $userfont-bold;
+        font-weight: 700;
+        color: $color-warning;
+        font-size: 14px;
+        text-transform: lowercase;
+
+        @media (max-width: 1200px) {
+            display: block;
+            position: initial;
         }
     }
 }

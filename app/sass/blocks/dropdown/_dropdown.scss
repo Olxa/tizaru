@@ -68,7 +68,7 @@
     }
 
     &__list-item {
-        white-space: nowrap;
+        /*white-space: nowrap;*/
     }
 
     &__list-val {
@@ -154,5 +154,25 @@
 
     .dropdown__list {
         width: 100%;
+    }
+}
+
+
+
+
+
+/*------------------------------------*\
+  #Выпадающий список - с рамками
+\*------------------------------------*/
+
+.dropdown--warning {
+    border-color: $color-warning;
+
+    .dropdown__value-inner {
+        color: $color-warning;
+    }
+
+    .dropdown__value::after {
+        color: $color-warning;
     }
 }

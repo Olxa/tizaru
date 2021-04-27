@@ -29,6 +29,16 @@
         display: flex;
     }
 
+    &__status--sm {
+        margin-left: 10px;
+
+        .point-page__status-txt::after {
+            top: 0;
+            width: 29px;
+            height: 29px;
+        }
+    }
+
     &__status-txt {
         position: relative;
 
@@ -75,5 +85,9 @@
 
     &__alert-txt {
         margin: 0;
+    }
+
+    &__fr {
+        max-width: 660px;
     }
 }

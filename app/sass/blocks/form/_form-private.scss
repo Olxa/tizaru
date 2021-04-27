@@ -35,6 +35,20 @@
         }
     }
 
+    &__mob-hidden {
+        @media (max-width: 1199px) {
+            display: none;
+        }
+    }
+
+    &__mob-visible {
+        display: none;
+
+        @media (max-width: 1199px) {
+            display: block;
+        }
+    }
+
     &__time-label {
         display: inline-block;
         margin-bottom: 4px;

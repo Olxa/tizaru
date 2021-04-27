@@ -70,3 +70,27 @@
 .text-center {
     text-align: center;
 }
+
+
+
+
+
+/*------------------------------------*\
+  #Текст и иконками состояний
+\*------------------------------------*/
+
+.state-text {
+    display: flex;
+    align-items: center;
+    margin: 0;
+    font-size: 14px;
+    cursor: default;
+
+    .icon {
+        margin-left: 10px;
+    }
+
+    &--succes {
+        color: $color-succes;
+    }
+}

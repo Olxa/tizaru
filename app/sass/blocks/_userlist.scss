@@ -7,16 +7,7 @@
     &__search-form {
         margin-bottom: 35px;
     }
-
-
-    &__status--disabled {
-        color: rgba($gray, .7);
-    }
-
-    &__status--locked {
-        color: $color-warning;
-    }
-
+    
     &__selected {
         display: flex;
         font-size: 14px;

@@ -7,47 +7,64 @@
         <nav aria-label="breadcrumb">
             <ol class="breadcrumb breadcrumb--private-office">
                 <li class="breadcrumb__item"><a class="breadcrumb__link" href="/">Главная</a></li>
-                <li class="breadcrumb__item"><a class="breadcrumb__link" href="private-office">Личный кабинет</a></li>
+                <li class="breadcrumb__item"><a class="breadcrumb__link" href="fr-private-office.html">Список пользователей</a></li>
                 <li class="breadcrumb__item active" aria-current="page">Баланс</li>
             </ol>
         </nav>
 
         <div class="private-office">
             <div class="private-office__sidebar">
-                <!--#include virtual="/parts/user-nav-page.html" -->
+                <!--#include virtual="/parts/user-nav-page-fr.html" -->
             </div>
 
             <div class="private-office__content">
-
-                <div class="private-office__status">
-                    ID 3500560, статус
-                    <div class="private-office__status-val private-office__status-val--one">
-                        <div class="private-office__status-popup">
-                            <p class="private-office__status-popup-txt">За все время вы набрали 2000 баллов</p>
-                        </div>
-                    </div>
-                </div>
+                <div class="page-title page-title__margin-b">Иванов Иван Иванович</div>
 
                 <ul class="private-office__tab">
                     <li class="private-office__tab-item">
-                        <a class="private-office__tab-link" href="private-office.html">Личная информация</a>
+                        <a class="private-office__tab-link" href="fr-private-office-user.html">Личная информация</a>
                     </li>
                     <li class="private-office__tab-item">
-                        <a class="private-office__tab-link" href="private-office-change-password.html">Смена пароля</a>
+                        <a class="private-office__tab-link" href="fr-private-office-user-company.html">Организации</a>
                     </li>
-                    <li class="private-office__tab-item">
+                    <li class="private-office__tab-item">                        
                         <div class="private-office__tab-link active">Баланс</div>
                     </li>
                     <li class="private-office__tab-item">
-                        <a class="private-office__tab-link" href="private-office-profile-photo.html">Фото профиля</a>
+                        <a class="private-office__tab-link" href="fr-private-office-user-point.html">Баллы</a>
                     </li>
                 </ul>
-
                 <div class="private-office__tab-content page-balance">
-                    <div class="page-title-wrap balance__page-title-wrap">
-                        <div class="page-title page-title__margin-r">На балансе 15 000 ₽</div>
-                        <a class="btn btn-accent btn--md private-office__balance-add--desc" href="#">Пополнить</a>
-                    </div>
+
+                    <h2 class="page-title__sub">На балансе 15 000 ₽</h2>
+
+                    <form class="form page-balance__shearch-form" action="/" method="post">
+                        <div class="row form-horizont">
+                            <div class="col-md-4">
+                                <div class="input-wrap">
+                                    <label class="input-wrap__label">Количество<input class="input" type="text"></label>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="input-wrap">
+                                    <label class="input-wrap__label">Выберите причину</label>
+                                    <div class="dropdown dropdown--input js-dropdown-toogle">
+                                        <button class="dropdown__value" type="button">
+                                            <span class="dropdown__value-inner">
+                                            </span>
+                                        </button>
+                                        <div class="dropdown__list scroll-gray">
+                                            <div class="dropdown__list-item"><a href="#" class="dropdown__list-val">Значение 1</a></div>
+                                            <div class="dropdown__list-item"><a href="#" class="dropdown__list-val">Значение 2</a></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <button class="btn btn-accent btn--md" type="submit">Изменить</button>
+                            </div>
+                        </div>
+                    </form>
 
                     <div class="table__responsive">
                         <table class="table table-striped">
@@ -77,13 +94,13 @@
                             </tr>
                             <tr class="table__tr">
                                 <td class="table__td">3</td>
-                                <td class="table__td table__td--nowrap">12.12.2020 21:21:22</td>
-                                <td class="table__td table__td--nowrap">- 200 ₽</td>
-                                <td class="table__td">Оплата сертификата</td>
+                                <td class="table__td table__td--nowrap table__message--disabled">12.12.2020 21:21:22</td>
+                                <td class="table__td table__td--nowrap table__message--disabled">- 200 ₽</td>
+                                <td class="table__td table__message--disabled status-cancel__wrap">Оплата сертификата <span class="status-cancel">Отменена</span></td>
                             </tr>
                         </table>
                     </div>
-                    <a class="btn btn-accent btn--md btn--full private-office__balance-add--mob" href="#">Пополнить</a>
+
                 </div>
 
             </div>
