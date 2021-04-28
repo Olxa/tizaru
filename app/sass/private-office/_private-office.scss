@@ -3,6 +3,8 @@
 \*------------------------------------*/
 
 .private-office {
+    $width-sidabar: 210px;
+
     display: flex;
     align-items: flex-start;
 
@@ -14,7 +16,7 @@
     }
 
     &__sidebar {
-        min-width: 210px;
+        min-width: $width-sidabar;
         border-right: 1px solid $gray;
 
         @media (max-width: 1200px) {
@@ -31,17 +33,19 @@
         width: 100%;
         max-width: 1230px;
 
-        @media (max-width: 1500px) {
-            max-width: initial;
-        }
-
-        @media (max-width: 1200px) {
+        @media (max-width: 1600px) {
+            width: calc(100% - #{$width-sidabar});
             padding-left: 20px;
         }
 
         @media (max-width: 992px) {
+            width: 100%;
             padding: 0;
         }
+    }
+
+    &__content--full-width {
+        max-width: 100%;
     }
 
     &__header {
