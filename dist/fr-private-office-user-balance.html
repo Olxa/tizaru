@@ -258,7 +258,8 @@
         <nav aria-label="breadcrumb">
             <ol class="breadcrumb breadcrumb--private-office">
                 <li class="breadcrumb__item"><a class="breadcrumb__link" href="/">Главная</a></li>
-                <li class="breadcrumb__item active" aria-current="page">Пользователи</li>
+                <li class="breadcrumb__item"><a class="breadcrumb__link" href="fr-private-office.html">Список пользователей</a></li>
+                <li class="breadcrumb__item active" aria-current="page">Баланс</li>
             </ol>
         </nav>
 
@@ -299,19 +300,38 @@
             </div>
 
             <div class="private-office__content">
+                <div class="private-office__header">
+                    <div class="page-title page-title__margin-b">Иванов Иван Иванович</div>
+                </div>
 
-                <div class="page-title page-title__margin-b">Список пользователей</div>
-                <div class="private-office__tab-content">
-                    <form class="form userlist" action="/" method="post">
-                        <div class="row form-horizont userlist__search-form">
-                            <div class="col-md-3">
+                <ul class="private-office__tab">
+                    <li class="private-office__tab-item">
+                        <a class="private-office__tab-link" href="fr-private-office-user.html">Личная информация</a>
+                    </li>
+                    <li class="private-office__tab-item">
+                        <a class="private-office__tab-link" href="fr-private-office-user-company.html">Организации</a>
+                    </li>
+                    <li class="private-office__tab-item">
+                        <div class="private-office__tab-link active">Баланс</div>
+                    </li>
+                    <li class="private-office__tab-item">
+                        <a class="private-office__tab-link" href="fr-private-office-user-point.html">Баллы</a>
+                    </li>
+                </ul>
+                <div class="private-office__tab-content page-balance">
+
+                    <h2 class="page-title__sub">На балансе 15 000 ₽</h2>
+
+                    <form class="form page-balance__shearch-form" action="/" method="post">
+                        <div class="row form-horizont">
+                            <div class="col-md-4">
                                 <div class="input-wrap">
-                                    <label class="input-wrap__label">ФИО<input class="input" type="text"></label>
+                                    <label class="input-wrap__label">Количество<input class="input" type="text"></label>
                                 </div>
                             </div>
-                            <div class="col-md-3">
+                            <div class="col-md-4">
                                 <div class="input-wrap">
-                                    <label class="input-wrap__label">Регион</label>
+                                    <label class="input-wrap__label">Выберите причину</label>
                                     <div class="dropdown dropdown--input js-dropdown-toogle">
                                         <button class="dropdown__value" type="button">
                                             <span class="dropdown__value-inner">
@@ -324,194 +344,47 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-md-3">
-                                <div class="input-wrap">
-                                    <label class="input-wrap__label">Город</label>
-                                    <div class="dropdown dropdown--input js-dropdown-toogle">
-                                        <button class="dropdown__value" type="button">
-                                            <span class="dropdown__value-inner">
-                                            </span>
-                                        </button>
-                                        <div class="dropdown__list scroll-gray">
-                                            <div class="dropdown__list-item"><a href="#" class="dropdown__list-val">Значение 1</a></div>
-                                            <div class="dropdown__list-item"><a href="#" class="dropdown__list-val">Значение 2</a></div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-3">
-                                <button class="btn btn-accent btn--md btn-search--sm icon i-search" type="submit">
-                                    <span class="btn-search__mob-txt">Найти</span>
-                                </button>
+                            <div class="col-md-4 btn--mob-center">
+                                <button class="btn btn-accent btn--md" type="submit">Изменить</button>
                             </div>
                         </div>
                     </form>
+
                     <div class="table__responsive">
                         <table class="table table-striped">
                             <tr class="table__tr">
-                                <th class="table__th table__th-sorting--chevron js-sorting">
-                                    <div class="checkbox">
-                                        <input class="checkbox__field" id="chek-all" type="checkbox">
-                                        <label class="checkbox__value" for="chek-all"></label>
-                                    </div>
+                                <th class="table__th">№</th>
+                                <th class="table__th table__th-sorting">
+                                    Дата/время
                                     <div class="sorting">
-                                        <button class="sorting__btn icon-sorting i-down" type="button"></button>
+                                        <button class="sorting__btn sorting__btn--disabled i-arrow-bottom" type="button"></button>
+                                        <button class="sorting__btn i-arrow-top" type="button"></button>
                                     </div>
                                 </th>
-                                <th class="table__th">Регистрация</th>
-                                <th class="table__th text-center">ФИО</th>
-                                <th class="table__th text-center">Регион</th>
-                                <th class="table__th text-center">Баланс, руб</th>
-                                <th class="table__th text-center">Баллы</th>
-                                <th class="table__th text-center">Объявлений</th>
-                                <th class="table__th"></th>
-                                <th class="table__th"></th>
-                            </tr>
-                            <tr class="table__tr userlist__locked">
-                                <td class="table__td">
-                                    <div class="checkbox">
-                                        <input class="checkbox__field" id="chek1" type="checkbox">
-                                        <label class="checkbox__value" for="chek1"></label>
-                                    </div>
-                                </td>
-                                <td class="table__td userlist__status table__message--disabled">22.01.2021. 22:20</td>
-                                <td class="table__td userlist__status table__message--disabled"><a class="table__td-link" href="fr-private-office-user.html" title="Редактировать пользователя">Иванов Иван</a></td>
-                                <td class="table__td userlist__status table__message--disabled">Россия, Рязань</td>
-                                <td class="table__td userlist__status table__message--disabled text-center"><a class="table__td-link" href="fr-private-office-user-balance.html" title="Просмотр баланса">1 233</a></td>
-                                <td class="table__td userlist__status table__message--disabled text-center"><a class="table__td-link" href="fr-private-office-user-point.html" title="Просмотр баллов">434</a></td>
-                                <td class="table__td userlist__status table__message--disabled text-center">5</td>
-                                <td class="table__td">
-                                    <div class="options">
-                                        <button class="options__btn" type="button"></button>
-                                        <div class="options__popup">
-                                            <ul class="options__list">
-                                                <li class="options__item"><a class="options__link" href="fr-private-office-user.html">Изменить</a></li>
-                                                <li class="options__item"><a class="options__link" href="#">Опубликовать</a></li>
-                                                <li class="options__item"><a class="options__link" href="#">Снять с публикации</a></li>
-                                                <li class="options__item"><a class="options__link  options__link-del" href="#">Удалить</a></li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </td>
-                                <td class="table__td text-center table__message--danger">Заблокирован</td>
+                                <th class="table__th text-center">Сумма</th>
+                                <th class="table__th text-center">Операция</th>
                             </tr>
                             <tr class="table__tr">
-                                <td class="table__td">
-                                    <div class="checkbox">
-                                        <input class="checkbox__field" id="chek1" type="checkbox">
-                                        <label class="checkbox__value" for="chek1"></label>
-                                    </div>
-                                </td>
-                                <td class="table__td">22.01.2021. 22:20</td>
-                                <td class="table__td userlist__status"><a class="table__td-link" href="fr-private-office-user.html" title="Редактировать пользователя">Иванов Иван</a></td>
-                                <td class="table__td">Россия, Рязань</td>
-                                <td class="table__td userlist__status text-center"><a class="table__td-link" href="fr-private-office-user-balance.html" title="Просмотр баланса">1 233</a></td>
-                                <td class="table__td userlist__status text-center"><a class="table__td-link" href="fr-private-office-user-point.html" title="Просмотр баллов">434</a></td>
-                                <td class="table__td text-center">5</td>
-                                <td class="table__td">
-                                    <div class="options">
-                                        <button class="options__btn" type="button"></button>
-                                        <div class="options__popup">
-                                            <ul class="options__list">
-                                                <li class="options__item"><a class="options__link" href="fr-private-office-user.html">Изменить</a></li>
-                                                <li class="options__item"><a class="options__link" href="#">Опубликовать</a></li>
-                                                <li class="options__item"><a class="options__link" href="#">Снять с публикации</a></li>
-                                                <li class="options__item"><a class="options__link  options__link-del" href="#">Удалить</a></li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </td>
-                                <td class="table__td text-center"></td>
+                                <td class="table__td">1</td>
+                                <td class="table__td table__td--nowrap">12.02.2021 21:21:22</td>
+                                <td class="table__td table__td--nowrap">+ 1000 ₽</td>
+                                <td class="table__td">Пополнение через PayPal</td>
                             </tr>
                             <tr class="table__tr">
-                                <td class="table__td">
-                                    <div class="checkbox">
-                                        <input class="checkbox__field" id="chek1" type="checkbox">
-                                        <label class="checkbox__value" for="chek1"></label>
-                                    </div>
-                                </td>
-                                <td class="table__td">22.01.2021. 22:20</td>
-                                <td class="table__td userlist__status"><a class="table__td-link" href="fr-private-office-user.html" title="Редактировать пользователя">Иванов Иван</a></td>
-                                <td class="table__td">Россия, Рязань</td>
-                                <td class="table__td userlist__status text-center"><a class="table__td-link" href="fr-private-office-user-balance.html" title="Просмотр баланса">1 233</a></td>
-                                <td class="table__td userlist__status text-center"><a class="table__td-link" href="fr-private-office-user-point.html" title="Просмотр баллов">434</a></td>
-                                <td class="table__td text-center">5</td>
-                                <td class="table__td">
-                                    <div class="options">
-                                        <button class="options__btn" type="button"></button>
-                                        <div class="options__popup">
-                                            <ul class="options__list">
-                                                <li class="options__item"><a class="options__link" href="fr-private-office-user.html">Изменить</a></li>
-                                                <li class="options__item"><a class="options__link" href="#">Опубликовать</a></li>
-                                                <li class="options__item"><a class="options__link" href="#">Снять с публикации</a></li>
-                                                <li class="options__item"><a class="options__link  options__link-del" href="#">Удалить</a></li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </td>
-                                <td class="table__td text-center"></td>
+                                <td class="table__td">2</td>
+                                <td class="table__td table__td--nowrap">01.02.2021 21:21:22</td>
+                                <td class="table__td table__td--nowrap">- 100 ₽</td>
+                                <td class="table__td">Продвижение карточки «Моя организация»</td>
                             </tr>
                             <tr class="table__tr">
-                                <td class="table__td">
-                                    <div class="checkbox">
-                                        <input class="checkbox__field" id="chek1" type="checkbox" checked>
-                                        <label class="checkbox__value" for="chek1"></label>
-                                    </div>
-                                </td>
-                                <td class="table__td">22.01.2021. 22:20</td>
-                                <td class="table__td userlist__status"><a class="table__td-link" href="fr-private-office-user.html" title="Редактировать пользователя">Иванов Иван</a></td>
-                                <td class="table__td">Россия, Рязань</td>
-                                <td class="table__td userlist__status text-center"><a class="table__td-link" href="fr-private-office-user-balance.html" title="Просмотр баланса">1 233</a></td>
-                                <td class="table__td userlist__status text-center"><a class="table__td-link" href="fr-private-office-user-point.html" title="Просмотр баллов">434</a></td>
-                                <td class="table__td text-center">5</td>
-                                <td class="table__td">
-                                    <div class="options">
-                                        <button class="options__btn" type="button"></button>
-                                        <div class="options__popup">
-                                            <ul class="options__list">
-                                                <li class="options__item"><a class="options__link" href="fr-private-office-user.html">Изменить</a></li>
-                                                <li class="options__item"><a class="options__link" href="#">Опубликовать</a></li>
-                                                <li class="options__item"><a class="options__link" href="#">Снять с публикации</a></li>
-                                                <li class="options__item"><a class="options__link  options__link-del" href="#">Удалить</a></li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </td>
-                                <td class="table__td text-center"></td>
+                                <td class="table__td">3</td>
+                                <td class="table__td table__td--nowrap table__message--disabled">12.12.2020 21:21:22</td>
+                                <td class="table__td table__td--nowrap table__message--disabled">- 200 ₽</td>
+                                <td class="table__td table__message--disabled status-cancel__wrap">Оплата сертификата <span class="status-cancel">Отменена</span></td>
                             </tr>
                         </table>
                     </div>
-                    <div class="userlist__selected">
-                        <div class="userlist__selected-title">Выбранное:</div>
-                        <ul class="userlist__selected-list">
-                            <li class="userlist__selected-item"><button class="link link-accent link--border" type="button">Заблокировать</button></li>
-                            <li class="userlist__selected-item"><button class="link link-accent link--border" type="button">Разблокировать</button></li>
-                            <li class="userlist__selected-item"><button class="link link-accent link--border" type="button">Удалить</button></li>
-                        </ul>
-                    </div>
-                    <div class="pagination__wrap">
-    <div class="pagination pagination--center">
-        <div class="pagination__left-link">
-            <a class="pagination__link pagination__link_first disabled" href="#">В начало</a>
-            <a class="pagination__link pagination__link_first disabled" href="#">Предыдущая</a>
-        </div>
-        <ul class="pagination-list">
-            <li class="pagination-list__item"><a class="pagination-list__link" href="#"><span class="pagination-list__page">1</span></a></li>
-            <li class="pagination-list__item active"><a class="pagination-list__link" href="#"><span class="pagination-list__page">2</span></a></li>
-            <li class="pagination-list__item"><a class="pagination-list__link" href="#"><span class="pagination-list__page">3</span></a></li>
-            <li class="pagination-list__item"><a class="pagination-list__link" href="#"><span class="pagination-list__page">4</span></a></li>
-            <li class="pagination-list__item"><a class="pagination-list__link" href="#"><span class="pagination-list__page">5</span></a></li>
-        </ul>
-        <div class="pagination__right-link">
-            <a class="pagination__link pagination__link_last" href="#">Следующая</a>
-            <a class="pagination__link pagination__link_last" href="#">Последняя</a>
-        </div>
-    </div>
 
-    <span class="pagination__count">
-        Всего: 1230 организаций
-    </span>
-</div>
                 </div>
 
             </div>

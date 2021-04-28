@@ -62,6 +62,14 @@
     justify-content: center;
 }
 
+.btn--mob-center {
+
+    @media (max-width:767px) {
+        text-align: center;
+    }
+}
+
+
 
 
 

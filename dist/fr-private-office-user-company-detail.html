@@ -258,8 +258,9 @@
         <nav aria-label="breadcrumb">
             <ol class="breadcrumb breadcrumb--private-office">
                 <li class="breadcrumb__item"><a class="breadcrumb__link" href="/">Главная</a></li>
-                <li class="breadcrumb__item"><a class="breadcrumb__link" href="private-office-my-company.html">Мои компании</a></li>
-                <li class="breadcrumb__item active" aria-current="page">Моя компания</li>
+                <li class="breadcrumb__item"><a class="breadcrumb__link" href="fr-private-office.html">Список пользователей</a></li>
+                <li class="breadcrumb__item"><a class="breadcrumb__link" href="fr-private-office-user.html">Иванов Иван</a></li>
+                <li class="breadcrumb__item active" aria-current="page">ООО Длинное название компании</li>
             </ol>
         </nav>
 
@@ -267,68 +268,69 @@
             <div class="private-office__sidebar">
                 <ul class="private-office__nav-list user-nav user-nav--page">
     <li class="user-nav__item">
-        <a href="private-office.html" class="user-nav__link active">Личный кабинет</a>
+        <a href="fr-private-office.html" class="user-nav__link active">Пользователи</a>
     </li>
     <li class="user-nav__item">
-        <a href="private-office-my-company.html" class="user-nav__link">Мои компании <span class="user-nav__count">23</span></a>
+        <a href="#" class="user-nav__link">Организации</a>
     </li>
     <li class="user-nav__item">
-        <a href="private-office-vote.html" class="user-nav__link">Голосование</a>
+        <a href="#" class="user-nav__link">Карточка</a>
     </li>
     <li class="user-nav__item">
-        <a href="private-office-point.html" class="user-nav__link">Баллы <span class="user-nav__count">1523</span></a>
+        <a href="fr-private-office-profit.html" class="user-nav__link">Балансы</a>
     </li>
     <li class="user-nav__item">
-        <a href="private-office-sertivicat.html" class="user-nav__link">Сертификат</a>
+        <a href="fr-private-office-profit-point.html" class="user-nav__link">Баллы</a>
     </li>
     <li class="user-nav__item">
-        <a href="private-office-chat.html" class="user-nav__link">Обратная связь <span class="user-nav__count user-nav__count-message">+1</span></a>
+        <a href="#" class="user-nav__link">Сотрудники</a>
     </li>
     <li class="user-nav__item">
-        <a href="private-office-id.html" class="user-nav__link">ID номер</a>
+        <a href="#" class="user-nav__link">Франшизы</a>
+    </li>
+    <li class="user-nav__item">
+        <a href="#" class="user-nav__link">Обратная связь <span class="user-nav__count user-nav__count-message">+1</span></a>
+    </li>
+    <li class="user-nav__item">
+        <a href="#" class="user-nav__link">Голосование</a>
+    </li>
+    <li class="user-nav__item">
+        <a href="#" class="user-nav__link">ID номер</a>
     </li>
 </ul>
             </div>
 
-            <div class="private-office__content">
-
-                <ul class="private-office__tab">
-                    <li class="private-office__tab-item">
-                        <div class="private-office__tab-link active">Редактирование</div>
-                    </li>
-                    <li class="private-office__tab-item">
-                        <a class="private-office__tab-link" href="private-office-my-company-detail-promo.html">Промокоды</a>
-                    </li>
-                    <li class="private-office__tab-item">
-                        <a class="private-office__tab-link" href="private-office-my-company-detail-statistic.html">Статистика</a>
-                    </li>
-                    <li class="private-office__tab-item">
-                        <a class="private-office__tab-link" href="private-office-my-company-detail-advert.html">Реклама объявления</a>
-                    </li>
-                </ul>
-
-                <div class="edit-company private-office__tab-content">
+            <div class="private-office__content">     
+                <div class="private-office__tab-content">
 
                     <div class="edit-company__header">
                         <div class="row edit-company__header-row">
                             <div class="col-xl-7 edit-company__title">
                                 <div class="edit-company__title">
                                     <div class="page-title-wrap">
-                                        <h1 class="page-title page-title__margin-r">ООО "Моя компания"</h1>
-                                        <div class="alert-wrap">ожидает модерации<span class="alert i-alert"></span></div>
+                                        <h1 class="page-title page-title__margin-r">ООО "Длинное название компании"</h1>
                                     </div>
                                 </div>
                             </div>
                             <div class="col-xl-5 edit-company__tools">
-                                <a class="link link-accent link--underline edit-company__tools-item" href="page-organization.html" target="_blank" title="Откроется окно в новой вкладке">Предпросмотр карточки</a>
-                                <button class="btn btn-conture edit-company__tools-item" type="button">Сохранить</button>
+                                <div class="input-wrap edit-company__tools-item">
+                                    <div class="dropdown dropdown--input dropdown--warning js-dropdown-toogle form__dropdown-status">
+                                        <button class="dropdown__value" type="button"><span class="dropdown__value-inner">Ожидает модерации</span></button>
+                                        <div class="dropdown__list scroll-gray">
+                                            <div class="dropdown__list-item"><a href="#" class="dropdown__list-val">Опубликовано</a></div>
+                                            <div class="dropdown__list-item"><a href="#" class="dropdown__list-val">Ожидает подтверждение по телефону</a></div>
+                                            <div class="dropdown__list-item"><a href="#" class="dropdown__list-val">Подтверждено</a></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <button class="btn btn-conture btn--md edit-company__tools-item" type="button">Сохранить</button>
                             </div>
                         </div>
-                        <a href="private-office-my-company.html" class="link link-accent link--border back-link i-arrow">Вернуться к профилю</a>
+                        <a href="#" class="link link-accent link--border back-link back-link--go">Перейти к следующей организации <span class="icon i-arrow-rigth"></span></a>
                     </div>
 
                     <div class="edit-company__message">
-                        <div class="edit-company__message-title"> Комментарий от модератора</div>
+                        <div class="edit-company__message-title">Комментарий пользователю</div>
                         <div class="edit-company__message-txt">Требуется добавить фотографии</div>
                     </div>
 
@@ -1468,38 +1470,21 @@
         </div>
     </fieldset>
 </fieldset>
-                        <div class="row edit-company__bottom-tools">
-                            <div class="col-xl-3">
-                                <a class="link link-accent link--border back-link i-arrow" href="private-office-my-company.html">Вернуться к профилю</a>
-                            </div>
-                            <div class="col-xl-3 col-md-6 offset-xl-3 preview-link">
+                        <div class="row edit-company__bottom-tools">                            
+                            <div class="col-xl-3 col-md-6 preview-link">
                                 <a class="link link-accent link--underline" href="page-organization.html" target="_blank" title="Откроется окно в новой вкладке">Предпросмотр карточки</a>
                             </div>
                             <div class="col-xl-3 col-md-6">
-                                <button class="btn btn-accent btn--full" type="submit">Сохранить</button>
+                                <button class="btn btn-conture btn--full" type="submit">Сохранить</button>
                             </div>
                         </div>
                     </form>
 
                 </div>
-
             </div>
         </div>
 
     </div>
-</div>
-
-<div id="del-photo" class="popup delete-popup mfp-hide">
-    <div class="delete-popup__title">Удалить фото?</div>
-    <div class="delete-popup__btn-group">
-        <div class="btn btn-conture btn--md add-avatar__popup-btn-close mfp-btn-close">Отмена</div>
-        <button class="btn btn-accent btn--md popup-link" type="button" data-mfp-src="#del-confirmed">Удалить</button>
-    </div>
-</div>
-
-
-<div id="del-confirmed" class="popup delete-popup mfp-hide">
-    <div class="delete-popup__title">Фото удалено</div>
 </div>
 
 	<footer class="footer">
