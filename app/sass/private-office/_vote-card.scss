@@ -2,17 +2,32 @@
   #Карточка с голосованием
 \*------------------------------------*/
 
+
+.vote-card__wrap {
+    column-count: 2;
+    column-gap: 30px;
+    margin-bottom: 40px;
+    orphans: 1; 
+    widows: 1;
+
+    @media (max-width: 767px) {
+        column-count: 1;
+    }
+}
+
 .vote-card {
+    position: relative;
+    display: inline-block;
+    width: 100%;
     padding: 25px 30px;
-    margin-right: 30px;
+    margin-bottom: 30px;
+    word-wrap: break-word;
+    border-radius: 8px;
+    break-inside: avoid;
     background: #ffffff;
     border: 1px solid $gray;
     border-radius: $border-radius;
-
-    @media (max-width: 992px) {
-        margin-right: 0;
-        margin-bottom: 30px;
-    }
+    overflow: hidden;
 
     @media (max-width: 767px) {
         padding: 25px 10px;
@@ -20,20 +35,6 @@
 
     &:last-child {
         margin-right: 0;
-    }
-
-    &__wrap {
-        display: flex;
-        margin-bottom: 40px;
-
-        &:last-child {
-            margin-bottom: 0;
-        }
-
-        @media (max-width: 992px) {
-            flex-wrap: wrap;
-            margin-bottom: 0;
-        }
     }
 
     &__header {
