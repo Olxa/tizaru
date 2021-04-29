@@ -47,7 +47,7 @@
     &__card-header {
         padding: 30px 24px 20px;
 
-        @media (max-width: 1200px) {
+        @media (max-width: 1365px) {
             padding: 15px;
         }
     }
@@ -55,6 +55,10 @@
     &__indicators {
         display: flex;
         padding: 0 24px 20px;
+
+        @media (max-width: 1365px) {
+            padding: 0 15px 10px;
+        }
     }
 
     &__indicators-col {
@@ -72,26 +76,26 @@
     }
 
     .graph {
-        @media (max-width: 1200px) {
+        @media (max-width: 1365px) {
             padding: 0 15px;
         }
     }
 
     .group-tab {
-        @media (max-width: 1200px) {
+        @media (max-width: 1365px) {
             padding-bottom: 60px;
         }
     }
 
     .slick-prev {
-        @media (max-width: 1200px) {
+        @media (max-width: 1365px) {
             right: auto;
             left: 15px;
         }
     }
 
     .slick-next {
-        @media (max-width: 1200px) {
+        @media (max-width: 1365px) {
             right: auto;
             left: 70px;
         }

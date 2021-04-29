@@ -65,6 +65,10 @@
         background-position: center;
         background-size: contain;
 
+        @media (max-width:1500px) {
+            position: initial;
+        }
+
         @media (max-width:992px) {
             position: initial;
             height: 330px

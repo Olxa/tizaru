@@ -95,6 +95,7 @@
     }
 
     &__user-name {
+        display: inline-block;
         text-align: left;
         font-size: 14px;
         line-height: 16px;
@@ -106,6 +107,7 @@
 
     &__user-avatar {
         position: relative;
+        display: inline-block;
         margin-left: 8px;
 
         &::before {

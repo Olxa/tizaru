@@ -202,10 +202,10 @@
 
             <div class="header__right-btns user-account">
                 <button class="user-account__btn-open" type="button">
-                    <div class="user-account__user-name">Длиннофамильцева <br />Евгения</div>
-                    <div class="user-account__user-avatar">
+                    <span class="user-account__user-name">Длиннофамильцева <br />Евгения</span>
+                    <span class="user-account__user-avatar">
                         <img src="images/dist/or2.jpg" alt="Длиннофамильцева Евгения" />
-                    </div>
+                    </span>
                 </button>
                 
                 <div class="user-account__dropdown account-menu">
@@ -273,9 +273,6 @@
         <a href="fr-private-office-company.html" class="user-nav__link">Организации</a>
     </li>
     <li class="user-nav__item">
-        <a href="#" class="user-nav__link">Карточка</a>
-    </li>
-    <li class="user-nav__item">
         <a href="fr-private-office-profit.html" class="user-nav__link">Балансы</a>
     </li>
     <li class="user-nav__item">
@@ -309,81 +306,99 @@
 
                 <div class="private-office__tab-content">
                     <form class="form form-private" action="/" method="post">
-                        <div class="row align-items-end">
-                            <div class="col-xl-4 form-private__mob-last">
-                                <div class="input-wrap">
-                                    <label class="input-wrap__label">
-                                        Название
-                                        <input class="input" type="text">
-                                    </label>
+                        <div class="form__subgroup">
+                            <div class="row align-items-end">
+                                <div class="col-xl-4 form-private__mob-last">
+                                    <div class="input-wrap">
+                                        <label class="input-wrap__label">
+                                            Название
+                                            <input class="input" type="text">
+                                        </label>
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="col-xl-3">
-                                <div class="input-wrap">
-                                    <div class="dropdown dropdown--input dropdown--warning js-dropdown-toogle form__dropdown-status">
-                                        <button class="dropdown__value" type="button"><span class="dropdown__value-inner">Изменить статус</span></button>
-                                        <div class="dropdown__list scroll-gray">
-                                            <div class="dropdown__list-item"><a href="#" class="dropdown__list-val">Опубликовано</a></div>
-                                            <div class="dropdown__list-item"><a href="#" class="dropdown__list-val">Не опубликовано</a></div>
-                                            <div class="dropdown__list-item"><a href="#" class="dropdown__list-val">Закрыто</a></div>
+                                <div class="col-xl-3">
+                                    <div class="input-wrap">
+                                        <div class="dropdown dropdown--input dropdown--warning js-dropdown-toogle form__dropdown-status">
+                                            <button class="dropdown__value" type="button"><span class="dropdown__value-inner">Изменить статус</span></button>
+                                            <div class="dropdown__list scroll-gray">
+                                                <div class="dropdown__list-item"><a href="#" class="dropdown__list-val">Опубликовано</a></div>
+                                                <div class="dropdown__list-item"><a href="#" class="dropdown__list-val">Не опубликовано</a></div>
+                                                <div class="dropdown__list-item"><a href="#" class="dropdown__list-val">Закрыто</a></div>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-xl-4">
-                                <div class="input-wrap">
-                                    <span class="input-wrap__label">
-                                        Описание
-                                        <textarea class="textarea"></textarea>
-                                    </span>
+                            <div class="row">
+                                <div class="col-xl-4">
+                                    <div class="input-wrap">
+                                        <span class="input-wrap__label">
+                                            Описание
+                                            <textarea class="textarea"></textarea>
+                                        </span>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-xl-2">
-                                <div class="create-void__title-option">Варианты ответа</div>
-                                <div class="form__field-has-del">
-                                    <div class="input-wrap">
-                                        <label class="input-wrap__label">
-                                            <input class="input text-center" type="text" value="Согласиться">
-                                        </label>
-                                    </div>
-                                    <button class="form__btn-del i-clear" type="button"></button>
+                            <div class="row">
+                                <div class="col-xl-2 col-md-6">
+                                    <div class="create-void__title-option">Варианты ответа</div>
                                 </div>
-                                <div class="form__field-has-del">
-                                    <div class="input-wrap">
-                                        <label class="input-wrap__label">
-                                            <input class="input text-center" type="text" value="Отказаться">
-                                        </label>
-                                    </div>
-                                    <button class="form__btn-del i-clear" type="button"></button>
-                                </div>
-                                <div class="form__field-has-del">
-                                    <div class="input-wrap">
-                                        <label class="input-wrap__label">
-                                            <input class="input text-center" type="text" value="Воздержаться">
-                                        </label>
-                                    </div>
-                                    <button class="form__btn-del i-clear" type="button"></button>
+                                <div class="col-xl-4 offset-xl-1 col-md-6">
+                                    <div class="create-void__title-count">Всего проголосовало: 1644</div>
                                 </div>
                             </div>
-                            <div class="col-xl-4 offset-xl-1">
-                                <div class="create-void__title-count">Всего проголосовало: 1644</div>
-                                <div class="void-result">
+                            <div class="row">
+                                <div class="col-xl-2 col-md-6">
+                                    <div class="form__field-has-del">
+                                        <div class="input-wrap">
+                                            <label class="input-wrap__label">
+                                                <input class="input text-center" type="text" value="Согласиться">
+                                            </label>
+                                        </div>
+                                        <button class="form__btn-del form__btn-del--only-input i-clear" type="button"></button>
+                                    </div>
+                                </div>
+                                <div class="col-xl-4 offset-xl-1 col-md-6">
                                     <div class="void-result__item">
                                         <div class="void-result">
                                             <div class="void-result__text">123 голоса (15%)</div>
                                             <div class="void-result__bg" style="width: 15%;"></div>
                                         </div>
                                     </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-xl-2 col-md-6">
+                                    <div class="form__field-has-del">
+                                        <div class="input-wrap">
+                                            <label class="input-wrap__label">
+                                                <input class="input text-center" type="text" value="Отказаться">
+                                            </label>
+                                        </div>
+                                        <button class="form__btn-del form__btn-del--only-input i-clear" type="button"></button>
+                                    </div>
+                                </div>
+                                <div class="col-xl-4 offset-xl-1 col-md-6">
                                     <div class="void-result__item">
                                         <div class="void-result">
                                             <div class="void-result__text">1200 голосов (50%)</div>
                                             <div class="void-result__bg" style="width: 50%;"></div>
                                         </div>
                                     </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-xl-2 col-md-6">
+                                    <div class="form__field-has-del">
+                                        <div class="input-wrap">
+                                            <label class="input-wrap__label">
+                                                <input class="input text-center" type="text" value="Воздержаться">
+                                            </label>
+                                        </div>
+                                        <button class="form__btn-del form__btn-del--only-input i-clear" type="button"></button>
+                                    </div>
+                                </div>
+                                <div class="col-xl-4 offset-xl-1 col-md-6">
                                     <div class="void-result__item">
                                         <div class="void-result">
                                             <div class="void-result__text">321 голос (35%)</div>
@@ -391,6 +406,29 @@
                                         </div>
                                     </div>
                                 </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-xl-2 col-md-6">
+                                    <div class="form__field-has-del">
+                                        <div class="input-wrap">
+                                            <label class="input-wrap__label">
+                                                <input class="input text-center" type="text" placeholder="Введите вариант">
+                                            </label>
+                                        </div>
+                                        <button class="form__btn-del form__btn-del--only-input i-clear" type="button"></button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-12">
+                                    <button class="form__subgroup-add" type="button">+ Добавить подгруппу</button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-md-3 col-sm-4 col-12">
+                                <button class="btn btn--full btn-accent" type="submit">Сохранить</button>
                             </div>
                         </div>
                     </form>
