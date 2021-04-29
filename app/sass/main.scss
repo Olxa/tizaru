@@ -68,6 +68,7 @@
 
 // == tabs ==
 @import "blocks/tabs/tabs";
+@import "blocks/tabs/group-tab";
 
 // == categoty-bar ==
 @import "blocks/categoty-bar/categoty-bar";
@@ -88,6 +89,7 @@
 // == slider ==
 @import "blocks/slider/slider";
 @import "blocks/slider/content-slider";
+@import "blocks/slider/statistic-slider";
 
 // == content-carusel ==
 @import "blocks/content-carusel/content-carusel";
@@ -189,6 +191,7 @@
 @import "private-office/page-franchise-void";
 @import "private-office/create-void";
 @import "private-office/void-result";
+@import "private-office/void-stat";
 
 // == options ==
 @import "blocks/options/options";

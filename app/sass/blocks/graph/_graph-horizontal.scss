@@ -95,7 +95,7 @@
         overflow: hidden;
 
         @media (max-width: 1201px) {
-            height: auto;
+            height: auto !important;
             width: 100%;
             padding: 7px 0;
             text-align: left;
@@ -152,5 +152,21 @@
             font-family: $userfont-sbold;
             font-weight: 600;
         }
+    }
+}
+
+.graph--sm {
+    border-bottom: 0;
+
+    .graph__cell {
+        height: 200px;
+    }
+
+    .graph__data-val {
+        font-size: 11px;
+    }
+
+    .graph__footer-item {
+        font-size: 11px;
     }
 }
