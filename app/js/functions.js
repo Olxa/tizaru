@@ -78,6 +78,14 @@ document.addEventListener("DOMContentLoaded", function () {
         ]
     });
 
+    $('.statistic-slider').slick({
+        infinite: false,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        dots: false,
+        autoplay: false
+    });
+
     $('body').on('click', '.password-visible', function () {
         if ($('.password').attr('type') == 'password') {
             $(this).addClass('view');
