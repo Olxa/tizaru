@@ -4,6 +4,7 @@
 
 .company-page {
     padding: 15px 0 60px;
+    cursor: default;
 
     &__header {
     }
@@ -27,14 +28,28 @@
         margin-bottom: 15px;
     }
 
+    &__desc-wrap {
+        margin-bottom: 20px;
+    }
+
     &__desc {
         font-size: 18px;
+        margin: 0;
     }
 
     &__content {
     }
 
+    &__content--sm {
+        max-width: 720px;
+        margin: 0 auto;
+    }
+
     &__content--team {
         padding-top: 75px;
+    }
+
+    &__filter {
+        padding: 0 0 10px;
     }
 }
