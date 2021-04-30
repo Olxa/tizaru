@@ -43,6 +43,7 @@
 @import "blocks/header/header-logo";
 @import "blocks/header/user-account";
 @import "blocks/header/account-menu";
+@import "blocks/header/header-lend";
 
 // == footer ==
 @import "blocks/footer/footer";
@@ -167,6 +168,10 @@
 @import "blocks/add-file/file-photo";
 @import "blocks/add-file/file-txt";
 
+// == team ==
+@import "blocks/team/team";
+@import "blocks/team/team-card";
+
 // == private-office ==
 @import "private-office/private-office";
 @import "private-office/user-nav";
@@ -199,3 +204,6 @@
 // == graph ==
 @import "blocks/graph/graph-vertical";
 @import "blocks/graph/graph-horizontal";
+
+// == marketing ==
+@import "marketing/company-page";

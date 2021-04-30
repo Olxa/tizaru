@@ -1,0 +1,42 @@
+.header-lend {
+    padding: 16px 0;
+    border-bottom: 1px solid #E7E7E7;
+
+    &__inner {
+    }
+
+    &__logo {
+    }
+
+    &__logo-image {
+        @media (max-width: 992px) {
+            display: none;
+        }
+    }
+
+    &__logo-image-mob {
+        display: none;
+
+        @media (max-width: 992px) {
+            display: block;
+        }
+    }
+
+    &__link-wrap {
+        flex: 1;
+        padding: 0 20px;
+        text-align: center;
+    }
+
+    &__link {
+        margin-right: 100px;
+
+        &:hover {
+            color: $accent;
+        }
+
+        &:last-child {
+            margin-right: 0;
+        }
+    }
+}
