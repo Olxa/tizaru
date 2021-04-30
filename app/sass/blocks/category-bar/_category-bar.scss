@@ -1,4 +1,4 @@
-.categoty-bar {
+.category-bar {
     position: relative;
     display: flex;
 
@@ -18,14 +18,14 @@
         }
     }
 
-    &.categoty-modal-active {
+    &.category-modal-active {
 
-        .categoty-modal {
+        .category-modal {
             opacity: 1;
             visibility: visible;
         }
 
-        .categoty-bar__btn::before {
+        .category-bar__btn::before {
             content: "\e913";
         }
     }

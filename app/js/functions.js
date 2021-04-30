@@ -241,8 +241,8 @@ document.addEventListener("DOMContentLoaded", function () {
         $(".user-account__dropdown").toggleClass('active');
     });
 
-    $(".categoty-bar__btn").on('click', function () {
-        $(".categoty-bar").toggleClass('categoty-modal-active');
+    $(".category-bar__btn").on('click', function () {
+        $(".category-bar").toggleClass('category-modal-active');
     });
 
     $(".city-search__btn").on('click', function () {
@@ -283,19 +283,19 @@ document.addEventListener("DOMContentLoaded", function () {
     //
 
     $(".mobil-filter__btn-category").on('click', function () {
-        $(".categoty-modal-mobil").addClass('active');
+        $(".category-modal-mobil").addClass('active');
     });
 
     $(".mobil-filter__back").on('click', function () {
         $(".mobil-filter__wrapper").removeClass('active');
     });
 
-    $(".categoty-modal-mobil__cancel").on('click', function () {
-        $(".categoty-modal-mobil").removeClass('active');
+    $(".category-modal-mobil__cancel").on('click', function () {
+        $(".category-modal-mobil").removeClass('active');
     });
 
-    $(".categoty-modal-mobil__ok").on('click', function () {
-        $(".categoty-modal-mobil").removeClass('active');
+    $(".category-modal-mobil__ok").on('click', function () {
+        $(".category-modal-mobil").removeClass('active');
     });
 
     $(".mobil-filter__btn-country").on('click', function () {
@@ -329,9 +329,9 @@ $(document).on('mouseup', function (e) {
         $(".header").removeClass("log-active")
     }
 
-    let ctm = $('.categoty-bar');
+    let ctm = $('.category-bar');
     if (!hsm.is(e.target) && ctm.has(e.target).length === 0) {
-        ctm.removeClass('categoty-modal-active');
+        ctm.removeClass('category-modal-active');
     }
 
     let csh = $('.city-search');

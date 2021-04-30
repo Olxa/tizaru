@@ -2,7 +2,7 @@
   Попап категорий
 \*------------------------------------*/
 
-.categoty-modal {
+.category-modal {
     position: absolute;
     top: 100%;
     left: 0;
@@ -155,7 +155,7 @@
     }
 }
 
-.categoty-modal__li {
+.category-modal__li {
     margin-bottom: 15px;
 
     @media (max-width: 992px) {
@@ -172,14 +172,14 @@
     }
 
     &:hover {
-        > .categoty-modal__sub {
+        > .category-modal__sub {
             opacity: 1;
             visibility: visible;
             z-index: 2;
             top: 0%;
         }
 
-        .categoty-modal__link {
+        .category-modal__link {
             color: $accent;
 
             &::after {
@@ -187,14 +187,14 @@
             }
         }
 
-        .categoty-modal__link-name {
+        .category-modal__link-name {
             border-color: $accent;
         }
     }
 }
 
 @media (max-width: 992px) {
-    .categoty-modal-mobil__footer {
+    .category-modal-mobil__footer {
         padding-top: 34px;
         display: flex;
         justify-content: flex-end;
@@ -205,7 +205,7 @@
         }
     }
 
-    .categoty-modal-mobil__cancel {
+    .category-modal-mobil__cancel {
         border-color: transparent;
     }
 }
