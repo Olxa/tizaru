@@ -4,7 +4,7 @@
 
 <head>
     <meta charset="utf-8">
-    <title>Личный кабинет | Информация</title>
+    <title>Команда проекта</title>
     <meta name="description" content="<!--#echo var=' title' -->">
     <meta name="viewport" content="width=device-width">
     <link rel="icon" href="images/favicon.png">
@@ -200,168 +200,282 @@
                 </div>
             </div>
 
-            <div class="header__right-btns user-account">
-                <button class="user-account__btn-open" type="button">
-                    <span class="user-account__user-name">Длиннофамильцева <br />Евгения</span>
-                    <span class="user-account__user-avatar">
-                        <img src="images/dist/or2.jpg" alt="Длиннофамильцева Евгения" />
-                    </span>
-                </button>
-                
-                <div class="user-account__dropdown account-menu">
-                    <button class="user-account__dropdown-close i-close" type="button"></button>
+            <div class="header__right-btns login-wrapper">
+                <button class="header__reg-btn" type="button"><span class="header__regis-link">Регистрация /</span> Вход</button>
+                <div class="login-reg">
+                    <button class="login-reg__close mobil-vis i-min-close" type="button"></button>
+                    <div class="login active">
+                        <div class="login-user active">
+                            <form action="/" method="post">
+                                <div class="login-reg__title">Войдите в свой аккаунт</div>
+                                <div class="input-wrap">
+                                    <label class="input-wrap__label">
+                                        E-mail
+                                        <input class="input" type="email">
+                                    </label>
+                                </div>
+                                <div class="input-wrap">
+                                    <label class="input-wrap__label" for="password3">Пароль</label>
+                                    <div class="input-password">
+                                        <input class="input input-password__val" id="password3" type="password">
+                                        <button class="input-password__eye icon i-eye"></button>
+                                    </div>
+                                </div>
+                                <div class="login-reg__row">
+                                    <div class="checkbox">
+                                        <input class="checkbox__field" id="remember" type="checkbox">
+                                        <label class="checkbox__value" for="remember">Запомнить меня</label>
+                                    </div>
+                                    <div class="recovery-link">Забыли пароль?</div>
+                                </div>
+                                <div class="captcha">
+                                    <img src="images/dist/capc.jpg" alt="Гугл капча">
+                                </div>
+                                <button class="btn btn-accent btn--full" type="submit">Войти</button>
+                            </form>
+                            
+                            <span class="login-user__or-txt">Или используйте социальную сеть</span>                            
+                            <div class="soc-login">
+                                <a class="soc-login__link gg" href="#"></a>
+                                <a class="soc-login__link vk" href="#"></a>
+                                <a class="soc-login__link fb" href="#"></a>
+                            </div>
+                            <button type="button" class="btn btn-conture btn--full btn-login-franchisees">Вход франчайзи</button>
+                        </div>
 
-                    <div class="account-menu__data">
-                        <div class="account-menu__data-id">id 3500560</div>
-                        <div class="account-menu__data-status account-menu__data-status--one">Статус</div>
+                        <div class="login-franchisees">
+                            <form action="/" method="post">
+                                <div class="login-reg__title">Вход франчайзи</div>
+                                <div class="input-wrap">
+                                    <label class="input-wrap__label">
+                                        E-mail
+                                        <input class="input" type="email">
+                                    </label>
+                                </div>
+                                <div class="input-wrap">
+                                    <label class="input-wrap__label" for="password">Пароль</label>
+                                    <div class="input-password">
+                                        <input class="input input-password__val" id="password" type="password">
+                                        <button class="input-password__eye icon i-eye"></button>
+                                    </div>
+                                </div>
+                                <div class="login-reg__row">
+                                    <div class="checkbox">
+                                        <input class="checkbox__field" id="remember-f" type="checkbox">
+                                        <label class="checkbox__value" for="remember-f">Запомнить меня</label>
+                                    </div>
+                                    <div class="recovery-link">Забыли пароль?</div>
+                                </div>
+                                <div class="captcha">
+                                    <img src="images/dist/capc.jpg" alt="Гугл капча">
+                                </div>
+                                <button type="submit" class="btn btn-accent btn--full">Войти</button>
+                            </form>
+                            <button type="button" class="btn btn-conture btn--full btn-login-user">Вход пользователя</button>
+                        </div>
+
+                        <div class="login-reg__footer">
+                            <button type="button" class="login-reg__btn login__btn">Регистрация</button>
+                        </div>
+
                     </div>
-                    
+                    <div class="registrations">
 
-                    <ul class="user-account__nav-list user-nav">
-                        <li class="user-nav__item">
-                            <a href="private-office.html" class="user-nav__link active">Личный кабинет</a>
-                        </li>
-                        <li class="user-nav__item">
-                            <a href="#" class="user-nav__link">Мои компании <span class="user-nav__count">23</span></a>
-                        </li>
-                        <li class="user-nav__item">
-                            <a href="#" class="user-nav__link">Голосование</a>
-                        </li>
-                        <li class="user-nav__item">
-                            <a href="#" class="user-nav__link">Баллы <span class="user-nav__count">1523</span></a>
-                        </li>
-                        <li class="user-nav__item">
-                            <a href="#" class="user-nav__link">Сертификат</a>
-                        </li>
-                        <li class="user-nav__item">
-                            <a href="#" class="user-nav__link">Обратная связь <span class="user-nav__count user-nav__count-message">+1</span></a>
-                        </li>
-                        <li class="user-nav__item">
-                            <a href="#" class="user-nav__link">ID номер</a>
-                        </li>
-                        <li class="user-nav__item">
-                            <a href="/" class="user-nav__link">Выход</a>
-                        </li>
-                    </ul>
+                        <div class="registrations-user active">
+                            <form action="/" method="post">
+                                <div class="login-reg__title">Регистрация</div>
+                                <div class="input-wrap">
+                                    <label class="input-wrap__label">
+                                        E-mail
+                                        <input class="input" type="email">
+                                    </label>
+                                </div>
+                                <div class="input-wrap">
+                                    <label class="input-wrap__label" for="password1">Пароль</label>
+                                    <div class="input-password">
+                                        <input class="input input-password__val" id="password1" type="password">
+                                        <button class="input-password__eye icon i-eye"></button>
+                                    </div>
+                                </div>
+                                <div class="login-reg__row">
+                                    <div class="checkbox">
+                                        <input class="checkbox__field" id="consent" type="checkbox">
+                                        <label class="checkbox__value login-reg__checkbox-accept" for="consent">Согласен(-на) на обработку данных и с <a href="terms-of-use.html">пользовательским соглашением</a></label>
+                                    </div>
+                                </div>
+                                <div class="captcha">
+                                    <img src="images/dist/capc.jpg" alt="Гугл капча">
+                                </div>
+                                <button type="submit" class="btn btn-accent btn--full">Зарегистрироваться</button>
+                            </form>
+
+                            <span class="login-user__or-txt">Или используйте социальную сеть</span>
+                            <div class="soc-login">
+                                <a class="soc-login__link gg" href="#"></a>
+                                <a class="soc-login__link vk" href="#"></a>
+                                <a class="soc-login__link fb" href="#"></a>
+                            </div>
+                            <button type="button" class="btn btn-conture btn--full btn-registrations-franchisees">Регистрация франчайзи</button>
+                        </div>
+
+                        <div class="registrations-franchisees">
+                            <form action="/" method="post">
+                                <div class="login-reg__title">Регистрация франчайзи</div>
+                                <div class="input-wrap">
+                                    <label class="input-wrap__label">
+                                        E-mail
+                                        <input class="input" type="email">
+                                    </label>
+                                </div>
+                                <div class="input-wrap">
+                                    <label class="input-wrap__label" for="password2">Пароль</label>
+                                    <div class="input-password">
+                                        <input class="input input-password__val" id="password2" type="password">
+                                        <button class="input-password__eye icon i-eye"></button>
+                                    </div>
+                                </div>
+                                <div class="input-wrap">
+                                    <label class="input-wrap__label">
+                                        Страна
+                                        <input class="input" type="text">
+                                    </label>
+                                </div>
+                                <div class="input-wrap">
+                                    <label class="input-wrap__label">
+                                        Город
+                                        <input class="input" type="text">
+                                    </label>
+                                </div>
+                                <div class="login-reg__row">
+                                    <div class="checkbox">
+                                        <input class="checkbox__field" id="consent-f" type="checkbox">
+                                        <label class="checkbox__value login-reg__checkbox-accept" for="consent-f">Согласен(-на) на обработку данных и с <a href="terms-of-use.html">пользовательским соглашением</a></label>
+                                    </div>
+                                </div>
+                                <div class="captcha">
+                                    <img src="images/dist/capc.jpg" alt="гугл капча">
+                                </div>
+                                <button type="submit" class="btn btn-accent btn--full">Зарегистрироваться</button>
+                            </form>
+                            <button type="button" class="btn btn-conture btn--full btn-registrations-user">Регистрация пользователя</button>
+                        </div>
+
+                        <div class="login-reg__footer">
+                            <button type="button" class="login-reg__btn registrations__btn">Вход</button>
+                        </div>
+
+                    </div>
+
+                    <div class="recovery">
+
+                        <div class="recovery-form active">
+                            <form action="/" method="post">
+                                <div class="login-reg__title">Восстановление пароля</div>
+                                <div class="input-wrap">
+                                    <label class="input-wrap__label">
+                                        E-mail
+                                        <input class="input" type="email">
+                                    </label>
+                                </div>
+                                <div class="captcha">
+                                    <img src="images/dist/capc.jpg" alt="Гугл капча">
+                                </div>
+                                <div class="login-reg__footer">
+                                    <button type="button" class="btn btn-accent btn--full btn-recovery-send">Восстановить пароль</button>
+                                </div>
+                            </form>
+                            <button type="button" class="btn btn-conture btn--full btn-registrations-user">Зарегистрироваться</button>
+                        </div>
+
+                        <div class="recovery-send">
+                            <div class="recovery-send__image"></div>
+                            <div class="recovery-send__txt">
+                                Инструкции по восстановлению пароля отправлены на ваш email
+                            </div>
+                        </div>
+
+                        <div class="login-reg__footer">
+                            <button type="button" class="login-reg__btn registrations__btn">Вход</button>
+                        </div>
+                    </div>
+
                 </div>
             </div>
         </div>
     </header>
 
+<div class="company-page">
+    <div class="container">
 
-<div class="page-content">
-    <div class="full-container private-office__wrap">
-
-        <nav aria-label="breadcrumb">
-            <ol class="breadcrumb breadcrumb--private-office">
-                <li class="breadcrumb__item"><a class="breadcrumb__link" href="/">Главная</a></li>
-                <li class="breadcrumb__item"><a class="breadcrumb__link" href="private-office">Личный кабинет</a></li>
-                <li class="breadcrumb__item active" aria-current="page">Баланс</li>
-            </ol>
-        </nav>
-
-        <div class="private-office">
-            <div class="private-office__sidebar">
-                <ul class="private-office__nav-list user-nav user-nav--page">
-    <li class="user-nav__item">
-        <a href="private-office.html" class="user-nav__link active">Личный кабинет</a>
-    </li>
-    <li class="user-nav__item">
-        <a href="private-office-my-company.html" class="user-nav__link">Мои компании <span class="user-nav__count">23</span></a>
-    </li>
-    <li class="user-nav__item">
-        <a href="private-office-vote.html" class="user-nav__link">Голосование</a>
-    </li>
-    <li class="user-nav__item">
-        <a href="private-office-point.html" class="user-nav__link">Баллы <span class="user-nav__count">1523</span></a>
-    </li>
-    <li class="user-nav__item">
-        <a href="private-office-sertivicat.html" class="user-nav__link">Сертификат</a>
-    </li>
-    <li class="user-nav__item">
-        <a href="private-office-chat.html" class="user-nav__link">Тех. поддержка <span class="user-nav__count user-nav__count-message">+1</span></a>
-    </li>
-    <li class="user-nav__item">
-        <a href="private-office-id.html" class="user-nav__link">ID номер</a>
-    </li>
-</ul>
-            </div>
-
-            <div class="private-office__content">
-
-                <div class="private-office__status">
-                    ID 3500560, статус
-                    <div class="private-office__status-val private-office__status-val--one">
-                        <div class="private-office__status-popup">
-                            <p class="private-office__status-popup-txt">За все время вы набрали 2000 баллов</p>
-                        </div>
+        <div class="company-page__header">
+            <a class="company-page__logo" href="/">
+                <img class="company-page__logo-image" src="images/dist/logo-mobil.svg" alt="Tizaru">
+            </a>
+            <nav aria-label="breadcrumb company-page__breadcrumb">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb__item"><a class="breadcrumb__link" href="/">Главная</a></li>
+                    <li class="breadcrumb__item active" aria-current="page">Команда проекта</li>
+                </ol>
+            </nav>
+            <h1 class="page-title breadcrumb__page-title">Команда проекта</h1>
+            <p class="company-page__desc">
+                Мы — динамичная команда опытных инженеров, исследователей с разнообразным опытом работы в продвижении, науке о данных, безопасности, ИТ, электронной коммерции, вычислениях, мобильных устройства, ОС, приложениях. Наши лидеры окончили всемирно известные университеты. Мы увлечены разработкой и коммерциализацией новых продуктов и услуг
+            </p>
+        </div>
+        <div class="team company-page__content company-page__content--team">
+            <div class="team__list">
+                <div class="team__item team-card">
+                    <div class="team-card__image-wrap">
+                        <img class="team-card__image" src="images/dist/n6.jpg" alt="Егор Емельянов" />
                     </div>
+                    <h2 class="team-card__name">Егор Емельянов</h2>
+                    <p class="team-card__short-description">Основатель и СЕО</p>
+                    <a class="team-card__link-more link link-accent link--border" href="#">Подробнее</a>
                 </div>
-
-                <ul class="private-office__tab">
-                    <li class="private-office__tab-item">
-                        <a class="private-office__tab-link" href="private-office.html">Личная информация</a>
-                    </li>
-                    <li class="private-office__tab-item">
-                        <a class="private-office__tab-link" href="private-office-change-password.html">Смена пароля</a>
-                    </li>
-                    <li class="private-office__tab-item">
-                        <div class="private-office__tab-link active">Баланс</div>
-                    </li>
-                    <li class="private-office__tab-item">
-                        <a class="private-office__tab-link" href="private-office-profile-photo.html">Фото профиля</a>
-                    </li>
-                </ul>
-
-                <div class="private-office__tab-content page-balance">
-                    <div class="page-title-wrap balance__page-title-wrap">
-                        <div class="page-title page-title__margin-r">На балансе 15 000 ₽</div>
-                        <a class="btn btn-accent btn--md private-office__balance-add--desc" href="#">Пополнить</a>
+                <div class="team__item team-card">
+                    <div class="team-card__image-wrap">
+                        <img class="team-card__image" src="images/dist/n6.jpg" alt="Андрей Дементьев" />
                     </div>
-
-                    <div class="table__responsive">
-                        <table class="table table-striped">
-                            <tr class="table__tr">
-                                <th class="table__th">№</th>
-                                <th class="table__th table__th-sorting">
-                                    Дата/время
-                                    <div class="sorting">
-                                        <button class="sorting__btn sorting__btn--disabled i-arrow-bottom" type="button"></button>
-                                        <button class="sorting__btn i-arrow-top" type="button"></button>
-                                    </div>
-                                </th>
-                                <th class="table__th text-center">Сумма</th>
-                                <th class="table__th text-center">Операция</th>
-                            </tr>
-                            <tr class="table__tr">
-                                <td class="table__td">1</td>
-                                <td class="table__td table__td--nowrap">12.02.2021 21:21:22</td>
-                                <td class="table__td table__td--nowrap">+ 1000 ₽</td>
-                                <td class="table__td">Пополнение через PayPal</td>
-                            </tr>
-                            <tr class="table__tr">
-                                <td class="table__td">2</td>
-                                <td class="table__td table__td--nowrap">01.02.2021 21:21:22</td>
-                                <td class="table__td table__td--nowrap">- 100 ₽</td>
-                                <td class="table__td">Продвижение карточки «Моя организация»</td>
-                            </tr>
-                            <tr class="table__tr">
-                                <td class="table__td">3</td>
-                                <td class="table__td table__td--nowrap">12.12.2020 21:21:22</td>
-                                <td class="table__td table__td--nowrap">- 200 ₽</td>
-                                <td class="table__td">Оплата сертификата</td>
-                            </tr>
-                        </table>
-                    </div>
-                    <a class="btn btn-accent btn--md btn--full private-office__balance-add--mob" href="#">Пополнить</a>
+                    <h2 class="team-card__name">Андрей Дементьев</h2>
+                    <p class="team-card__short-description">Основатель и СЕО</p>
+                    <a class="team-card__link-more link link-accent link--border" href="#">Подробнее</a>
                 </div>
-
+                <div class="team__item team-card">
+                    <div class="team-card__image-wrap">
+                        <img class="team-card__image" src="images/dist/n6.jpg" alt="Илья Иванов" />
+                    </div>
+                    <h2 class="team-card__name">Илья Иванов</h2>
+                    <p class="team-card__short-description">Основатель и СЕО</p>
+                    <a class="team-card__link-more link link-accent link--border" href="#">Подробнее</a>
+                </div>
+                <div class="team__item team-card">
+                    <div class="team-card__image-wrap">
+                        <img class="team-card__image" src="images/dist/n6.jpg" alt="Станислав Жуковский" />
+                    </div>
+                    <h2 class="team-card__name">Станислав Жуковский</h2>
+                    <p class="team-card__short-description">Основатель и СЕО</p>
+                    <a class="team-card__link-more link link-accent link--border" href="#">Подробнее</a>
+                </div>
+                <div class="team__item team-card">
+                    <div class="team-card__image-wrap">
+                        <img class="team-card__image" src="images/dist/n6.jpg" alt="Алена Новицкая" />
+                    </div>
+                    <h2 class="team-card__name">Алена Новицкая</h2>
+                    <p class="team-card__short-description">Основатель и СЕО</p>
+                    <a class="team-card__link-more link link-accent link--border" href="#">Подробнее</a>
+                </div>
+                <div class="team__item team-card">
+                    <div class="team-card__image-wrap">
+                        <img class="team-card__image" src="images/dist/n6.jpg" alt="Павел Петров" />
+                    </div>
+                    <h2 class="team-card__name">Павел Петров</h2>
+                    <p class="team-card__short-description">Основатель и СЕО</p>
+                    <a class="team-card__link-more link link-accent link--border" href="#">Подробнее</a>
+                </div>
             </div>
         </div>
-
     </div>
 </div>
-
 	<footer class="footer">
 		<div class="full-container">
 			<div class="footer__item footer__item_1">
