@@ -42,6 +42,14 @@
     &__margin-b {
         margin-bottom: 35px;
     }
+
+    &--desk-center {
+        text-align: center;
+
+        @media (max-width: 992px) {
+            text-align: left;
+        }
+    }
 }
 
 .alert-wrap {
