@@ -5,9 +5,19 @@
     &__inner {
         display: flex;
         align-items: center;
+
+        @media (max-width: 992px) {
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
     }
 
     &__logo {
+
+        @media (max-width: 992px) {
+            order: 1;
+            margin-bottom: 10px;
+        }
     }
 
     &__logo-image {
@@ -26,13 +36,25 @@
 
     &__link-wrap {
         flex: 1;
+        display: flex;
+        justify-content: space-around;
         padding: 0 20px;
         text-align: center;
+
+        @media (max-width: 992px) {
+            flex: initial;
+            order: 3;
+            width: 100%;
+        }
+
+        @media (max-width: 768px) {
+            padding: 0;
+            justify-content: space-between;
+        }
     }
 
     &__link {
-        /*margin-right: 20%;*/
-        padding: 0 10%;
+
 
         &:hover {
             color: $accent;
@@ -40,6 +62,16 @@
 
         &:last-child {
             margin-right: 0;
+        }
+    }
+
+    .btn {
+        @media (max-width: 992px) {
+            order: 2;
+            height: 35px;
+            line-height: 25px;
+            padding: 5px 15px;
+            margin-bottom: 10px;
         }
     }
 }

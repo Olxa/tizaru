@@ -1,0 +1,69 @@
+.section {
+
+    &__inner {
+        width: 100%;
+        min-height: 60vh;
+        display: flex;
+        align-items: stretch;
+    }
+
+    &__content {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 50%;
+    }
+
+    &__image {
+        width: 50%;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: contain;
+    }
+
+    &__page-title {
+        margin-bottom: 36px;
+        font-family: $userfont-bold;
+        font-size: 35px;
+        font-weight: 700;
+        line-height: 48px;
+    }
+
+    &__title {
+        font-size: 30px;
+        line-height: 41px;
+    }
+
+    &__txt {
+        margin-bottom: 40px;
+        font-size: 18px;
+        line-height: 25px;
+    }
+}
+
+
+.section__image--adv-client {
+    background-image: url(../images/dist/adv-client.svg)
+}
+
+.section__image--adv-top {
+    background-image: url(../images/dist/adv-top.svg);
+    background-position: top left;
+}
+
+.section__image--adv-card-company {
+    background-image: url(../images/dist/card-company.svg);
+}
+
+
+.section__image--adv-statistic {
+    background-image: url(../images/dist/adv-statistic.svg);
+}
+
+.section__image--adv-start {
+    background-image: url(../images/dist/adv-start.svg);
+}
+
+.section__image--adv-form {
+    background-image: url(../images/dist/adv-form.svg);
+}
