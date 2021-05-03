@@ -103,7 +103,15 @@ document.addEventListener("DOMContentLoaded", function () {
         $(".registrations").addClass('active');
     });
 
-    $(".share-block__btn-share").on('click', function () {
+    //$(".share-block__btn-share").on('click', function () {
+    //    $(".share-popup").addClass('active');
+    //});
+
+    //$(".share-popup__close").on('click', function () {
+    //    $(".share-popup").removeClass('active');
+    //});
+
+    $(".js-share-btn").on('click', function () {
         $(".share-popup").addClass('active');
     });
 
@@ -247,28 +255,28 @@ document.addEventListener("DOMContentLoaded", function () {
 
     $(".city-search__btn").on('click', function () {
         $(".city-search").toggleClass('active');
-    });   
+    });
 
     $(".page-sertificat__more-btn--open").on('click', function () {
         $(this).addClass('hidden');
         $(".page-sertificat__more-btn--close").addClass('active');
         $(".page-sertificat__more-btn--close").removeClass('hidden');
         $(".page-sertificat__more-content").addClass('open');
-    }); 
+    });
     $(".page-sertificat__more-btn--close").on('click', function () {
         $(this).addClass('hidden');
         $(".page-sertificat__more-btn--open").addClass('active');
         $(".page-sertificat__more-btn--open").removeClass('hidden');
         $(".page-sertificat__more-content").removeClass('open');
-    }); 
+    });
 
     $(".js-popover-open").on('click', function () {
         $(".note-popover__panel").addClass('active');
-    }); 
+    });
 
     $(".note-popover__close").on('click', function () {
         $(".note-popover__panel").removeClass('active');
-    }); 
+    });
 
     //Mobil filter
 
