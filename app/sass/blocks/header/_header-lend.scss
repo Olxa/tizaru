@@ -3,6 +3,8 @@
     border-bottom: 1px solid #E7E7E7;
 
     &__inner {
+        display: flex;
+        align-items: center;
     }
 
     &__logo {
@@ -29,7 +31,8 @@
     }
 
     &__link {
-        margin-right: 100px;
+        /*margin-right: 20%;*/
+        padding: 0 10%;
 
         &:hover {
             color: $accent;

@@ -93,6 +93,11 @@
 
 .pagination--center {
     margin: 0 auto;
+    justify-content: center;
+
+    .pagination-list {
+        padding: 0 20px;
+    }
 }
 
 .pagination__left-link {
