@@ -11,6 +11,13 @@
         }
     }
 
+    &__title {
+        font-family: $userfont-bold;
+        font-size: 18px;
+        font-weight: 700;
+        line-height: 27px;
+    }
+
     &__group-title {
         margin-bottom: 16px;
         font-family: $userfont-bold;
