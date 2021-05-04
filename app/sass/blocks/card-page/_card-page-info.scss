@@ -127,5 +127,10 @@
     .share-popup {
         top: 0;
         right: 0;
+
+        @media (max-width: 767px) {
+            left: 0;
+            right: initial;
+        }
     }
 }

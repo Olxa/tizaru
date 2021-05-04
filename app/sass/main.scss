@@ -149,10 +149,6 @@
 // == social-list ==
 @import "blocks/social-list/social-list";
 
-// == article ==
-@import "blocks/article/sorting-article";
-@import "blocks/article/search-article";
-
 // == card-page ==
 @import "blocks/card-page/card-page";
 @import "blocks/card-page/card-link-row";
@@ -218,8 +214,10 @@
 // == sections ==
 @import "sections/section";
 
-// == sections ==
+// == article ==
 @import "articles/articles-page";
-@import "articles/articles";
+@import "articles/article";
 @import "articles/articles-group";
 @import "articles/articles-nav";
+@import "articles/sorting-article";
+@import "articles/search-article";

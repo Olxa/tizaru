@@ -103,14 +103,6 @@ document.addEventListener("DOMContentLoaded", function () {
         $(".registrations").addClass('active');
     });
 
-    //$(".share-block__btn-share").on('click', function () {
-    //    $(".share-popup").addClass('active');
-    //});
-
-    //$(".share-popup__close").on('click', function () {
-    //    $(".share-popup").removeClass('active');
-    //});
-
     $(".js-share-btn").on('click', function () {
         $(".share-popup").addClass('active');
     });
