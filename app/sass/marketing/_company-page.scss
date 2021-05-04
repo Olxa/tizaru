@@ -15,9 +15,6 @@
         font-size: 14px;
     }
 
-    &__header {
-    }
-
     &__logo {
         display: block;
         width: 280px;
@@ -43,6 +40,13 @@
 
     &__desc-wrap {
         margin-bottom: 20px;
+    }
+
+    &__desc-title {
+        margin-top: 20px;
+        margin-bottom: 20px;
+        font-family: $userfont-bold;
+        font-size: 18px;
     }
 
     &__desc {
