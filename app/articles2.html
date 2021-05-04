@@ -10,48 +10,27 @@
             <nav aria-label="breadcrumb company-page__breadcrumb">
                 <ol class="breadcrumb">
                     <li class="breadcrumb__item"><a class="breadcrumb__link" href="/">Главная</a></li>
-                    <li class="breadcrumb__item active" aria-current="page">Статьи</li>
+                    <li class="breadcrumb__item"><a class="breadcrumb__link" href="articles.html">Статьи</a></li>
+                    <li class="breadcrumb__item active" aria-current="page">Бизнес</li>
                 </ol>
             </nav>
-            <h1 class="page-title visually-hidden">Статьи Tizaru</h1>
+            <h1 class="articles-group__title">Статьи в разделе Бизнес</h1>
         </div>
         <div class="articles-page">
             <main class="articles-page__articles">
-                <div class="articles-group">
-                    <h2 class="articles-group__title">Статьи в разделе Бизнес</h2>
-                    <div class="row">
-                        <!--#include virtual="/parts/articles-group.html" -->
-                    </div>                   
-                    <div class="articles-group__more-wrap">
-                        <a class="articles-group__more" href="articles2.html">Читать все статьи по этому разделу</a>
-                    </div>
+                <div class="row">
+                    <!--#include virtual="/parts/articles-group.html" -->
                 </div>
-
-                <div class="articles-group">
-                    <h2 class="articles-group__title">Статьи в разделе Технологии</h2>
-                    <div class="row">
-                        <!--#include virtual="/parts/articles-group.html" -->
-                    </div>                   
-                    <div class="articles-group__more-wrap">
-                        <a class="articles-group__more" href="articles2.html">Читать все статьи по этому разделу</a>
-                    </div>
-                </div>
-
                 <div class="advertising-banner advertising-banner--mob-vis">
                     <span class="advertising-banner__title">Реклама</span>
                     <a href="#" class="advertising-banner__wrapper"><img src="images/dist/advertising-banner-mob.jpg" alt=""></a>
                 </div>
-
-                <div class="articles-group">
-                    <h2 class="articles-group__title">Статьи в разделе Финансы и инвестиции</h2>
-                    <div class="row">
-                        <!--#include virtual="/parts/articles-group.html" -->
-                    </div>                   
-                    <div class="articles-group__more-wrap">
-                        <a class="articles-group__more" href="articles2.html">Читать все статьи по этому разделу</a>
-                    </div>
+                <div class="row">
+                    <!--#include virtual="/parts/articles-group.html" -->
                 </div>
-
+                <div class="articles-page__more-wrap">
+                    <button class="articles-page__more" type="button">Показать ещё</button>
+                </div>                
                 <div class="advertising-banner advertising-banner_full">
                     <span class="advertising-banner__title">Реклама</span>
                     <a href="#" class="advertising-banner__wrapper"><img src="images/dist/advertising-banner-full.jpg" alt=""></a>
@@ -62,10 +41,10 @@
                     <h3 class="articles-nav__title">Выберите раздел</h3>
                     <ul class="articles-nav__list">
                         <li class="articles-nav__item">
-                            <a class="articles-nav__item-link current" href="articles2.html">Все разделы</a>
+                            <a class="articles-nav__item-link" href="articles2.html">Все разделы</a>
                         </li>
                         <li class="articles-nav__item">
-                            <a class="articles-nav__item-link" href="articles2.html">Бизнес</a>
+                            <a class="articles-nav__item-link current" href="articles2.html">Бизнес</a>
                         </li>
                         <li class="articles-nav__item">
                             <a class="articles-nav__item-link" href="articles2.html">Технологии</a>
