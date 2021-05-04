@@ -24,14 +24,15 @@
         }
     }
 
-    &__intro--franchise {
+    &__intro--franchise,
+    &__excerpt--franchise::before {
         background-image: url(../images/dist/franchise-bg.jpg);
     }
 
-    &__excerpt--franchise {
-        &::before {
-            background-image: url(../images/dist/franchise-bg.jpg);
-        }
+
+    &__intro--part,
+    &__excerpt--part::before {
+        background-image: url(../images/dist/part-bg.jpg);
     }
 
     &__excerpt {
@@ -123,6 +124,17 @@
         }
     }
 
+    &__intro-subtitle--magriin-sm {
+        margin-bottom: 30px;
+    }
+
+    &__intro-sub {
+        margin-bottom: 20px;
+        font-size: 18px;
+        line-height: 17px;
+        color: #ffffff;
+    }
+
     &__intro-buttons {
         display: flex;
         justify-content: space-between;
@@ -148,6 +160,10 @@
                 min-width: 100%;
             }
         }
+    }
+
+    &__intro-buttons--single-btn {
+        justify-content: center;
     }
 
     &__content-block {
@@ -223,6 +239,17 @@
             @media (max-width: 767px) {
                 display: none;
             }
+        }
+    }
+
+    &__buttons {
+        display: flex;
+        justify-content: space-between;
+        max-width: 975px;
+        margin: 0 auto;
+
+        .btn {
+            margin: 0 20px;
         }
     }
 }

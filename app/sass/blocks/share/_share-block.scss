@@ -1,4 +1,5 @@
 .share-block {
+    position:relative;
     padding: 45px 70px;
     border: 1px solid $accent;
 
@@ -47,8 +48,7 @@
         }
     }
 
-    &__action {
-        position: relative;
+    &__action {       
         width: 35%;
         text-align: center;
 
