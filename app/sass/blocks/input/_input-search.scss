@@ -1,5 +1,5 @@
 /*------------------------------------*\
-  #»нпут с полем поиска
+  #Инпут с полем поиска
 \*------------------------------------*/
 
 .input-search {
@@ -27,6 +27,59 @@
         &::before {
             font-size: 18px;
             color: $gray;
+        }
+    }
+}
+
+
+
+
+
+/*------------------------------------*\
+  #Поиск с кнопкой
+\*------------------------------------*/
+
+.input-search {
+
+    &--btn {
+        display: flex;
+
+        .input {
+            padding: 5px 12px 5px 35px;
+            border-radius: $input-border-radius 0 0 $input-border-radius;
+            border-right: 0;
+
+            @media (max-width: 767px) {
+                padding-left: 12px;
+            }
+        }
+    }
+
+    &__icon-desc {
+        position: absolute;
+        top: 10px;
+        left: 10px;
+        color: $gray;
+        font-size: 18px;
+
+        @media (max-width: 767px) {
+            display: none;
+        }
+    }
+
+    &__btn-txt {
+        border-radius: 0 $input-border-radius $input-border-radius 0;
+
+        @media (max-width: 767px) {
+            padding: 5px;
+        }
+
+        .icon {
+            display: none;
+
+            @media (max-width: 767px) {
+                display: block;
+            }
         }
     }
 }

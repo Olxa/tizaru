@@ -65,8 +65,7 @@
     }
 
     &__table {
-        position: relative;
-
+        
         .table__td {
             font-size: 16px;
         }
@@ -75,28 +74,6 @@
             margin: auto;
             margin-left: 12px;
         }
-
-        &::after {
-            content: '';
-            position: absolute;
-            left: 0;
-            right: 0;
-            bottom: 0;
-            display: block;
-            width: 100%;
-            height: 250px;
-            background: linear-gradient(rgba(255,255,255,0), rgb(255,255,255));
-        }
-    }
-
-    &__table--all {
-        &::after {
-            display: none;
-        }
-    }
-
-    &__table-more {
-        text-align: center;
     }
 
     &__footer {

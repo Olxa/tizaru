@@ -90,8 +90,8 @@
         </div>
     </div>
     <div class="franchise-list__table-container">
-        <div class="franchise-list__table">
-            <!--Когда таблица закончится добавить класс .franchise-list__table--all (уберет побление в конце)-->
+        <div class="franchise-list__table table__leave">
+            <!--Когда таблица закончится добавить класс .table__leave--visible (уберет побление в конце)-->
             <div class="table__responsive table-border">
                 <table class="table table-striped--even">
                     <tr class="table__tr">
@@ -291,14 +291,14 @@
                 </table>
             </div>
         </div>
-        <div class="franchise-list__table-more">
+        <div class="table__leave-more">
             <button class="link link-accent link--border" type="button">Показать ещё</button>
         </div>        
     </div>
     <div class="container">
         <div class="franchise-list__footer">
             <div class="franchise-list__regist">
-                <a class="btn btn-conture" href="#">Зарегистрироваться как франчайзи</a>
+                <a class="btn btn-conture popup-link" href="#regist-fr">Зарегистрироваться как франчайзи</a>
             </div>
             <div class="share-block share-block--company-page">
                 <div class="share-block__title">Расскажите о Tuzaru!</div>
@@ -313,5 +313,9 @@
             </div>
         </div>
     </div>
+</div>
+
+<div id="regist-fr" class="popup login-reg-popup mfp-hide">
+    <!--#include virtual="/parts/login-reg-fr.html" -->
 </div>
 <!--#include virtual="/parts/footer.html" -->
