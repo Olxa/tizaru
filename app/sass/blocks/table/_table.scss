@@ -18,7 +18,7 @@
     width: 100%;
     max-width: 100%;
     border-collapse: collapse;
-    margin-bottom: 1rem;
+    /*margin-bottom: 1rem;*/
     background-color: transparent;
     overflow-x: visible;
     cursor: default;
@@ -33,38 +33,19 @@
     }
 
     &__th {
+        font-family: $userfont-sbold;
+        font-weight: 600;
         vertical-align: middle;
+        line-height: 19px;
     }
 
     &__th-sorting {
         display: flex;
         align-items: center;
-        justify-content: flex-end;
+        justify-content: center;
 
         .sorting {
             margin-left: 15px;
-        }
-    }
-
-
-    &__th-sorting--chevron {
-        position: relative;
-        display: flex;
-        align-items: baseline;
-    }
-
-    .icon-sorting {
-        position: relative;
-
-        &::before {
-            position: absolute;
-            top: -11px;
-            font-size: 12px;
-            transition: all .3s linear;
-        }
-
-        &.active::before {
-            transform: rotate( -180deg );
         }
     }
 
@@ -163,6 +144,13 @@
     }
 }
 
+.table-striped--even {
+
+    .table__tr:nth-of-type(even) {
+        background-color: $white;
+    }
+}
+
 
 
 
@@ -174,15 +162,20 @@
 .table-border {
     border: 1px solid $gray;
 
-    .table__td:last-child {
+    .table__td {
         border-left: 1px solid $gray;
+
+        &:first-child {
+            border-left: none;
+        }
     }
 
     .table__th {
         background-color: #ffffff;
+        border-left: 1px solid $gray;
 
-        &:last-child {
-            border-left: 1px solid $gray;
+        &:first-child {
+            border-left: none;
         }
     }
 }
