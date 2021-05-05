@@ -270,6 +270,13 @@ document.addEventListener("DOMContentLoaded", function () {
         $(".note-popover__panel").removeClass('active');
     });
 
+    $(".js-services-open").click(function () {
+        $(this)
+            .addClass('active')
+            .siblings('.article__services').toggleClass('active');
+        return false;
+    });
+
     //Mobil filter
 
     $(".mobil-bar__btn").on('click', function () {
@@ -347,6 +354,12 @@ $(document).on('mouseup', function (e) {
     let option = $('.options__btn');
     if (!hsm.is(e.target) && drop.has(e.target).length === 0) {
         option.removeClass('active');
+    }
+
+    let services = $('.article__services');
+    if (!hsm.is(e.target) && drop.has(e.target).length === 0) {
+        $('.js-services-open').removeClass('active')
+        services.removeClass('active');
     }
 });
 

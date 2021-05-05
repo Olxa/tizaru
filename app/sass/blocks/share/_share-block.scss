@@ -1,5 +1,5 @@
 .share-block {
-    position:relative;
+    position: relative;
     padding: 45px 70px;
     border: 1px solid $accent;
 
@@ -48,12 +48,28 @@
         }
     }
 
-    &__action {       
+    &__action {
         width: 35%;
         text-align: center;
 
         @media (max-width: 992px) {
             width: 100%;
+        }
+    }
+
+    &__action--inline {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        width: 100%;
+
+        .share-block__action-count {
+            width: auto;
+            margin: 0 0 20px 20px;
+
+            @media (max-width: 992px) {
+                margin-left: 0;
+            }
         }
     }
 
