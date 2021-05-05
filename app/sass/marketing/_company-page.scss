@@ -52,6 +52,14 @@
     &__desc {
         font-size: 18px;
         margin: 0;
+
+        @media (max-width: 1200px) {
+            font-size: 16px;
+        }
+
+        @media (max-width: 768px) {
+            font-size: 14px;
+        }
     }
 
     &__content {
@@ -68,5 +76,10 @@
 
     &__filter {
         padding: 0 0 10px;
+    }
+
+    &__alert-txt {
+        margin-bottom: 0;
+        font-size: 16px;
     }
 }

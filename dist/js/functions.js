@@ -188,7 +188,8 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 
     $(".js-sorting").on('click', function () {
-        $('.icon-sorting').toggleClass('active');
+        $(this)
+        .children('.icon-sorting').toggleClass('active');
     });
 
     $(".collapse .collapse-link").click(function () {
@@ -270,6 +271,22 @@ document.addEventListener("DOMContentLoaded", function () {
         $(".note-popover__panel").removeClass('active');
     });
 
+    $(".js-services-open").click(function () {
+        $(this)
+            .addClass('active')
+            .siblings('.article__services').toggleClass('active');
+        return false;
+    });
+
+    $(".js-smart-filter").on('click', function () {
+        $(this)
+            .siblings('.smart-filter__popup').addClass('active');
+    });
+
+    $(".smart-filter__close").on('click', function () {
+        $('.smart-filter__popup').removeClass('active');
+    });
+
     //Mobil filter
 
     $(".mobil-bar__btn").on('click', function () {
@@ -347,6 +364,12 @@ $(document).on('mouseup', function (e) {
     let option = $('.options__btn');
     if (!hsm.is(e.target) && drop.has(e.target).length === 0) {
         option.removeClass('active');
+    }
+
+    let services = $('.article__services');
+    if (!hsm.is(e.target) && drop.has(e.target).length === 0) {
+        $('.js-services-open').removeClass('active')
+        services.removeClass('active');
     }
 });
 
