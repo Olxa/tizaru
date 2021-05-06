@@ -203,6 +203,7 @@
 // == graph ==
 @import "blocks/graph/graph-vertical";
 @import "blocks/graph/graph-horizontal";
+@import "blocks/graph/graph-sircle";
 
 // == marketing ==
 @import "marketing/company-page";
@@ -215,6 +216,7 @@
 @import "marketing/franchise-list";
 @import "marketing/general-register";
 @import "marketing/accrual-point";
+@import "marketing/help";
 
 // == sections ==
 @import "sections/section";

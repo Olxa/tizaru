@@ -66,11 +66,6 @@
 .share-block--company-page {
 
     .share-popup {
-        @media (max-width: 1299px) {
-            right: -40px;
-            top: -65%;
-        }
-
         @media (max-width: 992px) {
             display: block !important;
             position: initial;
