@@ -86,6 +86,10 @@
     }
 }
 
+.checkbox--inline {
+    display: inline-block;
+}
+
 .checkbox--muted {
     .checkbox__value {
         color: $gray;
