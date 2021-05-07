@@ -102,3 +102,38 @@
         color: $color-succes;
     }
 }
+
+
+
+
+
+
+/*------------------------------------*\
+  #ссылка на автора
+\*------------------------------------*/
+
+.freepik-link {
+    position: absolute;
+    display: inline-block;
+    width: 100%;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 16px;
+    text-align: center;
+    color: $gray;
+    z-index: 2;
+
+
+    @media (max-width: 767px) {
+        font-size: 12px;
+    }
+
+    &:hover {
+        color: $gray;
+    }
+
+    &__wrap {
+        position: relative;
+    }
+}
+

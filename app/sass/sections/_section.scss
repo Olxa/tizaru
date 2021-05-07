@@ -29,11 +29,16 @@
     }
 
     &__image {
+        position: relative;
         width: 100%;
         height: 100%;
         background-repeat: no-repeat;
         background-position: center;
         background-size: contain;
+
+        .freepik-link {
+            bottom: 10%;
+        }
     }
 
     &__page-title {
@@ -44,6 +49,7 @@
         line-height: 48px;
 
         @media (max-width: 1199px) {
+            margin-top: 20px;
             font-size: 28px;
             line-height: 35px;
         }
@@ -128,7 +134,7 @@
             top: 100%;
             display: inline-block;
             width: 200px;
-            height: 230px;
+            height: 180px;
             background: url(../images/dist/twisted-arrow.svg) no-repeat center;
             background-size: contain;
 
@@ -166,6 +172,16 @@
     @media (max-width: 767px) {
         min-height: 30vh;
     }
+
+    .freepik-link {
+        text-align: right;
+
+        @media (max-width: 1199px) {
+            text-align: center;
+            bottom: -5px;
+
+        }
+    }
 }
 
 .section__image--adv-top {
@@ -174,7 +190,13 @@
 
     @media (max-width: 1199px) {
         min-height: 250px;
-    }  
+    }
+
+    .freepik-link {
+        @media (max-width: 1199px) {
+            bottom: -3px;
+        }
+    }
 }
 
 .section__image--adv-card-company {
@@ -185,6 +207,14 @@
     @media (max-width: 1199px) {
         display: none;
     }
+
+    .freepik-link {
+        bottom: 18%;
+
+        @media (max-width: 1299px) {
+            bottom: 25%;
+        }
+    }
 }
 
 .section__image--adv-statistic {
@@ -193,6 +223,14 @@
 
     @media (max-width: 1199px) {
         min-height: 250px;
+    }
+
+    .freepik-link {
+        bottom: 0;
+
+        @media (max-width: 1199px) {
+            bottom: -10px;
+        }
     }
 }
 
@@ -212,6 +250,22 @@
     @media (max-width: 767px) {
         min-height: 200px;
     }
+
+    .freepik-link {
+        bottom: 0;
+
+        @media (max-width: 1299px) {
+            bottom: 5%;
+        }
+
+        @media (max-width: 1199px) {
+            bottom: 9%;
+        }
+
+        @media (max-width: 991px) {
+            bottom: 0;
+        }
+    }
 }
 
 .section__image--adv-form {
@@ -220,5 +274,9 @@
 
     @media (max-width: 1199px) {
         display: none;
+    }
+
+    .freepik-link {
+        bottom: 0;
     }
 }

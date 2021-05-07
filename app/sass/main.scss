@@ -122,6 +122,7 @@
 @import "blocks/userlist";
 @import "blocks/image-gallery";
 @import "blocks/smart-filter";
+@import "blocks/video";
 
 // == search-results ==
 @import "blocks/search-results/search-results";
@@ -142,6 +143,7 @@
 @import "blocks/popup/delete-popup";
 @import "blocks/popup/note-popover";
 @import "blocks/popup/open-franchise";
+@import "blocks/popup/popup-img";
 
 // == share ==
 @import "blocks/share/share-block";
@@ -219,6 +221,7 @@
 @import "marketing/help";
 @import "marketing/certificate";
 @import "marketing/join";
+@import "marketing/about";
 
 // == sections ==
 @import "sections/section";

@@ -6,12 +6,19 @@
         margin: 0 auto;
 
         .sorting__btn {
+            width: 100%;
             text-align: left;
-        }
 
+            &.text-center {
+                text-align: center;
+                justify-content: center;
+            }
+        }
+        
         .table__td,
         .table__th {
             padding: 10px 25px;
+            font-size: 16px;
         }
     }
 

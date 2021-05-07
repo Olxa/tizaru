@@ -40,6 +40,17 @@
         transition: all .3s linear;
         cursor: pointer;
 
+        @media (max-width: 1200px) {
+            width: 25%;
+        }
+
+        @media (max-width: 992px) {
+            width: 33.333%;
+        }
+        @media (max-width: 767px) {
+            width: 50%;
+        }
+        
         &:last-child {
             margin-right: 0;
         }
@@ -62,6 +73,10 @@
         height: 200px;
         width: 100%;
         object-fit: cover;
+
+        @media (max-width: 992px) {
+            height: 150px;
+        }
     }
 
     &__item-bottom {

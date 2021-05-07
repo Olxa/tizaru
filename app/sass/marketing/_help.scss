@@ -24,6 +24,23 @@
                 min-height: 300px;
             }
         }
+
+        .freepik-link {
+            bottom: 6%;
+
+            @media (max-width: 1299px) {
+                bottom: 8%;
+            }
+
+            @media (max-width: 1199px) {
+                bottom: 15%;
+            }
+
+            @media (max-width: 991px) {
+               left: 0;
+                bottom: 5%;
+            }
+        }
     }
 
     &__share {
@@ -121,6 +138,12 @@
 
         @media (max-width: 1199px) {
             display: none;
+        }
+
+        .freepik-link__wrap {
+            position: absolute !important;
+            width: 100%;
+            bottom: 0;
         }
     }
 

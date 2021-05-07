@@ -1,5 +1,6 @@
 .join {
     &__header {
+        position: relative;
         margin-bottom: 50px;
 
         @media (max-width: 1299px) {
@@ -26,6 +27,10 @@
             @media (max-width: 480px) {
                 height: 150px;
             }
+        }
+
+        .freepik-link {
+            bottom: -5px;
         }
     }
 

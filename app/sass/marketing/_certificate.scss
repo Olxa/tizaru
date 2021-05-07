@@ -23,9 +23,14 @@
         @media (max-width: 991px) {
             display: none;
         }
+
+        .freepik-link {
+            bottom: 0;
+        }
     }
 
     &__title-img-mob {
+        position: relative;
         display: none;
         min-height: 300px;
         width: 100%;
@@ -38,6 +43,17 @@
 
         @media (max-width: 767px) {
             background-position: center;
+        }
+
+        .freepik-link {
+            width: auto;
+            bottom: -14px;
+            left: 0;
+
+            @media (max-width: 767px) {
+                left: 50%;
+                margin-left: -25%;
+            }
         }
     }
 

@@ -78,3 +78,17 @@
         margin-top: -40px;
     }
 }
+
+
+.slick-slider--cover-img {
+
+    .slick-slide {
+        height: 200px;
+    }
+
+    img {
+        width: 100%;
+        height: 100%;
+        object-fit:cover;
+    }
+}

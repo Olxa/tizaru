@@ -8,7 +8,14 @@
         }
     }
 
+    &__image {
+        @media (max-width: 1200px) {         
+            margin-bottom: 20px;
+        }
+    }
+
     &__image-intro {
+        position: relative;
         width: 100%;
         height: 100%;
         background-image: url(../images/dist/accrual-point.svg);
@@ -23,6 +30,24 @@
 
         @media (max-width: 767px) {
             min-height: 210px;
+        }
+
+        .freepik-link__wrap {
+            position: absolute !important;
+            width: 100%;
+            bottom: 20%;
+
+            @media (max-width: 1299px) {
+                bottom: 25%;
+            }
+
+            @media (max-width: 1200px) {
+                bottom: 38%;
+            }
+
+            @media (max-width: 1199px) {
+                bottom: 10px;
+            }
         }
     }
 

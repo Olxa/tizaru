@@ -16,6 +16,7 @@
     }
 
     &__image {
+        position: relative;
         min-height: 40vh;
         background-image: url(../images/dist/404-bg.png);
         background-repeat: no-repeat;
@@ -24,6 +25,10 @@
 
         @media (max-width: 992px) {
             max-height: 30vh;
+        }
+
+        .freepik-link {
+            bottom: 0;
         }
     }
 

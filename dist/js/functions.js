@@ -86,6 +86,31 @@ document.addEventListener("DOMContentLoaded", function () {
         autoplay: false
     });
 
+    var slick = $('.popup-img__slider').slick({
+        infinite: false,
+        slidesToShow: 5,
+        slidesToScroll: 1,
+        dots: false,
+        autoplay: false,
+        responsive: [
+            {
+                breakpoint: 1200,
+                settings: {
+                    slidesToShow: 3,
+                }
+            },
+            {
+                breakpoint: 600,
+                settings: {
+                    slidesToShow: 2,
+                }
+            }
+        ]
+    });
+    $('.image-gallery__popup').click(function () {
+        slick.slick('refresh');
+    });     
+
     $('body').on('click', '.password-visible', function () {
         if ($('.password').attr('type') == 'password') {
             $(this).addClass('view');
@@ -285,6 +310,16 @@ document.addEventListener("DOMContentLoaded", function () {
 
     $(".smart-filter__close").on('click', function () {
         $('.smart-filter__popup').removeClass('active');
+    });
+
+    $(".popup-img__tags-more").on('click', function () {
+        $(this).css('display', 'none')
+        $('.popup-img__tags-hide').addClass('visible');
+    });
+
+    $(".popup-img__share-btn").on('click', function () {
+        $(this).css('display', 'none')
+        $('.popup-img__share-block').addClass('visible');
     });
 
     //Mobil filter
