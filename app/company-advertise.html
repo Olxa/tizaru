@@ -17,7 +17,7 @@
         </div>
     </section>
 
-    <section class="row section__row section__row--alight-center">
+    <section id="top-card" class="row section__row section__row--alight-center">
         <div class="col-lg-4 section__mob-end-col">
             <div class="section__image section__image--adv-top"><a class="freepik-link" href="https://ru.freepik.com/home" target="_blank">Designed by stories / Freepik</a></div>
         </div>
@@ -35,34 +35,61 @@
             <p class="section__txt">
                 Больше информации о вашей компании в карточке сделает её интереснее
             </p>
-            <div class="section__card section__card--simple">
+            <div class="section__img-card section__img-card--simple">
                 <img src="images/dist/card-simple.jpg" alt="Обычная карточка" />
-            </div>            
+            </div>
         </div>
         <div class="col-xl-5">
             <div class="section__image section__image--adv-card-company"><a class="freepik-link" href="https://ru.freepik.com/home" target="_blank">Designed by stories / Freepik</a></div>
         </div>
 
         <div class="col-xl-7 offset-xl-5 offset-sm-1">
-            <div class="section__card section__card--full">
-                <img src="images/dist/card-full.jpg" alt="Обычная карточка" />
+            <div class="section__img-card section__img-card--full">
+                <img src="images/dist/card-full.jpg" alt="Расширенная карточка" />
             </div>
         </div>
     </section>
 
     <section class="row section__row section__row--alight-center">
+        <div class="col-xl-6">
+            <div class="section__image section__image--adv-statistic"><a class="freepik-link" href="https://ru.freepik.com/home" target="_blank">Designed by stories / Freepik</a></div>
+        </div>
         <div class="col-xl-6 section__content">
             <h2 class="section__title">Понятная и доступная статистика</h2>
             <p class="section__txt">
                 Для того, чтобы вы могли видеть как работает ваша реклама на TIZARU - в личном кабинете есть все необходимое
             </p>
-        </div>
-        <div class="col-xl-6">
-            <div class="section__image section__image--adv-statistic"><a class="freepik-link" href="https://ru.freepik.com/home" target="_blank">Designed by stories / Freepik</a></div>
+            <div class="section__img-statistics">
+                <img src="images/dist/statistics-img.jpg" alt="Пример статистических данных" />
+            </div>           
         </div>
     </section>
 
-    <section class="row section__row section__row--alight-center">
+    <section id="banners" class="row section__row section__row--alight-center">
+        <div class="col-xl-6 section__content section__mob-end-col">
+            <div class="section__image section__image--adv-banners"><a class="freepik-link" href="https://ru.freepik.com/home" target="_blank">Designed by stories / Freepik</a></div>
+        </div>
+        <div class="col-xl-6 section__content">
+            <h2 class="section__title">Размещение банеров</h2>
+            <p class="section__txt">
+                Размещение рекламных банеров на страницах TIZARU даст компании дополнительные охваты
+            </p>
+        </div>
+    </section>
+
+    <section id="promocode" class="row section__row section__row--alight-center">
+        <div class="col-xl-6 section__content">
+            <h2 class="section__title">Промокоды для ваших клиентов</h2>
+            <p class="section__txt">
+                Создавайте скидку и она будет удобно отображена в карточке компании
+            </p>
+        </div>
+        <div class="col-xl-6">
+            <div class="section__image section__image--adv-promocode"><a class="freepik-link" href="https://ru.freepik.com/home" target="_blank">Designed by stories / Freepik</a></div>
+        </div>
+    </section>
+
+    <section class="row section__row section__row--padding-big section__row--alight-center">
         <div class="col-xl-6 col-lg-4 section__mob-end-col">
             <div class="section__image section__image--adv-start"><a class="freepik-link" href="https://ru.freepik.com/home" target="_blank">Designed by stories / Freepik</a></div>
         </div>
@@ -75,43 +102,43 @@
     </section>
 
     <section id="order-form" class="row section__row section__row--alight-center">
-        <div class="col-xl-5 section__content">         
-                <h2 class="section__title text-center">Оставьте заявку</h2>
-                <p class="section__txt text-center">
-                    Экономьте своё время, мы всё вам расскажем
-                </p>
-                <form class="form section__form" action="/" method="post">
-                    <div class="input-wrap">
-                        <label class="input-wrap__label">Ваше имя<input class="input" type="text"></label>
-                    </div>
-                    <div class="input-wrap">
-                        <label class="input-wrap__label">Номер телефона<input class="input" type="tel"></label>
-                    </div>
-                    <div class="input-wrap">
-                        <label class="input-wrap__label">E-mail<input class="input" type="email"></label>
-                    </div>
-                    <div class="input-wrap">
-                        <label class="input-wrap__label">Выберите регион</label>
-                        <div class="dropdown dropdown--input js-dropdown-toogle">
-                            <button class="dropdown__value" type="button"><span class="dropdown__value-inner"></span></button>
-                            <div class="dropdown__list scroll-gray">
-                                <div class="dropdown__list-item"><a href="#" class="dropdown__list-val">Значение 1</a></div>
-                                <div class="dropdown__list-item"><a href="#" class="dropdown__list-val">Значение 2</a></div>
-                            </div>
+        <div class="col-xl-5 section__content">
+            <h2 class="section__title text-center">Оставьте заявку</h2>
+            <p class="section__txt text-center">
+                Экономьте своё время, мы всё вам расскажем
+            </p>
+            <form class="form section__form" action="/" method="post">
+                <div class="input-wrap">
+                    <label class="input-wrap__label">Ваше имя<input class="input" type="text"></label>
+                </div>
+                <div class="input-wrap">
+                    <label class="input-wrap__label">Номер телефона<input class="input" type="tel"></label>
+                </div>
+                <div class="input-wrap">
+                    <label class="input-wrap__label">E-mail<input class="input" type="email"></label>
+                </div>
+                <div class="input-wrap">
+                    <label class="input-wrap__label">Выберите регион</label>
+                    <div class="dropdown dropdown--input js-dropdown-toogle">
+                        <button class="dropdown__value" type="button"><span class="dropdown__value-inner"></span></button>
+                        <div class="dropdown__list scroll-gray">
+                            <div class="dropdown__list-item"><a href="#" class="dropdown__list-val">Значение 1</a></div>
+                            <div class="dropdown__list-item"><a href="#" class="dropdown__list-val">Значение 2</a></div>
                         </div>
                     </div>
-                    <div class="input-wrap">
-                        <label class="input-wrap__label">Ваша компания<input class="input" type="text"></label>
-                    </div>
-                    <div class="checkbox section__form-consent">
-                        <input class="checkbox__field" id="consent" type="checkbox">
-                        <label class="checkbox__value login-reg__checkbox-accept" for="consent">Согласен(-на) на обработку данных и с <a href="terms-of-use.html">пользовательским соглашением</a></label>
-                    </div>
-                    <div class="section__form-captcha">
-                        <img src="images/dist/capc.jpg" alt="Гугл капча">
-                    </div>
-                    <button class="btn btn-accent btn--full section__form-submit" type="submit">Узнать условия</button>
-                </form>          
+                </div>
+                <div class="input-wrap">
+                    <label class="input-wrap__label">Ваша компания<input class="input" type="text"></label>
+                </div>
+                <div class="checkbox section__form-consent">
+                    <input class="checkbox__field" id="consent" type="checkbox">
+                    <label class="checkbox__value login-reg__checkbox-accept" for="consent">Согласен(-на) на обработку данных и с <a href="terms-of-use.html">пользовательским соглашением</a></label>
+                </div>
+                <div class="section__form-captcha">
+                    <img src="images/dist/capc.jpg" alt="Гугл капча">
+                </div>
+                <button class="btn btn-accent btn--full section__form-submit" type="submit">Узнать условия</button>
+            </form>
         </div>
         <div class="col-xl-7">
             <div class="section__image section__image--adv-form"><a class="freepik-link" href="https://ru.freepik.com/home" target="_blank">Designed by stories / Freepik</a></div>

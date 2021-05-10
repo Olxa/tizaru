@@ -111,6 +111,15 @@ document.addEventListener("DOMContentLoaded", function () {
         slick.slick('refresh');
     });     
 
+    $(document).ready(function () {
+        $("#sections-nav").on("click", "a", function (event) {         
+            event.preventDefault();
+            var id = $(this).attr('href'),              
+                top = $(id).offset().top;
+            $('body,html').animate({ scrollTop: top }, 100);
+        });
+    });
+
     $('body').on('click', '.password-visible', function () {
         if ($('.password').attr('type') == 'password') {
             $(this).addClass('view');
