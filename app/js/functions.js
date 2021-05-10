@@ -132,6 +132,10 @@ document.addEventListener("DOMContentLoaded", function () {
         $(".share-popup").addClass('active');
     });
 
+    $(".js-share-btn-bottom").on('click', function () {
+        $(".share-popup").addClass('active');
+    });
+
     $(".share-popup__close").on('click', function () {
         $(".share-popup").removeClass('active');
     });
