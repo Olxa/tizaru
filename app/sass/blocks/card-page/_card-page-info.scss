@@ -24,6 +24,13 @@
             height: 80px;
             margin: 0 auto 20px;
         }
+
+        img {
+            width: 100%;
+            object-fit: cover;
+            object-position: top center;
+            border-radius: 50%;
+        }
     }
 
     &__text {
