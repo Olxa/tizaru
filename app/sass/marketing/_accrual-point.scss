@@ -9,13 +9,14 @@
     }
 
     &__image {
-        @media (max-width: 1200px) {         
+        @media (max-width: 1200px) {
             margin-bottom: 20px;
         }
     }
 
     &__image-intro {
         position: relative;
+        
         width: 100%;
         height: 100%;
         background-image: url(../images/dist/accrual-point.svg);
@@ -35,11 +36,8 @@
         .freepik-link__wrap {
             position: absolute !important;
             width: 100%;
-            bottom: 20%;
-
-            @media (max-width: 1299px) {
-                bottom: 25%;
-            }
+            bottom: 0;
+            
 
             @media (max-width: 1200px) {
                 bottom: 38%;

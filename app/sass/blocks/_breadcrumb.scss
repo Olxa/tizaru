@@ -37,6 +37,10 @@
     &--private-office {
         padding-left: 286px;
 
+        @media (max-width: 1600px) {
+            padding-left: 210px;
+        }
+
         @media (max-width: 1200px) {
             padding-left: 0;
         }
