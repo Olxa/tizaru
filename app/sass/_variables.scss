@@ -15,7 +15,9 @@ $color-second:                          #000080;                                
 $color-tertiary:                        #008A00;                                                    //Зеленый
 
 $color-succes:                          $color-tertiary;                                               
-$color-warning:                         $accent;                      
+$color-warning:                         $accent;
+$color-alert:                           #FFD146;
+
                         
 
 
@@ -52,6 +54,9 @@ $systemfont:                            -apple-system, BlinkMacSystemFont, Arial
 \*------------------------------------*/
 
 $border-radius: 5px;
+
+$zindex-loader: 995;
+$zindex-note: 9999;
 
 
 

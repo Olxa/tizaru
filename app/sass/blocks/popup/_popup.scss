@@ -4,6 +4,12 @@
     opacity: 1;
 }
 
+@-moz-document url-prefix() {
+    .mfp-bg {
+        background: rgba(0, 0, 0, 0.5);
+    }
+}
+
 .mfp-close {
     width: 15px;
     height: 15px;
